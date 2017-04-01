@@ -120,7 +120,9 @@ Partial Class Marca
         '
         Me.lsvMarca.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.lsvMarca.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chIdMarca, Me.chNombreMarca})
+        Me.lsvMarca.ContextMenuStrip = Me.CmsOpciones
         Me.lsvMarca.FullRowSelect = True
+        Me.lsvMarca.GridLines = True
         Me.lsvMarca.Location = New System.Drawing.Point(12, 298)
         Me.lsvMarca.Name = "lsvMarca"
         Me.lsvMarca.Size = New System.Drawing.Size(522, 116)
