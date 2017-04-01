@@ -24,7 +24,7 @@ Public Class Marca
         PlMarca.Enabled = Panel
     End Sub
 
-    Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles BtnNuevo.Click
+    Private Sub btnNuevo_Click(sender As Object, e As EventArgs)
         HabilitarBotones(False, True, False, True, True)
         TxtCodM.Focus()
         ChkVertodo.Checked = False
@@ -33,7 +33,7 @@ Public Class Marca
         InvestigarCorrelativo()
     End Sub
 
-    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs)
 
         If Validar(TxtNombreM, "Debe ingresar el Nombre de la Marca") Then
         Else
@@ -45,7 +45,7 @@ Public Class Marca
         End If
     End Sub
 
-    Private Sub Btneditar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
+    Private Sub Btneditar_Click(sender As Object, e As EventArgs)
         If Validar(TxtNombreM, "El nombre de la marca es requerido") Then
         Else
             Actualizar()
@@ -56,7 +56,7 @@ Public Class Marca
 
     End Sub
 
-    Private Sub Btncancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
+    Private Sub Btncancelar_Click(sender As Object, e As EventArgs)
         HabilitarBotones(True, False, False, False, False)
         Limpiar()
         ChkVertodo.Enabled = True
@@ -71,6 +71,7 @@ Public Class Marca
         If cnn.State = ConnectionState.Open Then
             cnn.Close()
         End If
+
         cnn.Open()
 
         Using cmd As New SqlCommand
@@ -259,7 +260,4 @@ Public Class Marca
         End If
     End Function
 
-    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs) Handles GroupBox4.Enter
-
-    End Sub
 End Class

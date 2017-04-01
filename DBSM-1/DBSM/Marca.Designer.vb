@@ -26,28 +26,26 @@ Partial Class Marca
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Marca))
         Me.ChkVertodo = New System.Windows.Forms.CheckBox()
         Me.PlMarca = New System.Windows.Forms.Panel()
-        Me.TxtNombreM = New System.Windows.Forms.TextBox()
-        Me.TxtCodM = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PlBotones = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.BtnCancelar = New System.Windows.Forms.Button()
-        Me.BtnEditar = New System.Windows.Forms.Button()
-        Me.BtnNuevo = New System.Windows.Forms.Button()
-        Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.lsvMarca = New System.Windows.Forms.ListView()
         Me.chIdMarca = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chNombreMarca = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TxtCodM = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TxtNombreM = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.BtnCancelar = New System.Windows.Forms.Button()
+        Me.BtnEditar = New System.Windows.Forms.Button()
+        Me.BtnGuardar = New System.Windows.Forms.Button()
+        Me.BtnNuevo = New System.Windows.Forms.Button()
         Me.PlMarca.SuspendLayout()
-        Me.PlBotones.SuspendLayout()
         Me.CmsOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -55,10 +53,9 @@ Partial Class Marca
         '
         Me.ChkVertodo.AutoSize = True
         Me.ChkVertodo.BackColor = System.Drawing.Color.Transparent
-        Me.ChkVertodo.Location = New System.Drawing.Point(562, 148)
-        Me.ChkVertodo.Margin = New System.Windows.Forms.Padding(4)
+        Me.ChkVertodo.Location = New System.Drawing.Point(445, 179)
         Me.ChkVertodo.Name = "ChkVertodo"
-        Me.ChkVertodo.Size = New System.Drawing.Size(89, 21)
+        Me.ChkVertodo.Size = New System.Drawing.Size(70, 17)
         Me.ChkVertodo.TabIndex = 64
         Me.ChkVertodo.Text = "Ver Todo"
         Me.ChkVertodo.UseVisualStyleBackColor = False
@@ -68,187 +65,30 @@ Partial Class Marca
         Me.PlMarca.BackColor = System.Drawing.Color.Transparent
         Me.PlMarca.Controls.Add(Me.TxtNombreM)
         Me.PlMarca.Controls.Add(Me.TxtCodM)
-        Me.PlMarca.Controls.Add(Me.Label10)
-        Me.PlMarca.Controls.Add(Me.Label9)
         Me.PlMarca.Controls.Add(Me.Label1)
-        Me.PlMarca.Location = New System.Drawing.Point(29, 69)
-        Me.PlMarca.Margin = New System.Windows.Forms.Padding(4)
+        Me.PlMarca.Controls.Add(Me.Label11)
+        Me.PlMarca.Controls.Add(Me.Label9)
+        Me.PlMarca.Location = New System.Drawing.Point(24, 115)
         Me.PlMarca.Name = "PlMarca"
-        Me.PlMarca.Size = New System.Drawing.Size(525, 100)
+        Me.PlMarca.Size = New System.Drawing.Size(394, 81)
         Me.PlMarca.TabIndex = 63
-        '
-        'TxtNombreM
-        '
-        Me.TxtNombreM.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.TxtNombreM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.TxtNombreM.Location = New System.Drawing.Point(243, 55)
-        Me.TxtNombreM.Margin = New System.Windows.Forms.Padding(4)
-        Me.TxtNombreM.Name = "TxtNombreM"
-        Me.TxtNombreM.Size = New System.Drawing.Size(227, 22)
-        Me.TxtNombreM.TabIndex = 53
-        '
-        'TxtCodM
-        '
-        Me.TxtCodM.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.TxtCodM.Enabled = False
-        Me.TxtCodM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.TxtCodM.Location = New System.Drawing.Point(243, 17)
-        Me.TxtCodM.Margin = New System.Windows.Forms.Padding(4)
-        Me.TxtCodM.Name = "TxtCodM"
-        Me.TxtCodM.Size = New System.Drawing.Size(227, 22)
-        Me.TxtCodM.TabIndex = 52
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(41, 62)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(166, 18)
-        Me.Label10.TabIndex = 51
-        Me.Label10.Text = "Nombre de la Marca:"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(91, 74)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(68, 60)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(0, 17)
+        Me.Label9.Size = New System.Drawing.Size(0, 13)
         Me.Label9.TabIndex = 50
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(41, 18)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(160, 18)
-        Me.Label1.TabIndex = 49
-        Me.Label1.Text = "Codigo de la Marca:"
-        '
-        'PlBotones
-        '
-        Me.PlBotones.BackColor = System.Drawing.Color.Transparent
-        Me.PlBotones.Controls.Add(Me.Label5)
-        Me.PlBotones.Controls.Add(Me.Label4)
-        Me.PlBotones.Controls.Add(Me.Label3)
-        Me.PlBotones.Controls.Add(Me.Label2)
-        Me.PlBotones.Controls.Add(Me.BtnCancelar)
-        Me.PlBotones.Controls.Add(Me.BtnEditar)
-        Me.PlBotones.Controls.Add(Me.BtnNuevo)
-        Me.PlBotones.Controls.Add(Me.BtnGuardar)
-        Me.PlBotones.Location = New System.Drawing.Point(123, 186)
-        Me.PlBotones.Margin = New System.Windows.Forms.Padding(4)
-        Me.PlBotones.Name = "PlBotones"
-        Me.PlBotones.Size = New System.Drawing.Size(396, 74)
-        Me.PlBotones.TabIndex = 62
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(241, 54)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 17)
-        Me.Label5.TabIndex = 58
-        Me.Label5.Text = "Cancelar"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(171, 54)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(45, 17)
-        Me.Label4.TabIndex = 58
-        Me.Label4.Text = "Editar"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(92, 54)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(61, 17)
-        Me.Label3.TabIndex = 48
-        Me.Label3.Text = "Guardar"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(19, 54)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 17)
-        Me.Label2.TabIndex = 47
-        Me.Label2.Text = "Nuevo"
-        '
-        'BtnCancelar
-        '
-        Me.BtnCancelar.BackColor = System.Drawing.Color.Transparent
-        Me.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnCancelar.FlatAppearance.BorderSize = 0
-        Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancelar.Location = New System.Drawing.Point(236, 6)
-        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(68, 49)
-        Me.BtnCancelar.TabIndex = 39
-        Me.BtnCancelar.UseVisualStyleBackColor = False
-        '
-        'BtnEditar
-        '
-        Me.BtnEditar.BackColor = System.Drawing.Color.Transparent
-        Me.BtnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnEditar.FlatAppearance.BorderSize = 0
-        Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEditar.Location = New System.Drawing.Point(168, 7)
-        Me.BtnEditar.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(52, 44)
-        Me.BtnEditar.TabIndex = 38
-        Me.BtnEditar.UseVisualStyleBackColor = False
-        '
-        'BtnNuevo
-        '
-        Me.BtnNuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnNuevo.FlatAppearance.BorderSize = 0
-        Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnNuevo.Location = New System.Drawing.Point(20, 10)
-        Me.BtnNuevo.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(51, 46)
-        Me.BtnNuevo.TabIndex = 36
-        Me.BtnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.BtnNuevo.UseVisualStyleBackColor = False
-        '
-        'BtnGuardar
-        '
-        Me.BtnGuardar.BackColor = System.Drawing.Color.Transparent
-        Me.BtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnGuardar.FlatAppearance.BorderSize = 0
-        Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.BtnGuardar.Location = New System.Drawing.Point(96, 9)
-        Me.BtnGuardar.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(51, 44)
-        Me.BtnGuardar.TabIndex = 37
-        Me.BtnGuardar.UseVisualStyleBackColor = False
         '
         'lsvMarca
         '
         Me.lsvMarca.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.lsvMarca.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chIdMarca, Me.chNombreMarca})
         Me.lsvMarca.FullRowSelect = True
-        Me.lsvMarca.Location = New System.Drawing.Point(13, 278)
-        Me.lsvMarca.Margin = New System.Windows.Forms.Padding(4)
+        Me.lsvMarca.Location = New System.Drawing.Point(12, 298)
         Me.lsvMarca.Name = "lsvMarca"
-        Me.lsvMarca.Size = New System.Drawing.Size(694, 142)
+        Me.lsvMarca.Size = New System.Drawing.Size(522, 116)
         Me.lsvMarca.TabIndex = 61
         Me.lsvMarca.UseCompatibleStateImageBehavior = False
         Me.lsvMarca.View = System.Windows.Forms.View.Details
@@ -268,37 +108,186 @@ Partial Class Marca
         Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
         Me.CmsOpciones.Name = "CmsOpciones"
-        Me.CmsOpciones.Size = New System.Drawing.Size(182, 84)
+        Me.CmsOpciones.Size = New System.Drawing.Size(122, 56)
         '
         'EditarToolStripMenuItem
         '
         Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.EditarToolStripMenuItem.Text = "Editar"
         '
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(25, 18)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(148, 16)
+        Me.Label11.TabIndex = 69
+        Me.Label11.Text = "Codigó de la Marca:"
+        '
+        'TxtCodM
+        '
+        Me.TxtCodM.Location = New System.Drawing.Point(179, 17)
+        Me.TxtCodM.Name = "TxtCodM"
+        Me.TxtCodM.Size = New System.Drawing.Size(53, 20)
+        Me.TxtCodM.TabIndex = 70
+        Me.TxtCodM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(20, 49)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(153, 16)
+        Me.Label1.TabIndex = 69
+        Me.Label1.Text = "Nombre de la Marca:"
+        '
+        'TxtNombreM
+        '
+        Me.TxtNombreM.Location = New System.Drawing.Point(179, 48)
+        Me.TxtNombreM.Name = "TxtNombreM"
+        Me.TxtNombreM.Size = New System.Drawing.Size(171, 20)
+        Me.TxtNombreM.TabIndex = 70
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(350, 250)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(56, 15)
+        Me.Label13.TabIndex = 90
+        Me.Label13.Text = "Cancelar"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(266, 250)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(39, 15)
+        Me.Label14.TabIndex = 91
+        Me.Label14.Text = "Editar"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(168, 250)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(52, 15)
+        Me.Label15.TabIndex = 92
+        Me.Label15.Text = "Guardar"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(85, 250)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(42, 15)
+        Me.Label19.TabIndex = 93
+        Me.Label19.Text = "Nuevo"
+        '
+        'BtnCancelar
+        '
+        Me.BtnCancelar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnCancelar.BackgroundImage = CType(resources.GetObject("BtnCancelar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnCancelar.FlatAppearance.BorderSize = 0
+        Me.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCancelar.Location = New System.Drawing.Point(349, 202)
+        Me.BtnCancelar.Name = "BtnCancelar"
+        Me.BtnCancelar.Size = New System.Drawing.Size(55, 49)
+        Me.BtnCancelar.TabIndex = 86
+        Me.BtnCancelar.UseVisualStyleBackColor = False
+        '
+        'BtnEditar
+        '
+        Me.BtnEditar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnEditar.BackgroundImage = CType(resources.GetObject("BtnEditar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEditar.FlatAppearance.BorderSize = 0
+        Me.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEditar.Location = New System.Drawing.Point(255, 202)
+        Me.BtnEditar.Name = "BtnEditar"
+        Me.BtnEditar.Size = New System.Drawing.Size(55, 49)
+        Me.BtnEditar.TabIndex = 87
+        Me.BtnEditar.UseVisualStyleBackColor = False
+        '
+        'BtnGuardar
+        '
+        Me.BtnGuardar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnGuardar.BackgroundImage = CType(resources.GetObject("BtnGuardar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnGuardar.FlatAppearance.BorderSize = 0
+        Me.BtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnGuardar.Location = New System.Drawing.Point(165, 202)
+        Me.BtnGuardar.Name = "BtnGuardar"
+        Me.BtnGuardar.Size = New System.Drawing.Size(55, 49)
+        Me.BtnGuardar.TabIndex = 88
+        Me.BtnGuardar.UseVisualStyleBackColor = False
+        '
+        'BtnNuevo
+        '
+        Me.BtnNuevo.BackColor = System.Drawing.Color.Transparent
+        Me.BtnNuevo.BackgroundImage = CType(resources.GetObject("BtnNuevo.BackgroundImage"), System.Drawing.Image)
+        Me.BtnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnNuevo.FlatAppearance.BorderSize = 0
+        Me.BtnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNuevo.Location = New System.Drawing.Point(78, 202)
+        Me.BtnNuevo.Name = "BtnNuevo"
+        Me.BtnNuevo.Size = New System.Drawing.Size(55, 49)
+        Me.BtnNuevo.TabIndex = 89
+        Me.BtnNuevo.UseVisualStyleBackColor = False
         '
         'Marca
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(778, 445)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(550, 432)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.BtnCancelar)
+        Me.Controls.Add(Me.BtnEditar)
+        Me.Controls.Add(Me.BtnGuardar)
+        Me.Controls.Add(Me.BtnNuevo)
         Me.Controls.Add(Me.ChkVertodo)
         Me.Controls.Add(Me.PlMarca)
-        Me.Controls.Add(Me.PlBotones)
         Me.Controls.Add(Me.lsvMarca)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Marca"
         Me.Text = "Marca"
         Me.PlMarca.ResumeLayout(False)
         Me.PlMarca.PerformLayout()
-        Me.PlBotones.ResumeLayout(False)
-        Me.PlBotones.PerformLayout()
         Me.CmsOpciones.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -306,24 +295,23 @@ Partial Class Marca
     End Sub
     Friend WithEvents ChkVertodo As CheckBox
     Friend WithEvents PlMarca As Panel
-    Friend WithEvents TxtNombreM As TextBox
-    Friend WithEvents TxtCodM As TextBox
-    Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents PlBotones As Panel
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents BtnCancelar As Button
-    Friend WithEvents BtnEditar As Button
-    Friend WithEvents BtnNuevo As Button
-    Friend WithEvents BtnGuardar As Button
     Friend WithEvents lsvMarca As ListView
     Friend WithEvents chIdMarca As ColumnHeader
     Friend WithEvents chNombreMarca As ColumnHeader
     Friend WithEvents CmsOpciones As ContextMenuStrip
     Friend WithEvents EditarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TxtNombreM As TextBox
+    Friend WithEvents TxtCodM As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents BtnCancelar As Button
+    Friend WithEvents BtnEditar As Button
+    Friend WithEvents BtnGuardar As Button
+    Friend WithEvents BtnNuevo As Button
 End Class
