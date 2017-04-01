@@ -26,6 +26,10 @@ Partial Class Marca
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Marca))
         Me.ChkVertodo = New System.Windows.Forms.CheckBox()
         Me.PlMarca = New System.Windows.Forms.Panel()
+        Me.TxtNombreM = New System.Windows.Forms.TextBox()
+        Me.TxtCodM = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lsvMarca = New System.Windows.Forms.ListView()
         Me.chIdMarca = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -33,10 +37,6 @@ Partial Class Marca
         Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.TxtCodM = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TxtNombreM = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -72,6 +72,41 @@ Partial Class Marca
         Me.PlMarca.Name = "PlMarca"
         Me.PlMarca.Size = New System.Drawing.Size(394, 81)
         Me.PlMarca.TabIndex = 63
+        '
+        'TxtNombreM
+        '
+        Me.TxtNombreM.Location = New System.Drawing.Point(179, 48)
+        Me.TxtNombreM.Name = "TxtNombreM"
+        Me.TxtNombreM.Size = New System.Drawing.Size(171, 20)
+        Me.TxtNombreM.TabIndex = 70
+        '
+        'TxtCodM
+        '
+        Me.TxtCodM.Location = New System.Drawing.Point(179, 17)
+        Me.TxtCodM.Name = "TxtCodM"
+        Me.TxtCodM.Size = New System.Drawing.Size(53, 20)
+        Me.TxtCodM.TabIndex = 70
+        Me.TxtCodM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(20, 49)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(153, 16)
+        Me.Label1.TabIndex = 69
+        Me.Label1.Text = "Nombre de la Marca:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(25, 18)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(148, 16)
+        Me.Label11.TabIndex = 69
+        Me.Label11.Text = "Codigó de la Marca:"
         '
         'Label9
         '
@@ -124,47 +159,12 @@ Partial Class Marca
         Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(25, 18)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(148, 16)
-        Me.Label11.TabIndex = 69
-        Me.Label11.Text = "Codigó de la Marca:"
-        '
-        'TxtCodM
-        '
-        Me.TxtCodM.Location = New System.Drawing.Point(179, 17)
-        Me.TxtCodM.Name = "TxtCodM"
-        Me.TxtCodM.Size = New System.Drawing.Size(53, 20)
-        Me.TxtCodM.TabIndex = 70
-        Me.TxtCodM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(20, 49)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(153, 16)
-        Me.Label1.TabIndex = 69
-        Me.Label1.Text = "Nombre de la Marca:"
-        '
-        'TxtNombreM
-        '
-        Me.TxtNombreM.Location = New System.Drawing.Point(179, 48)
-        Me.TxtNombreM.Name = "TxtNombreM"
-        Me.TxtNombreM.Size = New System.Drawing.Size(171, 20)
-        Me.TxtNombreM.TabIndex = 70
-        '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(350, 250)
+        Me.Label13.Location = New System.Drawing.Point(374, 250)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(56, 15)
         Me.Label13.TabIndex = 90
@@ -175,7 +175,7 @@ Partial Class Marca
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(266, 250)
+        Me.Label14.Location = New System.Drawing.Point(290, 250)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(39, 15)
         Me.Label14.TabIndex = 91
@@ -186,7 +186,7 @@ Partial Class Marca
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(168, 250)
+        Me.Label15.Location = New System.Drawing.Point(192, 250)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(52, 15)
         Me.Label15.TabIndex = 92
@@ -197,7 +197,7 @@ Partial Class Marca
         Me.Label19.AutoSize = True
         Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(85, 250)
+        Me.Label19.Location = New System.Drawing.Point(109, 250)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(42, 15)
         Me.Label19.TabIndex = 93
@@ -212,7 +212,7 @@ Partial Class Marca
         Me.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancelar.Location = New System.Drawing.Point(349, 202)
+        Me.BtnCancelar.Location = New System.Drawing.Point(373, 202)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(55, 49)
         Me.BtnCancelar.TabIndex = 86
@@ -227,7 +227,7 @@ Partial Class Marca
         Me.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEditar.Location = New System.Drawing.Point(255, 202)
+        Me.BtnEditar.Location = New System.Drawing.Point(279, 202)
         Me.BtnEditar.Name = "BtnEditar"
         Me.BtnEditar.Size = New System.Drawing.Size(55, 49)
         Me.BtnEditar.TabIndex = 87
@@ -242,7 +242,7 @@ Partial Class Marca
         Me.BtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnGuardar.Location = New System.Drawing.Point(165, 202)
+        Me.BtnGuardar.Location = New System.Drawing.Point(189, 202)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(55, 49)
         Me.BtnGuardar.TabIndex = 88
@@ -257,7 +257,7 @@ Partial Class Marca
         Me.BtnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnNuevo.Location = New System.Drawing.Point(78, 202)
+        Me.BtnNuevo.Location = New System.Drawing.Point(102, 202)
         Me.BtnNuevo.Name = "BtnNuevo"
         Me.BtnNuevo.Size = New System.Drawing.Size(55, 49)
         Me.BtnNuevo.TabIndex = 89
@@ -283,7 +283,7 @@ Partial Class Marca
         Me.Controls.Add(Me.lsvMarca)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Marca"
         Me.Text = "Marca"
         Me.PlMarca.ResumeLayout(False)
