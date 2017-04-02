@@ -7,7 +7,7 @@ Public Class FrmBusquedaModelo
         RdoNombreMo.Checked = False
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
         If RdoCodigoMo.Checked = True Then
             If TxtBuscarMo.Text.Trim = Nothing Then
                 MessageBox.Show("El código de modelo es necesario", "DBSM", MessageBoxButtons.OK)
@@ -194,7 +194,7 @@ Public Class FrmBusquedaModelo
         LsvModeloBu.Items.Clear()
     End Sub
 
-    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBuscarMo.KeyPress
+    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs)
         If RdoCodigoMo.Checked = True Then
             e.Handled = txtNumerico(TxtBuscarMo, e.KeyChar, True)
         End If

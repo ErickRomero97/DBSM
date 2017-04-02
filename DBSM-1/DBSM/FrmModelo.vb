@@ -11,10 +11,10 @@ Public Class FrmModelo
 
     Private Sub Chkvertodo_CheckedChanged(sender As Object, e As EventArgs) Handles Chkvertodo.CheckedChanged
         If Chkvertodo.CheckState = CheckState.Checked Then
-            Height = 451
+            Height = 490
             CenterToScreen()
         Else
-            Height = 315
+            Height = 350
             CenterToScreen()
         End If
     End Sub
@@ -294,4 +294,5 @@ Public Class FrmModelo
             Validar = False
         End If
     End Function
+
 End Class

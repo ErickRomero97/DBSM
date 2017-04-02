@@ -238,3 +238,6 @@ C:\Users\WalterPC\Desktop\Unicah\DBSM\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.Marca.reso
 C:\Users\WalterPC\Desktop\Unicah\DBSM\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaMarca.resources
 C:\Users\WalterPC\Desktop\Unicah\DBSM\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmModelo.resources
 C:\Users\WalterPC\Desktop\Unicah\DBSM\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaModelo.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaMarca.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaModelo.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmModelo.resources

@@ -9,10 +9,10 @@ Public Class Marca
 
     Private Sub Chkvertodo_CheckedChanged(sender As Object, e As EventArgs) Handles ChkVertodo.CheckedChanged
         If ChkVertodo.CheckState = CheckState.Checked Then
-            Height = 429
+            Height = 464
             CenterToScreen()
         Else
-            Height = 277
+            Height = 317
             CenterToScreen()
         End If
     End Sub

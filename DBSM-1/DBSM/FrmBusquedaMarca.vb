@@ -2,7 +2,7 @@
 Public Class FrmBusquedaMarca
     Private Sub FrmBusquedaMarca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TxtBuscar.Enabled = False
-        btnBuscar.Enabled = False
+        BtnBuscar.Enabled = False
         RdoCodMarca.Checked = False
         RdoNombreMarca.Checked = False
     End Sub
@@ -158,7 +158,7 @@ Public Class FrmBusquedaMarca
     Private Sub rdoCodMarca_CheckedChanged(sender As Object, e As EventArgs) Handles RdoCodMarca.CheckedChanged
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
-        btnBuscar.Enabled = True
+        BtnBuscar.Enabled = True
         TxtBuscar.Text = ""
         LsvMarca.Items.Clear()
     End Sub
@@ -166,24 +166,24 @@ Public Class FrmBusquedaMarca
     Private Sub rdoNombreMarca_CheckedChanged(sender As Object, e As EventArgs) Handles RdoNombreMarca.CheckedChanged
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
-        btnBuscar.Enabled = True
+        BtnBuscar.Enabled = True
         TxtBuscar.Text = ""
         LsvMarca.Items.Clear()
     End Sub
 
-    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBuscar.KeyPress
+    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs)
         If RdoCodMarca.Checked = True Then
             e.Handled = txtNumerico(TxtBuscar, e.KeyChar, True)
         End If
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
         If RdoCodMarca.Checked = True Then
             If TxtBuscar.Text.Trim = Nothing Then
                 MessageBox.Show("El código de la marca es requerido", "DBSM", MessageBoxButtons.OK)
                 TxtBuscar.Focus()
             Else
-                MostrarxCodMarca()
+                MostrarXCodMarca()
                 TxtBuscar.Text = ""
             End If
         End If
