@@ -86,6 +86,24 @@
     <Compile Include="Equipo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmBuscarEmpleado.Designer.vb">
+      <DependentUpon>FrmBuscarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarUsuario.Designer.vb">
+      <DependentUpon>FrmBuscarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaComputadora.Designer.vb">
+      <DependentUpon>FrmBusquedaComputadora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusquedaComputadora.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmBusquedaMarca.Designer.vb">
       <DependentUpon>FrmBusquedaMarca.vb</DependentUpon>
     </Compile>
@@ -98,10 +116,22 @@
     <Compile Include="FrmBusquedaModelo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmEmpleado.Designer.vb">
+      <DependentUpon>FrmEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmModelo.Designer.vb">
       <DependentUpon>FrmModelo.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmModelo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.vb">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.vb">
@@ -155,14 +185,29 @@
     <EmbeddedResource Include="Equipo.resx">
       <DependentUpon>Equipo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarEmpleado.resx">
+      <DependentUpon>FrmBuscarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarUsuario.resx">
+      <DependentUpon>FrmBuscarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaComputadora.resx">
+      <DependentUpon>FrmBusquedaComputadora.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBusquedaMarca.resx">
       <DependentUpon>FrmBusquedaMarca.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBusquedaModelo.resx">
       <DependentUpon>FrmBusquedaModelo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleado.resx">
+      <DependentUpon>FrmEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmModelo.resx">
       <DependentUpon>FrmModelo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -199,6 +244,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

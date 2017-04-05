@@ -9,10 +9,10 @@ Public Class Marca
 
     Private Sub Chkvertodo_CheckedChanged(sender As Object, e As EventArgs) Handles ChkVertodo.CheckedChanged
         If ChkVertodo.CheckState = CheckState.Checked Then
-            Height = 464
+            Height = 429
             CenterToScreen()
         Else
-            Height = 317
+            Height = 277
             CenterToScreen()
         End If
     End Sub
@@ -28,7 +28,7 @@ Public Class Marca
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles BtnNuevo.Click
         HabilitarBotones(False, True, False, True, True)
-        TxtCodM.Focus()
+        TxtNombreM.Focus()
         ChkVertodo.Checked = False
         Limpiar()
         ChkVertodo.Enabled = False

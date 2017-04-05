@@ -39,7 +39,7 @@ Partial Class FrmPrincipal
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(830, 229)
+        Me.PictureBox2.Location = New System.Drawing.Point(684, 179)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(173, 159)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -51,7 +51,7 @@ Partial Class FrmPrincipal
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(581, 298)
+        Me.PictureBox3.Location = New System.Drawing.Point(435, 248)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(173, 159)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -63,7 +63,7 @@ Partial Class FrmPrincipal
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(318, 229)
+        Me.PictureBox1.Location = New System.Drawing.Point(172, 179)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(173, 159)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -75,7 +75,7 @@ Partial Class FrmPrincipal
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(353, 396)
+        Me.Label1.Location = New System.Drawing.Point(207, 346)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(98, 31)
         Me.Label1.TabIndex = 9
@@ -86,7 +86,7 @@ Partial Class FrmPrincipal
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(608, 460)
+        Me.Label2.Location = New System.Drawing.Point(462, 410)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(122, 31)
         Me.Label2.TabIndex = 9
@@ -97,7 +97,7 @@ Partial Class FrmPrincipal
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(859, 391)
+        Me.Label3.Location = New System.Drawing.Point(713, 341)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(122, 31)
         Me.Label3.TabIndex = 9
