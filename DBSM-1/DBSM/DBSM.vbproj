@@ -79,78 +79,114 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexion.vb" />
-    <Compile Include="Equipo.Designer.vb">
-      <DependentUpon>Equipo.vb</DependentUpon>
+    <Compile Include="Busqueda\FrmBuscarAsignacionPrograma.Designer.vb">
+      <DependentUpon>FrmBuscarAsignacionPrograma.vb</DependentUpon>
     </Compile>
-    <Compile Include="Equipo.vb">
+    <Compile Include="Busqueda\FrmBuscarAsignacionPrograma.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBuscarEmpleado.Designer.vb">
+    <Compile Include="Busqueda\FrmBuscarPrograma.Designer.vb">
+      <DependentUpon>FrmBuscarPrograma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda\FrmBuscarPrograma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="Transaccionales\FrmEquipo.Designer.vb">
+      <DependentUpon>FrmEquipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaccionales\FrmEquipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catálogo\FrmAlumno.Designer.vb">
+      <DependentUpon>FrmAlumno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catálogo\FrmAlumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaccionales\FrmAsignacionComputadoraA.Designer.vb">
+      <DependentUpon>FrmAsignacionComputadoraA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaccionales\FrmAsignacionComputadoraA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda\FrmBuscarEmpleado.Designer.vb">
       <DependentUpon>FrmBuscarEmpleado.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmBuscarEmpleado.vb">
+    <Compile Include="Busqueda\FrmBuscarEmpleado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBuscarUsuario.Designer.vb">
+    <Compile Include="Busqueda\FrmBuscarUsuario.Designer.vb">
       <DependentUpon>FrmBuscarUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmBuscarUsuario.vb">
+    <Compile Include="Busqueda\FrmBuscarUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBusquedaComputadora.Designer.vb">
+    <Compile Include="Busqueda\FrmBusquedaAsignacionComputadora.Designer.vb">
+      <DependentUpon>FrmBusquedaAsignacionComputadora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda\FrmBusquedaAsignacionComputadora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda\FrmBusquedaComputadora.Designer.vb">
       <DependentUpon>FrmBusquedaComputadora.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmBusquedaComputadora.vb">
+    <Compile Include="Busqueda\FrmBusquedaComputadora.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBusquedaMarca.Designer.vb">
+    <Compile Include="Busqueda\FrmBusquedaMarca.Designer.vb">
       <DependentUpon>FrmBusquedaMarca.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmBusquedaMarca.vb">
+    <Compile Include="Busqueda\FrmBusquedaMarca.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBusquedaModelo.Designer.vb">
+    <Compile Include="Busqueda\FrmBusquedaModelo.Designer.vb">
       <DependentUpon>FrmBusquedaModelo.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmBusquedaModelo.vb">
+    <Compile Include="Busqueda\FrmBusquedaModelo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEmpleado.Designer.vb">
+    <Compile Include="Catálogo\FrmEmpleado.Designer.vb">
       <DependentUpon>FrmEmpleado.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmEmpleado.vb">
+    <Compile Include="Catálogo\FrmEmpleado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmModelo.Designer.vb">
+    <Compile Include="Catálogo\FrmModelo.Designer.vb">
       <DependentUpon>FrmModelo.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmModelo.vb">
+    <Compile Include="Catálogo\FrmModelo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUsuarios.Designer.vb">
+    <Compile Include="Catálogo\FrmPrograma.Designer.vb">
+      <DependentUpon>FrmPrograma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catálogo\FrmPrograma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catálogo\FrmUsuarios.Designer.vb">
       <DependentUpon>FrmUsuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmUsuarios.vb">
+    <Compile Include="Catálogo\FrmUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="FrmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Marca.Designer.vb">
-      <DependentUpon>Marca.vb</DependentUpon>
+    <Compile Include="Catálogo\FrmMarca.Designer.vb">
+      <DependentUpon>FrmMarca.vb</DependentUpon>
     </Compile>
-    <Compile Include="Marca.vb">
+    <Compile Include="Catálogo\FrmMarca.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Principal.Designer.vb">
-      <DependentUpon>Principal.vb</DependentUpon>
+    <Compile Include="FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </Compile>
-    <Compile Include="Principal.vb">
+    <Compile Include="FrmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -168,56 +204,68 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Software.Designer.vb">
-      <DependentUpon>Software.vb</DependentUpon>
+    <Compile Include="Transaccionales\FrmAsignacionPrograma.Designer.vb">
+      <DependentUpon>FrmAsignacionPrograma.vb</DependentUpon>
     </Compile>
-    <Compile Include="Software.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usuario.Designer.vb">
-      <DependentUpon>Usuario.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Usuario.vb">
+    <Compile Include="Transaccionales\FrmAsignacionPrograma.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Equipo.resx">
-      <DependentUpon>Equipo.vb</DependentUpon>
+    <EmbeddedResource Include="Busqueda\FrmBuscarAsignacionPrograma.resx">
+      <DependentUpon>FrmBuscarAsignacionPrograma.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBuscarEmpleado.resx">
+    <EmbeddedResource Include="Busqueda\FrmBuscarPrograma.resx">
+      <DependentUpon>FrmBuscarPrograma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaccionales\FrmEquipo.resx">
+      <DependentUpon>FrmEquipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catálogo\FrmAlumno.resx">
+      <DependentUpon>FrmAlumno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaccionales\FrmAsignacionComputadoraA.resx">
+      <DependentUpon>FrmAsignacionComputadoraA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda\FrmBuscarEmpleado.resx">
       <DependentUpon>FrmBuscarEmpleado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBuscarUsuario.resx">
+    <EmbeddedResource Include="Busqueda\FrmBuscarUsuario.resx">
       <DependentUpon>FrmBuscarUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBusquedaComputadora.resx">
+    <EmbeddedResource Include="Busqueda\FrmBusquedaAsignacionComputadora.resx">
+      <DependentUpon>FrmBusquedaAsignacionComputadora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda\FrmBusquedaComputadora.resx">
       <DependentUpon>FrmBusquedaComputadora.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBusquedaMarca.resx">
+    <EmbeddedResource Include="Busqueda\FrmBusquedaMarca.resx">
       <DependentUpon>FrmBusquedaMarca.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBusquedaModelo.resx">
+    <EmbeddedResource Include="Busqueda\FrmBusquedaModelo.resx">
       <DependentUpon>FrmBusquedaModelo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmEmpleado.resx">
+    <EmbeddedResource Include="Catálogo\FrmEmpleado.resx">
       <DependentUpon>FrmEmpleado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmModelo.resx">
+    <EmbeddedResource Include="Catálogo\FrmModelo.resx">
       <DependentUpon>FrmModelo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUsuarios.resx">
+    <EmbeddedResource Include="Catálogo\FrmPrograma.resx">
+      <DependentUpon>FrmPrograma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catálogo\FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Marca.resx">
-      <DependentUpon>Marca.vb</DependentUpon>
+    <EmbeddedResource Include="Catálogo\FrmMarca.resx">
+      <DependentUpon>FrmMarca.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
-    <EmbeddedResource Include="Principal.resx">
-      <DependentUpon>Principal.vb</DependentUpon>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -225,11 +273,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Software.resx">
-      <DependentUpon>Software.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usuario.resx">
-      <DependentUpon>Usuario.vb</DependentUpon>
+    <EmbeddedResource Include="Transaccionales\FrmAsignacionPrograma.resx">
+      <DependentUpon>FrmAsignacionPrograma.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
