@@ -1,18 +1,4 @@
 ﻿Public Class FrmPrincipal
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Dim Equipo As New FrmEquipo
-        Equipo.Show()
-    End Sub
-
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        Dim AsignacionComputadora As New FrmAsignacionComputadoraA
-        AsignacionComputadora.Show()
-    End Sub
-
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        Dim Asignacion As New FrmAsignacionPrograma
-        Asignacion.Show()
-    End Sub
 
     Private Sub AlumnoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AlumnoToolStripMenuItem.Click
         Dim Alumno As New FrmAlumno
@@ -55,7 +41,7 @@
     End Sub
 
     Private Sub BuscarAsignacionComputadoraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuscarAsignacionComputadoraToolStripMenuItem.Click
-        Dim BuscarAsignacion As New FrmAsignacionComputadoraA
+        Dim BuscarAsignacion As New FrmBusquedaAsignacionComputadora
         BuscarAsignacion.Show()
     End Sub
 
@@ -65,7 +51,7 @@
     End Sub
 
     Private Sub BuscarMarcaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuscarMarcaToolStripMenuItem.Click
-        Dim BuscarMarca As New FrmMarca
+        Dim BuscarMarca As New FrmBusquedaMarca
         BuscarMarca.Show()
     End Sub
 
@@ -75,12 +61,35 @@
     End Sub
 
     Private Sub BuscarAsignaciónProgramaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuscarAsignaciónProgramaToolStripMenuItem.Click
-        Dim AsignacionPrograma As New FrmAsignacionPrograma
+        Dim AsignacionPrograma As New FrmBuscarAsignacionPrograma
         AsignacionPrograma.Show()
     End Sub
 
     Private Sub BuscarProgramaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuscarProgramaToolStripMenuItem.Click
-        Dim Programa As New FrmPrograma
+        Dim Programa As New FrmBuscarPrograma
         Programa.Show()
+    End Sub
+
+    Private Sub LogAuditoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogAuditoriaToolStripMenuItem.Click
+        FrmLogAuditoria.Show()
+    End Sub
+
+    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub BtnEquipo_Click(sender As Object, e As EventArgs) Handles BtnEquipo.Click
+        Dim Equipo As New FrmEquipo
+        FrmEquipo.Show()
+    End Sub
+
+    Private Sub BtnAC_Click(sender As Object, e As EventArgs) Handles BtnAC.Click
+        Dim AsignacionComputadora As New FrmAsignacionComputadora
+        FrmAsignacionComputadora.Show()
+    End Sub
+
+    Private Sub BtnAP_Click(sender As Object, e As EventArgs) Handles BtnAP.Click
+        Dim Asignacion As New FrmAsignacionPrograma
+        FrmAsignacionPrograma.Show()
     End Sub
 End Class

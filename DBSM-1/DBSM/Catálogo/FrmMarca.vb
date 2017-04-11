@@ -1,7 +1,5 @@
 ﻿Imports System.Data.SqlClient
 Public Class FrmMarca
-    Public regreso As Integer = 0
-
     Private Sub Marca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         HabilitarBotones(True, False, False, False, False)
         MostrarMarcas()
@@ -37,8 +35,7 @@ Public Class FrmMarca
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
 
-        If Validar(TxtNombreM, "El Nombre de la marca se nesesita") Then
-        Else
+        If Validar() Then
             AgregarMarca()
             HabilitarBotones(True, False, False, False, False)
             Limpiar()
@@ -48,8 +45,7 @@ Public Class FrmMarca
     End Sub
 
     Private Sub Btneditar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
-        If Validar(TxtNombreM, "El Nombre de la marca se nesesita") Then
-        Else
+        If Validar() Then
             Actualizar()
             MostrarMarcas()
             Limpiar()
@@ -251,16 +247,17 @@ Public Class FrmMarca
         Return Val
     End Function
 
-
-    Function Validar(Control As Control, Mensaje As String) As Boolean
-
-        If Control.Text.Trim = Nothing Then
-            MessageBox.Show(Mensaje, "DBSM", MessageBoxButtons.OK)
-            Control.Focus()
-            Validar = True
+    Private Function Validar() As Boolean
+        Dim estado As Boolean
+        If TxtNombreM.Text = Nothing Then
+            MessageBox.Show("Ingrese el Nombre de La Marca", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtNombreM.Focus()
+            estado = False
         Else
-            Validar = False
+            estado = True
         End If
+        Return estado
     End Function
 
 End Class

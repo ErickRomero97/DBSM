@@ -6,9 +6,6 @@ Public Class FrmModelo
         Limpiar()
         HabilitarBotones(True, False, False, False, False)
     End Sub
-    Public regreso As Integer = 0
-
-
     Private Sub Chkvertodo_CheckedChanged(sender As Object, e As EventArgs) Handles Chkvertodo.CheckedChanged
         If Chkvertodo.CheckState = CheckState.Checked Then
             Height = 451
@@ -45,9 +42,7 @@ Public Class FrmModelo
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
 
-        If Validar(TxtModelo, "El nombre es necesario") Then
-        ElseIf Validar(CboMarca, "Seleccione una marca") Then
-        Else
+        If Validar() Then
             AgregarModelo()
             Limpiar()
             MostrarModelos()
@@ -58,10 +53,7 @@ Public Class FrmModelo
 
 
     Private Sub BtnEditar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
-        If Validar(TxtModelo, "El nombre es necesario") Then
-        ElseIf Validar(CboMarca, "Seleccione una marca") Then
-        Else
-
+        If Validar() Then
             Actualizar()
             MostrarModelos()
             Limpiar()
@@ -78,6 +70,7 @@ Public Class FrmModelo
     Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarToolStripMenuItem.Click
         TxtCodModelo.Text = LsvModelo.FocusedItem.SubItems(0).Text
         TxtModelo.Text = LsvModelo.FocusedItem.SubItems(1).Text
+        CboMarca.Text = LsvModelo.FocusedItem.SubItems(2).Text
         HabilitarBotones(False, False, True, True, True)
     End Sub
     Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
@@ -283,15 +276,26 @@ Public Class FrmModelo
         Return Val
     End Function
 
-
-    Function Validar(Control As Control, Mensaje As String) As Boolean
-
-        If Control.Text.Trim = Nothing Then
-            MessageBox.Show(Mensaje, "DBSM", MessageBoxButtons.OK)
-            Control.Focus()
-            Validar = True
+    Private Function Validar() As Boolean
+        Dim estado As Boolean
+        If TxtModelo.Text = Nothing And CboMarca.SelectedValue = Nothing Then
+            MessageBox.Show("Selecione e Ingrese los datos de la Relacion Modelo", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtModelo.Focus()
+            estado = False
+        ElseIf TxtModelo.Text = Nothing Then
+            MessageBox.Show("Ingrese el Nombre del Modelo", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtModelo.Focus()
+            estado = False
+        ElseIf CboMarca.SelectedValue = Nothing Then
+            MessageBox.Show("Selecione la Marca", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtModelo.Focus()
+            estado = False
         Else
-            Validar = False
+            estado = True
         End If
+        Return estado
     End Function
 End Class

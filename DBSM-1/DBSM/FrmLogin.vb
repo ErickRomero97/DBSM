@@ -34,9 +34,9 @@ Public Class FrmLogin
                         If reader.GetValue(5).ToString = 1 Then
                             FrmPrincipal.Show()
                         Else
-                            FrmPrincipal.PictureBox1.Enabled = False
-                            FrmPrincipal.PictureBox2.Enabled = False
-                            FrmPrincipal.PictureBox3.Enabled = False
+                            FrmPrincipal.BtnEquipo.Enabled = False
+                            FrmPrincipal.BtnAP.Enabled = False
+                            FrmPrincipal.BtnAC.Enabled = False
                             FrmPrincipal.UsuariosToolStripMenuItem.Enabled = False
                             FrmPrincipal.Show()
                         End If
@@ -76,7 +76,46 @@ Public Class FrmLogin
         End If
         Return estado
     End Function
+
     Private Sub FrmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+
+
+
+    Private Sub TxtPassword_Click(sender As Object, e As EventArgs) Handles TxtPassword.Click
+        TxtPassword.Focus()
+        TxtPassword.Text = ""
+        TxtPassword.PasswordChar = "*"
+
+    End Sub
+
+
+    Private Sub TxtUserName_Click(sender As Object, e As EventArgs) Handles TxtUserName.Click
+        TxtUserName.Focus()
+        TxtUserName.Text = ""
+
+    End Sub
+
+
+    Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles PnlVer.MouseMove
+        TxtPassword.PasswordChar = ""
+    End Sub
+
+    Private Sub Panel1_MouseLeave(sender As Object, e As EventArgs) Handles PnlVer.MouseLeave
+        TxtPassword.PasswordChar = "*"
+    End Sub
+
+    Private Sub TxtPassword_TextChanged(sender As Object, e As EventArgs) Handles TxtPassword.TextChanged
+
+    End Sub
+
+    Private Sub TxtUserName_TextChanged(sender As Object, e As EventArgs) Handles TxtUserName.TextChanged
+        PnlVer.Enabled = True
+    End Sub
+
+    Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles BtnSalir.Click
+        Close()
     End Sub
 End Class

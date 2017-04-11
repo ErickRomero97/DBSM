@@ -22,12 +22,7 @@ Partial Class FrmBusquedaComputadora
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TxtBuscar = New System.Windows.Forms.TextBox()
-        Me.BtnBuscar = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.RdoNumMaquina = New System.Windows.Forms.RadioButton()
-        Me.RdoSerieCom = New System.Windows.Forms.RadioButton()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBusquedaComputadora))
         Me.LsvEquipo = New System.Windows.Forms.ListView()
         Me.chNumMaquina = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chSerie = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -43,84 +38,22 @@ Partial Class FrmBusquedaComputadora
         Me.ChRevo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChEstadoA = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChSerieMo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Panel1.SuspendLayout()
+        Me.TxtBuscar = New System.Windows.Forms.TextBox()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RdoSerieCom = New System.Windows.Forms.RadioButton()
+        Me.RdoNumMaquina = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'TxtBuscar
-        '
-        Me.TxtBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.TxtBuscar.Location = New System.Drawing.Point(143, 142)
-        Me.TxtBuscar.Multiline = True
-        Me.TxtBuscar.Name = "TxtBuscar"
-        Me.TxtBuscar.Size = New System.Drawing.Size(314, 27)
-        Me.TxtBuscar.TabIndex = 78
-        '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.BackColor = System.Drawing.Color.Transparent
-        Me.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnBuscar.FlatAppearance.BorderSize = 0
-        Me.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnBuscar.Location = New System.Drawing.Point(504, 130)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(48, 39)
-        Me.BtnBuscar.TabIndex = 79
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = False
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(140, 62)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(173, 16)
-        Me.Label4.TabIndex = 83
-        Me.Label4.Text = "Opciones de búsqueda:"
-        '
-        'RdoNumMaquina
-        '
-        Me.RdoNumMaquina.AutoSize = True
-        Me.RdoNumMaquina.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RdoNumMaquina.Location = New System.Drawing.Point(16, 11)
-        Me.RdoNumMaquina.Name = "RdoNumMaquina"
-        Me.RdoNumMaquina.Size = New System.Drawing.Size(165, 20)
-        Me.RdoNumMaquina.TabIndex = 0
-        Me.RdoNumMaquina.TabStop = True
-        Me.RdoNumMaquina.Text = "Número de máquina"
-        Me.RdoNumMaquina.UseVisualStyleBackColor = True
-        '
-        'RdoSerieCom
-        '
-        Me.RdoSerieCom.AutoSize = True
-        Me.RdoSerieCom.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RdoSerieCom.Location = New System.Drawing.Point(274, 11)
-        Me.RdoSerieCom.Name = "RdoSerieCom"
-        Me.RdoSerieCom.Size = New System.Drawing.Size(160, 20)
-        Me.RdoSerieCom.TabIndex = 1
-        Me.RdoSerieCom.TabStop = True
-        Me.RdoSerieCom.Text = "Serie Computadora"
-        Me.RdoSerieCom.UseVisualStyleBackColor = True
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.Controls.Add(Me.RdoSerieCom)
-        Me.Panel1.Controls.Add(Me.RdoNumMaquina)
-        Me.Panel1.Location = New System.Drawing.Point(143, 83)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(437, 41)
-        Me.Panel1.TabIndex = 82
         '
         'LsvEquipo
         '
-        Me.LsvEquipo.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.LsvEquipo.BackColor = System.Drawing.Color.White
         Me.LsvEquipo.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chNumMaquina, Me.chSerie, Me.chMarca, Me.chModelo, Me.chMouse, Me.chTeclado, Me.chTipoMonitor, Me.chRam, Me.chDiscoDuro, Me.chDescripcion, Me.chTipoPc, Me.ChRevo, Me.ChEstadoA, Me.ChSerieMo})
         Me.LsvEquipo.GridLines = True
-        Me.LsvEquipo.Location = New System.Drawing.Point(3, 224)
+        Me.LsvEquipo.Location = New System.Drawing.Point(1, 224)
         Me.LsvEquipo.Name = "LsvEquipo"
-        Me.LsvEquipo.Size = New System.Drawing.Size(873, 201)
+        Me.LsvEquipo.Size = New System.Drawing.Size(989, 201)
         Me.LsvEquipo.TabIndex = 87
         Me.LsvEquipo.UseCompatibleStateImageBehavior = False
         Me.LsvEquipo.View = System.Windows.Forms.View.Details
@@ -191,32 +124,82 @@ Partial Class FrmBusquedaComputadora
         'ChSerieMo
         '
         Me.ChSerieMo.Text = "Serie Monitor"
+        Me.ChSerieMo.Width = 66
+        '
+        'TxtBuscar
+        '
+        Me.TxtBuscar.Location = New System.Drawing.Point(295, 177)
+        Me.TxtBuscar.Name = "TxtBuscar"
+        Me.TxtBuscar.Size = New System.Drawing.Size(323, 20)
+        Me.TxtBuscar.TabIndex = 102
+        '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.Location = New System.Drawing.Point(633, 176)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnBuscar.TabIndex = 104
+        Me.BtnBuscar.Text = "Buscar"
+        Me.BtnBuscar.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.RdoSerieCom)
+        Me.GroupBox1.Controls.Add(Me.RdoNumMaquina)
+        Me.GroupBox1.Location = New System.Drawing.Point(295, 105)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(323, 66)
+        Me.GroupBox1.TabIndex = 105
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Opciones de búsqueda:"
+        '
+        'RdoSerieCom
+        '
+        Me.RdoSerieCom.AutoSize = True
+        Me.RdoSerieCom.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RdoSerieCom.Location = New System.Drawing.Point(175, 25)
+        Me.RdoSerieCom.Name = "RdoSerieCom"
+        Me.RdoSerieCom.Size = New System.Drawing.Size(115, 17)
+        Me.RdoSerieCom.TabIndex = 2
+        Me.RdoSerieCom.TabStop = True
+        Me.RdoSerieCom.Text = "Serie Computadora"
+        Me.RdoSerieCom.UseVisualStyleBackColor = True
+        '
+        'RdoNumMaquina
+        '
+        Me.RdoNumMaquina.AutoSize = True
+        Me.RdoNumMaquina.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RdoNumMaquina.Location = New System.Drawing.Point(9, 24)
+        Me.RdoNumMaquina.Name = "RdoNumMaquina"
+        Me.RdoNumMaquina.Size = New System.Drawing.Size(120, 17)
+        Me.RdoNumMaquina.TabIndex = 1
+        Me.RdoNumMaquina.TabStop = True
+        Me.RdoNumMaquina.Text = "Número de máquina"
+        Me.RdoNumMaquina.UseVisualStyleBackColor = True
         '
         'FrmBusquedaComputadora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(888, 449)
-        Me.Controls.Add(Me.LsvEquipo)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Panel1)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(988, 449)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.TxtBuscar)
+        Me.Controls.Add(Me.LsvEquipo)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FrmBusquedaComputadora"
-        Me.Text = "FrmBusquedaComputadora"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Busqueda Computadora"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents TxtBuscar As TextBox
-    Friend WithEvents BtnBuscar As Button
-    Friend WithEvents Label4 As Label
-    Friend WithEvents RdoNumMaquina As RadioButton
-    Friend WithEvents RdoSerieCom As RadioButton
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents LsvEquipo As ListView
     Friend WithEvents chNumMaquina As ColumnHeader
     Friend WithEvents chSerie As ColumnHeader
@@ -232,4 +215,9 @@ Partial Class FrmBusquedaComputadora
     Friend WithEvents ChRevo As ColumnHeader
     Friend WithEvents ChEstadoA As ColumnHeader
     Friend WithEvents ChSerieMo As ColumnHeader
+    Friend WithEvents TxtBuscar As TextBox
+    Friend WithEvents BtnBuscar As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents RdoSerieCom As RadioButton
+    Friend WithEvents RdoNumMaquina As RadioButton
 End Class

@@ -22,6 +22,7 @@ Partial Class FrmBuscarUsuario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBuscarUsuario))
         Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
         Me.LsvMostrarUsuario = New System.Windows.Forms.ListView()
@@ -39,7 +40,7 @@ Partial Class FrmBuscarUsuario
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(353, 84)
+        Me.BtnBuscar.Location = New System.Drawing.Point(353, 156)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.BtnBuscar.TabIndex = 38
@@ -48,7 +49,7 @@ Partial Class FrmBuscarUsuario
         '
         'TxtBuscar
         '
-        Me.TxtBuscar.Location = New System.Drawing.Point(50, 85)
+        Me.TxtBuscar.Location = New System.Drawing.Point(50, 157)
         Me.TxtBuscar.Name = "TxtBuscar"
         Me.TxtBuscar.Size = New System.Drawing.Size(297, 20)
         Me.TxtBuscar.TabIndex = 37
@@ -58,9 +59,9 @@ Partial Class FrmBuscarUsuario
         Me.LsvMostrarUsuario.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChIdUsuario, Me.ChUsuario, Me.ChContraseña, Me.ChEstado, Me.ChEmpleado, Me.ChTipoUsuario})
         Me.LsvMostrarUsuario.FullRowSelect = True
         Me.LsvMostrarUsuario.GridLines = True
-        Me.LsvMostrarUsuario.Location = New System.Drawing.Point(-1, 125)
+        Me.LsvMostrarUsuario.Location = New System.Drawing.Point(-1, 198)
         Me.LsvMostrarUsuario.Name = "LsvMostrarUsuario"
-        Me.LsvMostrarUsuario.Size = New System.Drawing.Size(481, 276)
+        Me.LsvMostrarUsuario.Size = New System.Drawing.Size(481, 246)
         Me.LsvMostrarUsuario.TabIndex = 36
         Me.LsvMostrarUsuario.UseCompatibleStateImageBehavior = False
         Me.LsvMostrarUsuario.View = System.Windows.Forms.View.Details
@@ -96,11 +97,12 @@ Partial Class FrmBuscarUsuario
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.RdbId)
         Me.GroupBox1.Controls.Add(Me.RdbNombre)
-        Me.GroupBox1.Location = New System.Drawing.Point(63, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(50, 93)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(337, 64)
+        Me.GroupBox1.Size = New System.Drawing.Size(297, 57)
         Me.GroupBox1.TabIndex = 35
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Opciones de busqueda"
@@ -108,7 +110,7 @@ Partial Class FrmBuscarUsuario
         'RdbId
         '
         Me.RdbId.AutoSize = True
-        Me.RdbId.Location = New System.Drawing.Point(178, 31)
+        Me.RdbId.Location = New System.Drawing.Point(157, 25)
         Me.RdbId.Name = "RdbId"
         Me.RdbId.Size = New System.Drawing.Size(83, 17)
         Me.RdbId.TabIndex = 1
@@ -119,7 +121,7 @@ Partial Class FrmBuscarUsuario
         'RdbNombre
         '
         Me.RdbNombre.AutoSize = True
-        Me.RdbNombre.Location = New System.Drawing.Point(52, 31)
+        Me.RdbNombre.Location = New System.Drawing.Point(31, 25)
         Me.RdbNombre.Name = "RdbNombre"
         Me.RdbNombre.Size = New System.Drawing.Size(62, 17)
         Me.RdbNombre.TabIndex = 0
@@ -131,13 +133,18 @@ Partial Class FrmBuscarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(476, 401)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(476, 448)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.TxtBuscar)
         Me.Controls.Add(Me.LsvMostrarUsuario)
         Me.Controls.Add(Me.GroupBox1)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FrmBuscarUsuario"
-        Me.Text = "FrmBuscarUsuario"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Buscar Usuario"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

@@ -61,46 +61,79 @@ Public Class FrmEquipo
         Limpiar()
         InvestigarCorrelativo()
     End Sub
+    Private Function Validar() As Boolean
+        Dim estado As Boolean
 
-    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
-
-        If Validar(TxtSerieCompu, "El número de la serie de la computadora es requerido") Then
-        ElseIf Validar(CboMarca, "Seleccione una marca") Then
-        ElseIf Validar(CboModelo, "Seleccione un modelo") Then
-        ElseIf Validar(CboTeclado, "Seleccione el estado del teclado") Then
-        ElseIf Validar(CboMouse, "Seleccones el estado del mouse") Then
-        ElseIf Validar(TxtSerieMonitor, "el numero de la serie del monitor es requerido") Then
-        ElseIf Validar(TxtCapRAM, " la capacidad de RAM es requerida") Then
-        ElseIf Validar(TxtCapDisco, "la capacidad de Disco Duro es requerida") Then
-        ElseIf Validar(CboTipoPC, "Seleccione el tipo de PC") Then
-        ElseIf Validar(TxtDescPro, "la descripcion del procesador es requerida") Then
-        ElseIf Validar(CboTipoMonitor, "Seleccione el tipo de monitor") Then
-        ElseIf Validar(CboEstadoA, "Seleccione el estado de asignacion de la computadora") Then
-        ElseIf Validar(TxtRevoDisco, "las revoluciones del disco son requeridas") Then
+        If TxtSerieCompu.Text = Nothing And CboMarca.SelectedValue = Nothing And CboModelo.SelectedValue = Nothing And CboMouse.SelectedValue = Nothing And CboTeclado.SelectedValue = Nothing And TxtSerieMonitor.Text = Nothing And TxtRevoDisco.Text = Nothing And TxtCapDisco.Text = Nothing And TxtCapRAM.Text = Nothing And TxtRevoDisco.Text = Nothing And TxtDescPro.Text = Nothing And CboEstadoA.SelectedValue = Nothing Then
+            MessageBox.Show("Selecione e ingrese todo los valores de la Relacion Equipo.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtSerieCompu.Focus()
+            estado = False
+        ElseIf TxtSerieCompu.Text = Nothing Then
+            MessageBox.Show("Ingrese la Serie de la Computadora.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtSerieCompu.Focus()
+            estado = False
+        ElseIf CboMarca.SelectedValue = Nothing Then
+            MessageBox.Show("Seleccione una Marca.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            estado = False
+        ElseIf CboModelo.SelectedValue = Nothing Then
+            MessageBox.Show("Seleccione un Modelo.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            estado = False
+        ElseIf CboTeclado.SelectedValue = Nothing Then
+            MessageBox.Show("Seleccione el Estado del Mouse.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            estado = False
+        ElseIf CboMouse.SelectedValue = Nothing Then
+            MessageBox.Show("Seleccione el Estado del Mouse.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            estado = False
+        ElseIf TxtSerieMonitor.Text = Nothing Then
+            MessageBox.Show("Ingrese la Serie del Monitor.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtSerieMonitor.Focus()
+            estado = False
+        ElseIf TxtCapRAM.Text = Nothing Then
+            MessageBox.Show("Ingrese la capasidad de la RAM.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtCapRAM.Focus()
+            estado = False
+        ElseIf TxtCapDisco.Text = Nothing Then
+            MessageBox.Show("Ingrese la Capasiadad del Disco Duro.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtCapDisco.Focus()
+            estado = False
+        ElseIf CboTipoPC.SelectedValue = Nothing Then
+            MessageBox.Show("Seleccione el Tipo de Computadora.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            estado = False
+        ElseIf TxtDescPro.Text = Nothing Then
+            MessageBox.Show("Ingrese la Descripsion del Disco Duro.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtDescPro.Focus()
+            estado = False
+        ElseIf CboTipoMonitor.SelectedValue = Nothing Then
+            MessageBox.Show("Seleccione el Tipo de Monitor.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            estado = False
+        ElseIf CboEstadoA.SelectedValue = Nothing Then
+            MessageBox.Show("Seleccione el Estado de Asigancion de la Computadora.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            estado = False
+        ElseIf TxtRevoDisco.Text = Nothing Then
+            MessageBox.Show("Ingrese las Revoluciones del Disco Duro.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtRevoDisco.Focus()
+            estado = False
         Else
-            AgregarEquipo()
-            Limpiar()
-            HabilitarBotones(True, False, False, False, False)
-            ChkVerTodo.Enabled = True
-            MostrarEquipo()
+            estado = True
         End If
-    End Sub
-
+        Return estado
+    End Function
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
-        If Validar(TxtSerieCompu, "El número de la serie de la computadora es requerido") Then
-        ElseIf Validar(CboMarca, "Seleccione una marca") Then
-        ElseIf Validar(CboModelo, "Seleccione un modelo") Then
-        ElseIf Validar(CboTeclado, "Seleccione el estado del teclado") Then
-        ElseIf Validar(CboMouse, "Seleccones el estado del mouse") Then
-        ElseIf Validar(TxtSerieMonitor, "el numero de la serie del monitor es requerido") Then
-        ElseIf Validar(TxtCapRAM, " la capacidad de RAM es requerida") Then
-        ElseIf Validar(TxtCapDisco, "la capacidad de Disco Duro es requerida") Then
-        ElseIf Validar(CboTipoPC, "Seleccione el tipo de PC") Then
-        ElseIf Validar(TxtDescPro, "la descripcion del procesador es requerida") Then
-        ElseIf Validar(CboTipoMonitor, "Seleccione el tipo de monitor") Then
-        ElseIf Validar(CboEstadoA, "Seleccione el estado de asignacion de la computadora") Then
-        ElseIf Validar(TxtRevoDisco, "las revoluciones del disco son requeridas") Then
-        Else
+        If Validar() Then
             ActualizarEquipo()
             Limpiar()
             HabilitarBotones(True, False, False, False, False)
@@ -125,10 +158,15 @@ Public Class FrmEquipo
         TxtSerieCompu.Text = LsvEquipo.FocusedItem.SubItems(1).Text
         CboMarca.Text = LsvEquipo.FocusedItem.SubItems(2).Text
         CboModelo.Text = LsvEquipo.FocusedItem.SubItems(3).Text
+        CboMouse.Text = LsvEquipo.FocusedItem.SubItems(4).Text
+        CboTeclado.Text = LsvEquipo.FocusedItem.SubItems(5).Text
+        CboTipoMonitor.Text = LsvEquipo.FocusedItem.SubItems(6).Text
         TxtCapRAM.Text = LsvEquipo.FocusedItem.SubItems(7).Text
         TxtCapDisco.Text = LsvEquipo.FocusedItem.SubItems(8).Text
         TxtDescPro.Text = LsvEquipo.FocusedItem.SubItems(9).Text
+        CboTipoPC.Text = LsvEquipo.FocusedItem.SubItems(10).Text
         TxtRevoDisco.Text = LsvEquipo.FocusedItem.SubItems(11).Text
+        CboEstadoA.Text = LsvEquipo.FocusedItem.SubItems(12).Text
         TxtSerieMonitor.Text = LsvEquipo.FocusedItem.SubItems(13).Text
         HabilitarBotones(False, False, True, True, True)
     End Sub
@@ -290,7 +328,7 @@ Public Class FrmEquipo
         Try
             Using cmd As New SqlCommand
                 With cmd
-                    .CommandText = "Sp_LlenarComboboxModelo"
+                    .CommandText = "Sp_LlenarComboModelo"
                     .CommandType = CommandType.StoredProcedure
                     .Connection = cnn
                     .Parameters.Add("@IdMarca", SqlDbType.Int).Value = CboMarca.SelectedValue
@@ -521,30 +559,34 @@ Public Class FrmEquipo
         Return Val
     End Function
 
-    Function Validar(Control As Control, Mensaje As String) As Boolean
-
-        If Control.Text.Trim = Nothing Then
-            MessageBox.Show(Mensaje, "DBSM", MessageBoxButtons.OK)
-            Control.Focus()
-            Validar = True
-        Else
-            Validar = False
-        End If
-    End Function
 
     Private Sub btnIrMarca_Click(sender As Object, e As EventArgs) Handles BtnIrMarca.Click
         Me.Hide()
         FrmMarca.Show()
-        FrmMarca.regreso = 1
     End Sub
 
-    Private Sub btnIrModelo_Click(sender As Object, e As EventArgs) Handles btnIrModelo.Click
+    Private Sub btnIrModelo_Click(sender As Object, e As EventArgs) Handles BtnIrModelo.Click
         Me.Hide()
         FrmModelo.Show()
-        FrmModelo.regreso = 1
     End Sub
 
-    Private Sub PlCom_Paint(sender As Object, e As PaintEventArgs) Handles PlCom.Paint
+    Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
 
+        If Validar() Then
+            AgregarEquipo()
+            Limpiar()
+            HabilitarBotones(True, False, False, False, False)
+            ChkVerTodo.Enabled = True
+            MostrarEquipo()
+        End If
+    End Sub
+
+    Private Sub BtnActualizarMarca_Click(sender As Object, e As EventArgs) Handles BtnActualizarMarca.Click
+        Call LlenarComboMarca()
+    End Sub
+
+    Private Sub BtnActualizarModelo_Click(sender As Object, e As EventArgs) Handles BtnActualizarModelo.Click
+        Call LlenarComboMarca()
+        Call LlenarComboModelo()
     End Sub
 End Class

@@ -1,6 +1,5 @@
-﻿
-Imports System.Data.SqlClient
-Public Class FrmAsignacionComputadoraA
+﻿Imports System.Data.SqlClient
+Public Class FrmAsignacionComputadora
     Private Sub FrmAsignacionComputadoraA_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         HabilitarBotones(True, False, False, False, False)
         Call LlenarCboNumComputadora()
@@ -34,8 +33,6 @@ Public Class FrmAsignacionComputadoraA
         Finally
             cnn.Close()
         End Try
-
-
     End Sub
     Private Sub LlenarCboIdAlumno()
 
@@ -95,23 +92,35 @@ Public Class FrmAsignacionComputadoraA
         ChkVertodo.Enabled = False
         Limpiar()
     End Sub
-    Function Validar(Control As Control, Mensaje As String) As Boolean
+    Private Function Validar() As Boolean
+        Dim estado As Boolean
 
-        If Control.Text.Trim = Nothing Then
-            MessageBox.Show(Mensaje, "DBSM", MessageBoxButtons.OK)
-            Control.Focus()
-            Validar = True
+        If CboCompu.SelectedValue = Nothing And CboAlumno.SelectedValue = Nothing And DtpFechaA.Value = Nothing And TxtAsignacioC.Text = Nothing Then
+            MessageBox.Show("Ingrese y Seleccione todos los valores.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            estado = False
+        ElseIf CboCompu.SelectedValue = Nothing Then
+            MessageBox.Show("Seleccione la Computadora a Asignar.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            estado = False
+        ElseIf DtpFechaA.Value = Nothing Then
+            MessageBox.Show("Seleccione la Fecha de la Asignacion de la Computadora.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            DtpFechaA.Focus()
+            estado = False
+        ElseIf TxtAsignacioC.Text = Nothing Then
+            MessageBox.Show("Ingrese el estado de la Asignacion de la Computadora.", "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Call HabilitarBotones(False, True, False, True, True)
+            TxtAsignacioC.Focus()
+            estado = False
         Else
-            Validar = False
+            estado = True
         End If
+        Return estado
     End Function
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
 
-        If Validar(CboCompu, "Debe Selecionar el codigo de una computadora") Then
-        ElseIf Validar(CboAlumno, "Seleccione el codigo de un alumno") Then
-        ElseIf Validar(DtpFechaA, "Debe ingresar la fecha de la asignacion de la computadora") Then
-        ElseIf Validar(TxtAsignacioC, "ingrese el estado en que se entrego la computadora") Then
-        Else
+        If Validar() Then
             Agregar()
             Limpiar()
             HabilitarBotones(True, False, False, False, False)
@@ -120,11 +129,7 @@ Public Class FrmAsignacionComputadoraA
         End If
     End Sub
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
-        If Validar(CboCompu, "Debe Selecionar el codigo de una computadora") Then
-        ElseIf Validar(CboAlumno, "Seleccione el codigo de un alumno") Then
-        ElseIf Validar(DtpFechaA, "Debe ingresar la fecha de la asignacion de la computadora") Then
-        ElseIf Validar(TxtAsignacioC, "ingrese el estado en que se entrego la computadora") Then
-        Else
+        If Validar() Then
             Actualizar()
             Limpiar()
             HabilitarBotones(True, False, False, False, False)

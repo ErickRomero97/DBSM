@@ -1,12 +1,36 @@
 ﻿Imports System.Data.SqlClient
 Public Class FrmBusquedaMarca
     Private Sub FrmBusquedaMarca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TxtBuscar.Enabled = False
-        btnBuscar.Enabled = False
-        RdoCodMarca.Checked = False
-        RdoNombreMarca.Checked = False
+        Call MostrarMarcas()
     End Sub
+    Private Sub MostrarMarcas()
+        If cnn.State = ConnectionState.Open Then
+            cnn.Close()
+        End If
+        cnn.Open()
 
+        Using cmd As New SqlCommand
+            Try
+                With cmd
+                    .CommandText = "Sp_MostrarMarca"
+                    .CommandType = CommandType.StoredProcedure
+                    .Connection = cnn
+                End With
+                Dim VerMarca As SqlDataReader
+                VerMarca = cmd.ExecuteReader()
+                LsvMarca.Items.Clear()
+                While VerMarca.Read = True
+                    With Me.LsvMarca.Items.Add(VerMarca("IdMarca").ToString)
+                        .SubItems.Add(VerMarca("Marca").ToString)
+                    End With
+                End While
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                cnn.Close()
+            End Try
+        End Using
+    End Sub
     Private Sub MostrarXCodMarca()
         If ExisteMarcaxCodigo() = True Then
 
@@ -155,35 +179,35 @@ Public Class FrmBusquedaMarca
         End If
     End Function
 
-    Private Sub rdoCodMarca_CheckedChanged(sender As Object, e As EventArgs) Handles RdoCodMarca.CheckedChanged
+    Private Sub rdoCodMarca_CheckedChanged(sender As Object, e As EventArgs)
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
-        btnBuscar.Enabled = True
+        BtnBuscar.Enabled = True
         TxtBuscar.Text = ""
         LsvMarca.Items.Clear()
     End Sub
 
-    Private Sub rdoNombreMarca_CheckedChanged(sender As Object, e As EventArgs) Handles RdoNombreMarca.CheckedChanged
+    Private Sub rdoNombreMarca_CheckedChanged(sender As Object, e As EventArgs)
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
-        btnBuscar.Enabled = True
+        BtnBuscar.Enabled = True
         TxtBuscar.Text = ""
         LsvMarca.Items.Clear()
     End Sub
 
-    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBuscar.KeyPress
+    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs)
         If RdoCodMarca.Checked = True Then
             e.Handled = txtNumerico(TxtBuscar, e.KeyChar, True)
         End If
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
         If RdoCodMarca.Checked = True Then
             If TxtBuscar.Text.Trim = Nothing Then
                 MessageBox.Show("El código de la marca es requerido", "DBSM", MessageBoxButtons.OK)
                 TxtBuscar.Focus()
             Else
-                MostrarxCodMarca()
+                MostrarXCodMarca()
                 TxtBuscar.Text = ""
             End If
         End If

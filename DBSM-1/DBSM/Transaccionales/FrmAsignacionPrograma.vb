@@ -32,7 +32,7 @@ Public Class FrmAsignacionPrograma
         If chkVer.Checked = True Then
             Me.Height = 739
         Else
-            Me.Height = 565
+            Me.Height = 537
         End If
     End Sub
 
@@ -385,7 +385,7 @@ Public Class FrmAsignacionPrograma
         Return estado
     End Function
 
-    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarToolStripMenuItem.Click
+    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         Call HabilitarControles(False, False, True, True, True)
 
         TxtCodSoftware.Text = LsvAsignacion.FocusedItem.SubItems(0).Text
@@ -398,11 +398,15 @@ Public Class FrmAsignacionPrograma
         DtpFechaInstalacion.Text = LsvAsignacion.FocusedItem.SubItems(7).Text
     End Sub
 
-    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
+    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         Call EliminarAsignacion()
     End Sub
 
     Private Sub BtnPrograma_Click(sender As Object, e As EventArgs) Handles BtnPrograma.Click
         FrmPrograma.ShowDialog()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Call LlenarComboboxPrograma()
     End Sub
 End Class

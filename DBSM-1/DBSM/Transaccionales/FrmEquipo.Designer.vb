@@ -87,6 +87,8 @@ Partial Class FrmEquipo
         Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BtnActualizarMarca = New System.Windows.Forms.Button()
+        Me.BtnActualizarModelo = New System.Windows.Forms.Button()
         Me.PlCom.SuspendLayout()
         Me.CmsOpciones.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,6 +97,8 @@ Partial Class FrmEquipo
         'PlCom
         '
         Me.PlCom.BackColor = System.Drawing.Color.Transparent
+        Me.PlCom.Controls.Add(Me.BtnActualizarModelo)
+        Me.PlCom.Controls.Add(Me.BtnActualizarMarca)
         Me.PlCom.Controls.Add(Me.CboEstadoA)
         Me.PlCom.Controls.Add(Me.Label22)
         Me.PlCom.Controls.Add(Me.Label21)
@@ -145,30 +149,30 @@ Partial Class FrmEquipo
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(10, 222)
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(19, 222)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(142, 16)
+        Me.Label22.Size = New System.Drawing.Size(124, 16)
         Me.Label22.TabIndex = 77
         Me.Label22.Text = "Estado Asignacion:"
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(381, 200)
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(400, 197)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(177, 16)
+        Me.Label21.Size = New System.Drawing.Size(154, 16)
         Me.Label21.TabIndex = 76
         Me.Label21.Text = "Revoluciones del Disco:"
         '
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(29, 191)
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(31, 191)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(130, 16)
+        Me.Label20.Size = New System.Drawing.Size(112, 16)
         Me.Label20.TabIndex = 75
         Me.Label20.Text = "Serie del Monitor:"
         '
@@ -273,110 +277,110 @@ Partial Class FrmEquipo
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(418, 107)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(423, 110)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(147, 16)
+        Me.Label7.Size = New System.Drawing.Size(130, 16)
         Me.Label7.TabIndex = 68
         Me.Label7.Text = "Capacidad de RAM:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(381, 135)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(396, 138)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(180, 16)
+        Me.Label6.Size = New System.Drawing.Size(157, 16)
         Me.Label6.TabIndex = 68
         Me.Label6.Text = "Descripción Procesador:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(2, 161)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(8, 165)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(154, 16)
+        Me.Label5.Size = New System.Drawing.Size(135, 16)
         Me.Label5.TabIndex = 68
         Me.Label5.Text = "Capacidad de Disco:"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(502, 78)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(58, 16)
+        Me.Label10.Size = New System.Drawing.Size(52, 16)
         Me.Label10.TabIndex = 68
         Me.Label10.Text = "Mouse:"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(462, 18)
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(467, 19)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(99, 16)
+        Me.Label16.Size = New System.Drawing.Size(86, 16)
         Me.Label16.TabIndex = 68
         Me.Label16.Text = "Tipo Monitor:"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(491, 49)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(70, 16)
+        Me.Label8.Size = New System.Drawing.Size(62, 16)
         Me.Label8.TabIndex = 68
         Me.Label8.Text = "Teclado:"
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(88, 131)
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(83, 135)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(68, 16)
+        Me.Label17.Size = New System.Drawing.Size(60, 16)
         Me.Label17.TabIndex = 68
         Me.Label17.Text = "Tipo PC:"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(10, 50)
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(15, 49)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(146, 16)
+        Me.Label12.Size = New System.Drawing.Size(128, 16)
         Me.Label12.TabIndex = 68
         Me.Label12.Text = "Serie Computadora:"
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(92, 103)
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(86, 103)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(64, 16)
+        Me.Label18.Size = New System.Drawing.Size(57, 16)
         Me.Label18.TabIndex = 68
         Me.Label18.Text = "Modelo:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(101, 76)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(94, 77)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 16)
+        Me.Label1.Size = New System.Drawing.Size(49, 16)
         Me.Label1.TabIndex = 68
         Me.Label1.Text = "Marca:"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(5, 19)
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(10, 19)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(151, 16)
+        Me.Label11.Size = New System.Drawing.Size(133, 16)
         Me.Label11.TabIndex = 68
         Me.Label11.Text = "Número de Maquina:"
         '
@@ -441,7 +445,7 @@ Partial Class FrmEquipo
         Me.ChkVerTodo.AutoSize = True
         Me.ChkVerTodo.BackColor = System.Drawing.Color.Transparent
         Me.ChkVerTodo.FlatAppearance.BorderSize = 0
-        Me.ChkVerTodo.Location = New System.Drawing.Point(780, 275)
+        Me.ChkVerTodo.Location = New System.Drawing.Point(780, 299)
         Me.ChkVerTodo.Name = "ChkVerTodo"
         Me.ChkVerTodo.Size = New System.Drawing.Size(66, 17)
         Me.ChkVerTodo.TabIndex = 54
@@ -453,7 +457,7 @@ Partial Class FrmEquipo
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(525, 411)
+        Me.Label13.Location = New System.Drawing.Point(504, 432)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(56, 15)
         Me.Label13.TabIndex = 82
@@ -464,7 +468,7 @@ Partial Class FrmEquipo
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(441, 411)
+        Me.Label14.Location = New System.Drawing.Point(430, 432)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(39, 15)
         Me.Label14.TabIndex = 83
@@ -475,7 +479,7 @@ Partial Class FrmEquipo
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(347, 411)
+        Me.Label15.Location = New System.Drawing.Point(347, 432)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(52, 15)
         Me.Label15.TabIndex = 84
@@ -486,7 +490,7 @@ Partial Class FrmEquipo
         Me.Label19.AutoSize = True
         Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(261, 411)
+        Me.Label19.Location = New System.Drawing.Point(272, 429)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(42, 15)
         Me.Label19.TabIndex = 85
@@ -501,7 +505,7 @@ Partial Class FrmEquipo
         Me.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancelar.Location = New System.Drawing.Point(528, 354)
+        Me.BtnCancelar.Location = New System.Drawing.Point(502, 375)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(55, 49)
         Me.BtnCancelar.TabIndex = 78
@@ -516,7 +520,7 @@ Partial Class FrmEquipo
         Me.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEditar.Location = New System.Drawing.Point(434, 354)
+        Me.BtnEditar.Location = New System.Drawing.Point(422, 375)
         Me.BtnEditar.Name = "BtnEditar"
         Me.BtnEditar.Size = New System.Drawing.Size(55, 49)
         Me.BtnEditar.TabIndex = 79
@@ -531,7 +535,7 @@ Partial Class FrmEquipo
         Me.BtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnGuardar.Location = New System.Drawing.Point(344, 354)
+        Me.BtnGuardar.Location = New System.Drawing.Point(344, 375)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(55, 49)
         Me.BtnGuardar.TabIndex = 80
@@ -546,7 +550,7 @@ Partial Class FrmEquipo
         Me.BtnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnNuevo.Location = New System.Drawing.Point(264, 359)
+        Me.BtnNuevo.Location = New System.Drawing.Point(267, 376)
         Me.BtnNuevo.Name = "BtnNuevo"
         Me.BtnNuevo.Size = New System.Drawing.Size(55, 49)
         Me.BtnNuevo.TabIndex = 81
@@ -554,13 +558,13 @@ Partial Class FrmEquipo
         '
         'LsvEquipo
         '
-        Me.LsvEquipo.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.LsvEquipo.BackColor = System.Drawing.Color.White
         Me.LsvEquipo.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chNumMaquina, Me.chSerie, Me.chMarca, Me.chModelo, Me.chMouse, Me.chTeclado, Me.chTipoMonitor, Me.chRam, Me.chDiscoDuro, Me.chDescripcion, Me.chTipoPc, Me.ChRevo, Me.ChEstadoA, Me.ChSerieMo})
         Me.LsvEquipo.ContextMenuStrip = Me.CmsOpciones
         Me.LsvEquipo.GridLines = True
-        Me.LsvEquipo.Location = New System.Drawing.Point(1, 429)
+        Me.LsvEquipo.Location = New System.Drawing.Point(0, 475)
         Me.LsvEquipo.Name = "LsvEquipo"
-        Me.LsvEquipo.Size = New System.Drawing.Size(873, 201)
+        Me.LsvEquipo.Size = New System.Drawing.Size(887, 222)
         Me.LsvEquipo.TabIndex = 86
         Me.LsvEquipo.UseCompatibleStateImageBehavior = False
         Me.LsvEquipo.View = System.Windows.Forms.View.Details
@@ -657,19 +661,38 @@ Partial Class FrmEquipo
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(266, 21)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(12, -4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(317, 85)
-        Me.PictureBox1.TabIndex = 87
+        Me.PictureBox1.Size = New System.Drawing.Size(896, 80)
+        Me.PictureBox1.TabIndex = 125
         Me.PictureBox1.TabStop = False
+        '
+        'BtnActualizarMarca
+        '
+        Me.BtnActualizarMarca.Location = New System.Drawing.Point(338, 72)
+        Me.BtnActualizarMarca.Name = "BtnActualizarMarca"
+        Me.BtnActualizarMarca.Size = New System.Drawing.Size(25, 23)
+        Me.BtnActualizarMarca.TabIndex = 79
+        Me.BtnActualizarMarca.Text = "..."
+        Me.BtnActualizarMarca.UseVisualStyleBackColor = True
+        '
+        'BtnActualizarModelo
+        '
+        Me.BtnActualizarModelo.Location = New System.Drawing.Point(338, 100)
+        Me.BtnActualizarModelo.Name = "BtnActualizarModelo"
+        Me.BtnActualizarModelo.Size = New System.Drawing.Size(25, 23)
+        Me.BtnActualizarModelo.TabIndex = 80
+        Me.BtnActualizarModelo.Text = "..."
+        Me.BtnActualizarModelo.UseVisualStyleBackColor = True
         '
         'FrmEquipo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(886, 694)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(886, 468)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LsvEquipo)
         Me.Controls.Add(Me.Label13)
@@ -683,6 +706,7 @@ Partial Class FrmEquipo
         Me.Controls.Add(Me.ChkVerTodo)
         Me.Controls.Add(Me.PlCom)
         Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FrmEquipo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Equipo"
@@ -743,7 +767,6 @@ Partial Class FrmEquipo
     Friend WithEvents chDiscoDuro As ColumnHeader
     Friend WithEvents chDescripcion As ColumnHeader
     Friend WithEvents chTipoPc As ColumnHeader
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label21 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents TxtSerieMonitor As TextBox
@@ -758,4 +781,7 @@ Partial Class FrmEquipo
     Friend WithEvents ChRevo As ColumnHeader
     Friend WithEvents ChEstadoA As ColumnHeader
     Friend WithEvents ChSerieMo As ColumnHeader
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BtnActualizarModelo As Button
+    Friend WithEvents BtnActualizarMarca As Button
 End Class

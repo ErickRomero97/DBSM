@@ -251,7 +251,7 @@ Public Class FrmPrograma
         Return Estado
     End Function
 
-    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarToolStripMenuItem.Click
+    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         TxtCodPrograma.Text = LsvPrograma.FocusedItem.SubItems(0).Text
         TxtNombreMPrograma.Text = LsvPrograma.FocusedItem.SubItems(1).Text
         TxtDescripcion.Text = LsvPrograma.FocusedItem.SubItems(2).Text
@@ -262,9 +262,10 @@ Public Class FrmPrograma
 
     Private Sub ChkMostrarTodo_CheckedChanged(sender As Object, e As EventArgs) Handles ChkMostrarTodo.CheckedChanged
         If ChkMostrarTodo.Checked = True Then
-            Me.Height = 522
+            Me.Height = 538
         Else
-            Me.Height = 366
+            Me.Height = 370
         End If
     End Sub
+
 End Class

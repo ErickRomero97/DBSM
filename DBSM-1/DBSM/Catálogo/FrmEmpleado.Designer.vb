@@ -23,6 +23,7 @@ Partial Class FrmEmpleado
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmEmpleado))
         Me.ChkMostrarTodo = New System.Windows.Forms.CheckBox()
         Me.LsvDatosEmpleado = New System.Windows.Forms.ListView()
         Me.ChIdEmpleado = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -32,13 +33,6 @@ Partial Class FrmEmpleado
         Me.ChTelefono = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChCorreo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChSexo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BtnCancelar = New System.Windows.Forms.Button()
-        Me.BtnModificar = New System.Windows.Forms.Button()
-        Me.BtnGuardar = New System.Windows.Forms.Button()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
         Me.GbEmpleado = New System.Windows.Forms.GroupBox()
         Me.MtbCodEmpleado = New System.Windows.Forms.MaskedTextBox()
         Me.TxtDireccion = New System.Windows.Forms.TextBox()
@@ -54,16 +48,28 @@ Partial Class FrmEmpleado
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TxtApellido = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.CmsOpciones.SuspendLayout()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.BtnCancelar = New System.Windows.Forms.Button()
+        Me.BtnEditar = New System.Windows.Forms.Button()
+        Me.BtnGuardar = New System.Windows.Forms.Button()
+        Me.BtnNuevo = New System.Windows.Forms.Button()
+        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GbEmpleado.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CmsOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
         'ChkMostrarTodo
         '
         Me.ChkMostrarTodo.AutoSize = True
         Me.ChkMostrarTodo.BackColor = System.Drawing.Color.Transparent
-        Me.ChkMostrarTodo.Location = New System.Drawing.Point(488, 337)
+        Me.ChkMostrarTodo.Location = New System.Drawing.Point(473, 341)
         Me.ChkMostrarTodo.Name = "ChkMostrarTodo"
         Me.ChkMostrarTodo.Size = New System.Drawing.Size(89, 17)
         Me.ChkMostrarTodo.TabIndex = 34
@@ -73,12 +79,11 @@ Partial Class FrmEmpleado
         'LsvDatosEmpleado
         '
         Me.LsvDatosEmpleado.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChIdEmpleado, Me.ChNombre, Me.ChApellido, Me.ChDireccion, Me.ChTelefono, Me.ChCorreo, Me.ChSexo})
-        Me.LsvDatosEmpleado.ContextMenuStrip = Me.CmsOpciones
         Me.LsvDatosEmpleado.FullRowSelect = True
         Me.LsvDatosEmpleado.GridLines = True
-        Me.LsvDatosEmpleado.Location = New System.Drawing.Point(59, 374)
+        Me.LsvDatosEmpleado.Location = New System.Drawing.Point(9, 489)
         Me.LsvDatosEmpleado.Name = "LsvDatosEmpleado"
-        Me.LsvDatosEmpleado.Size = New System.Drawing.Size(535, 109)
+        Me.LsvDatosEmpleado.Size = New System.Drawing.Size(579, 109)
         Me.LsvDatosEmpleado.TabIndex = 33
         Me.LsvDatosEmpleado.UseCompatibleStateImageBehavior = False
         Me.LsvDatosEmpleado.View = System.Windows.Forms.View.Details
@@ -111,65 +116,12 @@ Partial Class FrmEmpleado
         'ChCorreo
         '
         Me.ChCorreo.Text = "Correo"
-        Me.ChCorreo.Width = 72
+        Me.ChCorreo.Width = 95
         '
         'ChSexo
         '
         Me.ChSexo.Text = "Sexo"
-        '
-        'CmsOpciones
-        '
-        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
-        Me.CmsOpciones.Name = "CmsOpciones"
-        Me.CmsOpciones.Size = New System.Drawing.Size(118, 48)
-        '
-        'EditarToolStripMenuItem
-        '
-        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
-        Me.EditarToolStripMenuItem.Text = "Editar"
-        '
-        'EliminarToolStripMenuItem
-        '
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
-        '
-        'BtnCancelar
-        '
-        Me.BtnCancelar.Location = New System.Drawing.Point(397, 332)
-        Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnCancelar.TabIndex = 32
-        Me.BtnCancelar.Text = "Cancelar"
-        Me.BtnCancelar.UseVisualStyleBackColor = True
-        '
-        'BtnModificar
-        '
-        Me.BtnModificar.Location = New System.Drawing.Point(316, 332)
-        Me.BtnModificar.Name = "BtnModificar"
-        Me.BtnModificar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnModificar.TabIndex = 31
-        Me.BtnModificar.Text = "Modificar"
-        Me.BtnModificar.UseVisualStyleBackColor = True
-        '
-        'BtnGuardar
-        '
-        Me.BtnGuardar.Location = New System.Drawing.Point(235, 332)
-        Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnGuardar.TabIndex = 30
-        Me.BtnGuardar.Text = "Guardar"
-        Me.BtnGuardar.UseVisualStyleBackColor = True
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.Location = New System.Drawing.Point(154, 332)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnAgregar.TabIndex = 29
-        Me.BtnAgregar.Text = "Nuevo"
-        Me.BtnAgregar.UseVisualStyleBackColor = True
+        Me.ChSexo.Width = 74
         '
         'GbEmpleado
         '
@@ -188,7 +140,7 @@ Partial Class FrmEmpleado
         Me.GbEmpleado.Controls.Add(Me.Label6)
         Me.GbEmpleado.Controls.Add(Me.TxtApellido)
         Me.GbEmpleado.Controls.Add(Me.Label5)
-        Me.GbEmpleado.Location = New System.Drawing.Point(154, 50)
+        Me.GbEmpleado.Location = New System.Drawing.Point(143, 110)
         Me.GbEmpleado.Name = "GbEmpleado"
         Me.GbEmpleado.Size = New System.Drawing.Size(313, 266)
         Me.GbEmpleado.TabIndex = 28
@@ -313,35 +265,174 @@ Partial Class FrmEmpleado
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Dirección"
         '
-        'Label2
+        'PictureBox1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(222, 19)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(182, 24)
-        Me.Label2.TabIndex = 27
-        Me.Label2.Text = "Gestión Empleado"
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(9, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(638, 75)
+        Me.PictureBox1.TabIndex = 109
+        Me.PictureBox1.TabStop = False
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(405, 436)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(56, 15)
+        Me.Label13.TabIndex = 114
+        Me.Label13.Text = "Cancelar"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(321, 436)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(39, 15)
+        Me.Label14.TabIndex = 115
+        Me.Label14.Text = "Editar"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(223, 436)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(52, 15)
+        Me.Label15.TabIndex = 116
+        Me.Label15.Text = "Guardar"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(140, 436)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(42, 15)
+        Me.Label19.TabIndex = 117
+        Me.Label19.Text = "Nuevo"
+        '
+        'BtnCancelar
+        '
+        Me.BtnCancelar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnCancelar.BackgroundImage = CType(resources.GetObject("BtnCancelar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnCancelar.FlatAppearance.BorderSize = 0
+        Me.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCancelar.Location = New System.Drawing.Point(404, 388)
+        Me.BtnCancelar.Name = "BtnCancelar"
+        Me.BtnCancelar.Size = New System.Drawing.Size(55, 49)
+        Me.BtnCancelar.TabIndex = 110
+        Me.BtnCancelar.UseVisualStyleBackColor = False
+        '
+        'BtnEditar
+        '
+        Me.BtnEditar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnEditar.BackgroundImage = CType(resources.GetObject("BtnEditar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnEditar.FlatAppearance.BorderSize = 0
+        Me.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEditar.Location = New System.Drawing.Point(310, 388)
+        Me.BtnEditar.Name = "BtnEditar"
+        Me.BtnEditar.Size = New System.Drawing.Size(55, 49)
+        Me.BtnEditar.TabIndex = 111
+        Me.BtnEditar.UseVisualStyleBackColor = False
+        '
+        'BtnGuardar
+        '
+        Me.BtnGuardar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnGuardar.BackgroundImage = CType(resources.GetObject("BtnGuardar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnGuardar.FlatAppearance.BorderSize = 0
+        Me.BtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnGuardar.Location = New System.Drawing.Point(220, 388)
+        Me.BtnGuardar.Name = "BtnGuardar"
+        Me.BtnGuardar.Size = New System.Drawing.Size(55, 49)
+        Me.BtnGuardar.TabIndex = 112
+        Me.BtnGuardar.UseVisualStyleBackColor = False
+        '
+        'BtnNuevo
+        '
+        Me.BtnNuevo.BackColor = System.Drawing.Color.Transparent
+        Me.BtnNuevo.BackgroundImage = CType(resources.GetObject("BtnNuevo.BackgroundImage"), System.Drawing.Image)
+        Me.BtnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnNuevo.FlatAppearance.BorderSize = 0
+        Me.BtnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNuevo.Location = New System.Drawing.Point(133, 388)
+        Me.BtnNuevo.Name = "BtnNuevo"
+        Me.BtnNuevo.Size = New System.Drawing.Size(55, 49)
+        Me.BtnNuevo.TabIndex = 113
+        Me.BtnNuevo.UseVisualStyleBackColor = False
+        '
+        'CmsOpciones
+        '
+        Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
+        Me.CmsOpciones.Name = "CmsOpciones"
+        Me.CmsOpciones.Size = New System.Drawing.Size(157, 78)
+        '
+        'EditarToolStripMenuItem
+        '
+        Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
+        Me.EditarToolStripMenuItem.Text = "Editar"
+        '
+        'EliminarToolStripMenuItem
+        '
+        Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
+        Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'FrmEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(636, 370)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(600, 468)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.BtnCancelar)
+        Me.Controls.Add(Me.BtnEditar)
+        Me.Controls.Add(Me.BtnGuardar)
+        Me.Controls.Add(Me.BtnNuevo)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ChkMostrarTodo)
         Me.Controls.Add(Me.LsvDatosEmpleado)
-        Me.Controls.Add(Me.BtnCancelar)
-        Me.Controls.Add(Me.BtnModificar)
-        Me.Controls.Add(Me.BtnGuardar)
-        Me.Controls.Add(Me.BtnAgregar)
         Me.Controls.Add(Me.GbEmpleado)
-        Me.Controls.Add(Me.Label2)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FrmEmpleado"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gestión Empleado"
-        Me.CmsOpciones.ResumeLayout(False)
         Me.GbEmpleado.ResumeLayout(False)
         Me.GbEmpleado.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CmsOpciones.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -356,10 +447,6 @@ Partial Class FrmEmpleado
     Friend WithEvents ChTelefono As ColumnHeader
     Friend WithEvents ChCorreo As ColumnHeader
     Friend WithEvents ChSexo As ColumnHeader
-    Friend WithEvents BtnCancelar As Button
-    Friend WithEvents BtnModificar As Button
-    Friend WithEvents BtnGuardar As Button
-    Friend WithEvents BtnAgregar As Button
     Friend WithEvents GbEmpleado As GroupBox
     Friend WithEvents MtbCodEmpleado As MaskedTextBox
     Friend WithEvents TxtDireccion As TextBox
@@ -375,7 +462,15 @@ Partial Class FrmEmpleado
     Friend WithEvents Label6 As Label
     Friend WithEvents TxtApellido As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents BtnCancelar As Button
+    Friend WithEvents BtnEditar As Button
+    Friend WithEvents BtnGuardar As Button
+    Friend WithEvents BtnNuevo As Button
     Friend WithEvents CmsOpciones As ContextMenuStrip
     Friend WithEvents EditarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem

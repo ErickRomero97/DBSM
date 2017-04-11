@@ -1,13 +1,40 @@
 ﻿Imports System.Data.SqlClient
 Public Class FrmBusquedaModelo
     Private Sub FrmBusquedaModelo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TxtBuscarMo.Enabled = False
-        BtnBuscar.Enabled = False
-        RdoCodigoMo.Checked = False
-        RdoNombreMo.Checked = False
+        MostrarModelos()
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+    Private Sub MostrarModelos()
+        If cnn.State = ConnectionState.Open Then
+            cnn.Close()
+        End If
+        cnn.Open()
+
+        Using cmd As New SqlCommand
+            Try
+                With cmd
+                    .CommandText = "Sp_MostrarTodoModeloInner"
+                    .CommandType = CommandType.StoredProcedure
+                    .Connection = cnn
+                End With
+                Dim VerModelo As SqlDataReader
+                VerModelo = cmd.ExecuteReader()
+                LsvModeloBu.Items.Clear()
+                While VerModelo.Read = True
+                    With Me.LsvModeloBu.Items.Add(VerModelo("IdModelo").ToString)
+                        .SubItems.Add(VerModelo("Modelo").ToString)
+                        .SubItems.Add(VerModelo("Marca").ToString)
+                    End With
+                End While
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                cnn.Close()
+            End Try
+        End Using
+    End Sub
+
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
         If RdoCodigoMo.Checked = True Then
             If TxtBuscarMo.Text.Trim = Nothing Then
                 MessageBox.Show("El código de modelo es necesario", "DBSM", MessageBoxButtons.OK)
@@ -194,9 +221,10 @@ Public Class FrmBusquedaModelo
         LsvModeloBu.Items.Clear()
     End Sub
 
-    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBuscarMo.KeyPress
+    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs)
         If RdoCodigoMo.Checked = True Then
             e.Handled = txtNumerico(TxtBuscarMo, e.KeyChar, True)
         End If
     End Sub
+
 End Class

@@ -22,6 +22,7 @@ Partial Class FrmBuscarPrograma
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBuscarPrograma))
         Me.LsvPrograma = New System.Windows.Forms.ListView()
         Me.ChCodPrograma = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChNombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -39,7 +40,8 @@ Partial Class FrmBuscarPrograma
         '
         Me.LsvPrograma.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChCodPrograma, Me.ChNombre, Me.ChDescripcion, Me.ChTipo})
         Me.LsvPrograma.FullRowSelect = True
-        Me.LsvPrograma.Location = New System.Drawing.Point(2, 142)
+        Me.LsvPrograma.GridLines = True
+        Me.LsvPrograma.Location = New System.Drawing.Point(2, 191)
         Me.LsvPrograma.Name = "LsvPrograma"
         Me.LsvPrograma.Size = New System.Drawing.Size(463, 140)
         Me.LsvPrograma.TabIndex = 119
@@ -68,7 +70,7 @@ Partial Class FrmBuscarPrograma
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(352, 99)
+        Me.BtnBuscar.Location = New System.Drawing.Point(352, 141)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.BtnBuscar.TabIndex = 122
@@ -77,18 +79,19 @@ Partial Class FrmBuscarPrograma
         '
         'TxtBuscar
         '
-        Me.TxtBuscar.Location = New System.Drawing.Point(49, 100)
+        Me.TxtBuscar.Location = New System.Drawing.Point(49, 142)
         Me.TxtBuscar.Name = "TxtBuscar"
         Me.TxtBuscar.Size = New System.Drawing.Size(297, 20)
         Me.TxtBuscar.TabIndex = 121
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.RdbCodPrograma)
         Me.GroupBox1.Controls.Add(Me.RdbPrograma)
-        Me.GroupBox1.Location = New System.Drawing.Point(62, 27)
+        Me.GroupBox1.Location = New System.Drawing.Point(49, 80)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(337, 64)
+        Me.GroupBox1.Size = New System.Drawing.Size(297, 55)
         Me.GroupBox1.TabIndex = 120
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Opciones de busqueda"
@@ -96,7 +99,7 @@ Partial Class FrmBuscarPrograma
         'RdbCodPrograma
         '
         Me.RdbCodPrograma.AutoSize = True
-        Me.RdbCodPrograma.Location = New System.Drawing.Point(178, 31)
+        Me.RdbCodPrograma.Location = New System.Drawing.Point(147, 23)
         Me.RdbCodPrograma.Name = "RdbCodPrograma"
         Me.RdbCodPrograma.Size = New System.Drawing.Size(92, 17)
         Me.RdbCodPrograma.TabIndex = 1
@@ -107,7 +110,7 @@ Partial Class FrmBuscarPrograma
         'RdbPrograma
         '
         Me.RdbPrograma.AutoSize = True
-        Me.RdbPrograma.Location = New System.Drawing.Point(52, 31)
+        Me.RdbPrograma.Location = New System.Drawing.Point(21, 23)
         Me.RdbPrograma.Name = "RdbPrograma"
         Me.RdbPrograma.Size = New System.Drawing.Size(70, 17)
         Me.RdbPrograma.TabIndex = 0
@@ -119,13 +122,18 @@ Partial Class FrmBuscarPrograma
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(464, 283)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(464, 333)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.TxtBuscar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.LsvPrograma)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FrmBuscarPrograma"
-        Me.Text = "FrmBuscarPrograma"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Buscar Programa"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

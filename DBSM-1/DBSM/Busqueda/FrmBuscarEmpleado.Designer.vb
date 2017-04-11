@@ -22,6 +22,7 @@ Partial Class FrmBuscarEmpleado
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBuscarEmpleado))
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
         Me.LsvDatosEmpleado = New System.Windows.Forms.ListView()
         Me.ChIdEmpleado = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -40,7 +41,7 @@ Partial Class FrmBuscarEmpleado
         '
         'TxtBuscar
         '
-        Me.TxtBuscar.Location = New System.Drawing.Point(128, 100)
+        Me.TxtBuscar.Location = New System.Drawing.Point(128, 154)
         Me.TxtBuscar.Name = "TxtBuscar"
         Me.TxtBuscar.Size = New System.Drawing.Size(297, 20)
         Me.TxtBuscar.TabIndex = 32
@@ -50,9 +51,9 @@ Partial Class FrmBuscarEmpleado
         Me.LsvDatosEmpleado.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChIdEmpleado, Me.ChNombre, Me.ChApellido, Me.ChDireccion, Me.ChTelefono, Me.ChCorreo, Me.ChSexo})
         Me.LsvDatosEmpleado.FullRowSelect = True
         Me.LsvDatosEmpleado.GridLines = True
-        Me.LsvDatosEmpleado.Location = New System.Drawing.Point(-3, 146)
+        Me.LsvDatosEmpleado.Location = New System.Drawing.Point(-1, 200)
         Me.LsvDatosEmpleado.Name = "LsvDatosEmpleado"
-        Me.LsvDatosEmpleado.Size = New System.Drawing.Size(642, 308)
+        Me.LsvDatosEmpleado.Size = New System.Drawing.Size(646, 260)
         Me.LsvDatosEmpleado.TabIndex = 29
         Me.LsvDatosEmpleado.UseCompatibleStateImageBehavior = False
         Me.LsvDatosEmpleado.View = System.Windows.Forms.View.Details
@@ -90,6 +91,7 @@ Partial Class FrmBuscarEmpleado
         'ChSexo
         '
         Me.ChSexo.Text = "Sexo"
+        Me.ChSexo.Width = 63
         '
         'RdbIdentidad
         '
@@ -115,7 +117,7 @@ Partial Class FrmBuscarEmpleado
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(431, 98)
+        Me.BtnBuscar.Location = New System.Drawing.Point(431, 152)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.BtnBuscar.TabIndex = 33
@@ -124,11 +126,12 @@ Partial Class FrmBuscarEmpleado
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.RdbIdentidad)
         Me.GroupBox1.Controls.Add(Me.RdbNombre)
-        Me.GroupBox1.Location = New System.Drawing.Point(182, 35)
+        Me.GroupBox1.Location = New System.Drawing.Point(128, 104)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(279, 44)
+        Me.GroupBox1.Size = New System.Drawing.Size(297, 44)
         Me.GroupBox1.TabIndex = 36
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Opciones de busqueda"
@@ -137,13 +140,18 @@ Partial Class FrmBuscarEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(639, 453)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(642, 458)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.TxtBuscar)
         Me.Controls.Add(Me.LsvDatosEmpleado)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FrmBuscarEmpleado"
-        Me.Text = "FrmBuscarEmpleado"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Buscar Empleado"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

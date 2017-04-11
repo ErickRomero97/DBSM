@@ -5,7 +5,7 @@ Public Class FrmAlumno
         HabilitarBotones(True, False, False, False, False)
         MostrarAlumno()
         LlenarCombobox()
-        Me.Height = 450
+        Me.Height = 491
     End Sub
 
     Private Sub HabilitarBotones(ByVal nuevo As Boolean, ByVal Guardar As Boolean, ByVal Editar As Boolean, ByVal Cancelar As Boolean, ByVal PanelAlumno As Boolean)
@@ -186,11 +186,6 @@ Public Class FrmAlumno
 
 
     End Sub
-
-    Private Sub CboSexo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CboSexo.SelectedIndexChanged
-
-    End Sub
-
     Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarToolStripMenuItem.Click
         MtbIdAlumno.Text = lsbAlumno.FocusedItem.SubItems(0).Text
         TxtNombre.Text = lsbAlumno.FocusedItem.SubItems(1).Text
@@ -287,10 +282,10 @@ Public Class FrmAlumno
 
     Private Sub ChkVertodo_CheckedChanged(sender As Object, e As EventArgs) Handles ChkVertodo.CheckedChanged
         If ChkVertodo.CheckState = CheckState.Checked Then
-            Me.Height = 666
+            Me.Height = 676
             Call MostrarAlumno()
         Else
-            Me.Height = 487
+            Me.Height = 491
         End If
     End Sub
 End Class

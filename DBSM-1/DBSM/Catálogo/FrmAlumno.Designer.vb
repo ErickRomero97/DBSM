@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmAlumno
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmAlumno
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAlumno))
@@ -44,7 +44,6 @@ Partial Class FrmAlumno
         Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.PnlAlumno = New System.Windows.Forms.Panel()
         Me.Mtbtelefono = New System.Windows.Forms.MaskedTextBox()
         Me.MtbIdAlumno = New System.Windows.Forms.MaskedTextBox()
@@ -61,9 +60,11 @@ Partial Class FrmAlumno
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.CmsOpciones.SuspendLayout()
         Me.PnlAlumno.SuspendLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label13
@@ -187,7 +188,7 @@ Partial Class FrmAlumno
         '
         'lsbAlumno
         '
-        Me.lsbAlumno.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lsbAlumno.BackColor = System.Drawing.Color.White
         Me.lsbAlumno.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChIdAlumno, Me.chNombre, Me.ChApellido0, Me.chDireccion, Me.chTelefono, Me.chCorreo, Me.chSexo})
         Me.lsbAlumno.ContextMenuStrip = Me.CmsOpciones
         Me.lsbAlumno.FullRowSelect = True
@@ -255,18 +256,6 @@ Partial Class FrmAlumno
         Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(249, 44)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(289, 39)
-        Me.Label2.TabIndex = 105
-        Me.Label2.Text = "Registra Alumno"
-        '
         'PnlAlumno
         '
         Me.PnlAlumno.BackColor = System.Drawing.Color.Transparent
@@ -277,8 +266,8 @@ Partial Class FrmAlumno
         Me.PnlAlumno.Controls.Add(Me.TxtNombre)
         Me.PnlAlumno.Controls.Add(Me.TxtDireccion)
         Me.PnlAlumno.Controls.Add(Me.TxtEmail)
-        Me.PnlAlumno.Location = New System.Drawing.Point(251, 124)
-        Me.PnlAlumno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnlAlumno.Location = New System.Drawing.Point(244, 117)
+        Me.PnlAlumno.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlAlumno.Name = "PnlAlumno"
         Me.PnlAlumno.Size = New System.Drawing.Size(178, 209)
         Me.PnlAlumno.TabIndex = 106
@@ -286,7 +275,7 @@ Partial Class FrmAlumno
         'Mtbtelefono
         '
         Me.Mtbtelefono.Location = New System.Drawing.Point(14, 117)
-        Me.Mtbtelefono.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Mtbtelefono.Margin = New System.Windows.Forms.Padding(2)
         Me.Mtbtelefono.Mask = "0000-0000"
         Me.Mtbtelefono.Name = "Mtbtelefono"
         Me.Mtbtelefono.PromptChar = Global.Microsoft.VisualBasic.ChrW(32)
@@ -296,7 +285,7 @@ Partial Class FrmAlumno
         'MtbIdAlumno
         '
         Me.MtbIdAlumno.Location = New System.Drawing.Point(14, 12)
-        Me.MtbIdAlumno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MtbIdAlumno.Margin = New System.Windows.Forms.Padding(2)
         Me.MtbIdAlumno.Mask = "0000-0000-00000"
         Me.MtbIdAlumno.Name = "MtbIdAlumno"
         Me.MtbIdAlumno.PromptChar = Global.Microsoft.VisualBasic.ChrW(32)
@@ -344,10 +333,10 @@ Partial Class FrmAlumno
         '
         Me.lblapellidos.AutoSize = True
         Me.lblapellidos.BackColor = System.Drawing.Color.Transparent
-        Me.lblapellidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblapellidos.Location = New System.Drawing.Point(181, 195)
+        Me.lblapellidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblapellidos.Location = New System.Drawing.Point(174, 188)
         Me.lblapellidos.Name = "lblapellidos"
-        Me.lblapellidos.Size = New System.Drawing.Size(74, 17)
+        Me.lblapellidos.Size = New System.Drawing.Size(65, 16)
         Me.lblapellidos.TabIndex = 33
         Me.lblapellidos.Text = "Apellidos"
         '
@@ -355,10 +344,10 @@ Partial Class FrmAlumno
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(179, 137)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(172, 130)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(74, 17)
+        Me.Label6.Size = New System.Drawing.Size(64, 16)
         Me.Label6.TabIndex = 18
         Me.Label6.Text = "IdAlumno"
         '
@@ -366,10 +355,10 @@ Partial Class FrmAlumno
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(181, 167)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(174, 160)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(72, 17)
+        Me.Label8.Size = New System.Drawing.Size(64, 16)
         Me.Label8.TabIndex = 20
         Me.Label8.Text = "Nombres"
         '
@@ -377,10 +366,10 @@ Partial Class FrmAlumno
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(194, 219)
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(187, 212)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(47, 17)
+        Me.Label12.Size = New System.Drawing.Size(42, 16)
         Me.Label12.TabIndex = 23
         Me.Label12.Text = "Email"
         '
@@ -388,10 +377,10 @@ Partial Class FrmAlumno
         '
         Me.Label16.AutoSize = True
         Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(175, 271)
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(168, 264)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(76, 17)
+        Me.Label16.Size = New System.Drawing.Size(65, 16)
         Me.Label16.TabIndex = 29
         Me.Label16.Text = "Dirección"
         '
@@ -399,10 +388,10 @@ Partial Class FrmAlumno
         '
         Me.Label17.AutoSize = True
         Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(178, 241)
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(171, 234)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(72, 17)
+        Me.Label17.Size = New System.Drawing.Size(62, 16)
         Me.Label17.TabIndex = 27
         Me.Label17.Text = "Teléfono"
         '
@@ -410,10 +399,10 @@ Partial Class FrmAlumno
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(201, 304)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(194, 297)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 17)
+        Me.Label1.Size = New System.Drawing.Size(39, 16)
         Me.Label1.TabIndex = 107
         Me.Label1.Text = "Sexo"
         '
@@ -421,16 +410,28 @@ Partial Class FrmAlumno
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(638, 75)
+        Me.PictureBox1.TabIndex = 108
+        Me.PictureBox1.TabStop = False
+        '
         'FrmAlumno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(593, 449)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(593, 452)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblapellidos)
         Me.Controls.Add(Me.PnlAlumno)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
@@ -446,15 +447,18 @@ Partial Class FrmAlumno
         Me.Controls.Add(Me.ChkVertodo)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.lsbAlumno)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "FrmAlumno"
-        Me.Text = "FrmAlumno"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Alumno"
         Me.CmsOpciones.ResumeLayout(False)
         Me.PnlAlumno.ResumeLayout(False)
         Me.PnlAlumno.PerformLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -470,7 +474,6 @@ Partial Class FrmAlumno
     Friend WithEvents BtnNuevo As Button
     Friend WithEvents ChkVertodo As CheckBox
     Friend WithEvents lsbAlumno As ListView
-    Friend WithEvents Label2 As Label
     Friend WithEvents PnlAlumno As Panel
     Friend WithEvents CboSexo As ComboBox
     Friend WithEvents TxtApellido As TextBox
@@ -497,4 +500,5 @@ Partial Class FrmAlumno
     Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Mtbtelefono As MaskedTextBox
     Friend WithEvents MtbIdAlumno As MaskedTextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

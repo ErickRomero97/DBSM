@@ -92,6 +92,18 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Conexion.vb" />
+    <Compile Include="FrmLogAuditoria.Designer.vb">
+      <DependentUpon>FrmLogAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash_DBSM.Designer.vb">
+      <DependentUpon>FrmSplash_DBSM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash_DBSM.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Transaccionales\FrmEquipo.Designer.vb">
       <DependentUpon>FrmEquipo.vb</DependentUpon>
     </Compile>
@@ -217,6 +229,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Busqueda\FrmBuscarPrograma.resx">
       <DependentUpon>FrmBuscarPrograma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogAuditoria.resx">
+      <DependentUpon>FrmLogAuditoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash_DBSM.resx">
+      <DependentUpon>FrmSplash_DBSM.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaccionales\FrmEquipo.resx">
       <DependentUpon>FrmEquipo.vb</DependentUpon>

@@ -1,10 +1,39 @@
 ﻿Imports System.Data.SqlClient
 Public Class FrmBusquedaAsignacionComputadora
     Private Sub FrmBusquedaAsignacionComputadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TxtBuscar.Enabled = False
-        BtnBuscar.Enabled = False
-        RdoCodCompuA.Checked = False
-        RdoCodAlumnoA.Checked = False
+        Call Mostrar()
+    End Sub
+    Private Sub Mostrar()
+        If cnn.State = ConnectionState.Open Then
+            cnn.Close()
+        End If
+        cnn.Open()
+
+        Using cmd As New SqlCommand
+            Try
+                With cmd
+                    .CommandText = "Sp_MostrarTodoAsignacionCA"
+                    .CommandType = CommandType.StoredProcedure
+                    .Connection = cnn
+                End With
+                Dim VerEquipo As SqlDataReader
+                VerEquipo = cmd.ExecuteReader()
+                LsvBusquedaCompuA.Items.Clear()
+
+                While VerEquipo.Read = True
+                    With Me.LsvBusquedaCompuA.Items.Add(VerEquipo("NumComputadora").ToString)
+                        .SubItems.Add(VerEquipo("IdAlumno").ToString)
+                        .SubItems.Add(VerEquipo("FechaAsigancion").ToString)
+                        .SubItems.Add(VerEquipo("FechaEntrega").ToString)
+                        .SubItems.Add(VerEquipo("EstadoEntrega").ToString)
+                    End With
+                End While
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                cnn.Close()
+            End Try
+        End Using
     End Sub
     Private Sub MostrarXIdAlumno()
         If ExisteAlumnoA() = True Then
@@ -176,13 +205,13 @@ Public Class FrmBusquedaAsignacionComputadora
         LsvBusquedaCompuA.Items.Clear()
     End Sub
 
-    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBuscar.KeyPress
+    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs)
         If RdoCodCompuA.Checked = True Then
             e.Handled = txtNumerico(TxtBuscar, e.KeyChar, True)
         End If
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
         If RdoCodCompuA.Checked = True Then
             If TxtBuscar.Text.Trim = Nothing Then
                 MessageBox.Show("El código de la computadora es requerido", "DBSM", MessageBoxButtons.OK)

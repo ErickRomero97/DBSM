@@ -118,65 +118,6 @@ C:\Users\WalterPC\Desktop\DBSM\DBSM\obj\Debug\DBSM.FrmSoftware.resources
 C:\Users\WalterPC\Desktop\DBSM\DBSM\obj\Debug\DBSM.FrmUsuario.resources
 C:\Users\WalterPC\Desktop\DBSM\DBSM\obj\Debug\DBSM.vbproj.GenerateResource.Cache
 C:\Users\WalterPC\Desktop\DBSM\DBSM\obj\Debug\DBSM.exe.licenses
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbprojResolveAssemblyReference.cache
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmEquipo.resources
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmLogin.resources
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.Marca.resources
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmPrincipal.resources
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.Resources.resources
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmSoftware.resources
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmUsuario.resources
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbproj.GenerateResource.Cache
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe.licenses
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe.config
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.pdb
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.xml
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.xml
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.xml
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.xml
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.xml
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.xml
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.xml
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.xml
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Data.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Data.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Data.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Data.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Utils.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Utils.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Utils.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Utils.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraBars.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraBars.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraBars.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraBars.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraEditors.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraEditors.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraEditors.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraEditors.v16.1.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Printing.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Printing.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Printing.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Printing.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Sparkline.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Sparkline.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Pdf.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.xml
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.pdb
 I:\DBSM-1\DBSM\bin\Debug\DBSM.exe.config
 I:\DBSM-1\DBSM\bin\Debug\DBSM.exe
 I:\DBSM-1\DBSM\bin\Debug\DBSM.pdb
@@ -593,3 +534,297 @@ C:\Users\Miguel\Desktop\DBSM FINAL\DBSM-1\DBSM\obj\Debug\DBSM.Resources.resource
 C:\Users\Miguel\Desktop\DBSM FINAL\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionPrograma.resources
 C:\Users\Miguel\Desktop\DBSM FINAL\DBSM-1\DBSM\obj\Debug\DBSM.vbproj.GenerateResource.Cache
 C:\Users\Miguel\Desktop\DBSM FINAL\DBSM-1\DBSM\obj\Debug\DBSM.exe.licenses
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe.config
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.xml
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.pdb
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.pdb
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.xml
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.xml
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.xml
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.xml
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.xml
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.xml
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.xml
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Utils.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Utils.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Utils.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Utils.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbprojResolveAssemblyReference.cache
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarAsignacionPrograma.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarPrograma.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmEquipo.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAlumno.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionComputadoraA.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarEmpleado.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarUsuario.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaAsignacionComputadora.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaComputadora.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaMarca.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaModelo.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmEmpleado.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmModelo.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmPrograma.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmUsuarios.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmLogin.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmMarca.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmPrincipal.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.Resources.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionPrograma.resources
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbproj.GenerateResource.Cache
+C:\Users\Miguel\Desktop\Proyecto\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe.licenses
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarAsignacionPrograma.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarPrograma.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmLogAuditoria.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmSplash_DBSM.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmEquipo.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAlumno.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionComputadora.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarEmpleado.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarUsuario.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaAsignacionComputadora.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaComputadora.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaMarca.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaModelo.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmEmpleado.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmModelo.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmPrograma.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmUsuarios.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmLogin.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmMarca.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmPrincipal.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.Resources.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionPrograma.resources
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbproj.GenerateResource.Cache
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe.licenses
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.xml
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe.config
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.pdb
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.xml
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.xml
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.xml
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.xml
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.xml
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.xml
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.xml
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Utils.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Utils.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Utils.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Utils.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.pdb
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbprojResolveAssemblyReference.cache
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe.config
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.pdb
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.xml
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.xml
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.xml
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.xml
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.xml
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.xml
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.xml
+H:\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.xml
+H:\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Data.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Data.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Data.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Data.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Utils.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Utils.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Utils.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Utils.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraBars.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraBars.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraBars.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraBars.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraEditors.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraEditors.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraEditors.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraEditors.v16.1.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Printing.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Printing.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Printing.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Printing.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Pdf.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarAsignacionPrograma.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarPrograma.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmLogAuditoria.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmSplash_DBSM.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmEquipo.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAlumno.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionComputadora.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarEmpleado.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarUsuario.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaAsignacionComputadora.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaComputadora.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaMarca.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaModelo.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmEmpleado.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmModelo.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmPrograma.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmUsuarios.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmLogin.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmMarca.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmPrincipal.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.Resources.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionPrograma.resources
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbproj.GenerateResource.Cache
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe.licenses
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.xml
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.pdb
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe.config
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.xml
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.pdb
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.pdb
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.xml
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Data.v16.1.xml
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Utils.v16.1.xml
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraBars.v16.1.xml
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.XtraEditors.v16.1.xml
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Printing.v16.1.Core.xml
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Sparkline.v16.1.Core.xml
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\DevExpress.Pdf.v16.1.Core.xml
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Data.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Data.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Data.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Data.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Utils.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Utils.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Utils.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Utils.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraBars.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraBars.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraBars.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraBars.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.XtraEditors.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.XtraEditors.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.XtraEditors.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.XtraEditors.v16.1.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Printing.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Printing.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Printing.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Printing.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\de\DevExpress.Pdf.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbprojResolveAssemblyReference.cache
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarAsignacionPrograma.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarPrograma.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmLogAuditoria.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmSplash_DBSM.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmEquipo.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAlumno.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionComputadora.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarEmpleado.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBuscarUsuario.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaAsignacionComputadora.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaComputadora.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaMarca.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaModelo.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmEmpleado.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmModelo.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmPrograma.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmUsuarios.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmLogin.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmMarca.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmPrincipal.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.Resources.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionPrograma.resources
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbproj.GenerateResource.Cache
+G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe.licenses
+H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbprojResolveAssemblyReference.cache

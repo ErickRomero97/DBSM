@@ -8,9 +8,9 @@ Public Class FrmEmpleado
     End Sub
 
     Private Sub HabilitarControles(ByVal Agregar As Boolean, ByVal Guardar As Boolean, ByVal Modificar As Boolean, ByVal Cancelar As Boolean, ByVal GroupBox As Boolean)
-        BtnAgregar.Enabled = Agregar
+        BtnNuevo.Enabled = Agregar
         BtnGuardar.Enabled = Guardar
-        BtnModificar.Enabled = Modificar
+        BtnEditar.Enabled = Modificar
         BtnCancelar.Enabled = Cancelar
         GbEmpleado.Enabled = GroupBox
     End Sub
@@ -92,12 +92,12 @@ Public Class FrmEmpleado
         End Using
     End Sub
 
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs)
         Call HabilitarControles(False, True, False, True, True)
         MtbCodEmpleado.Focus()
     End Sub
 
-    Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
+    Private Sub BtnGuardar_Click(sender As Object, e As EventArgs)
         Call HabilitarControles(True, False, False, False, False)
 
         If Validar() Then
@@ -108,7 +108,7 @@ Public Class FrmEmpleado
 
     End Sub
 
-    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarToolStripMenuItem.Click
+    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         MtbCodEmpleado.Text = LsvDatosEmpleado.FocusedItem.SubItems(0).Text
         TxtNombre.Text = LsvDatosEmpleado.FocusedItem.SubItems(1).Text
         TxtApellido.Text = LsvDatosEmpleado.FocusedItem.SubItems(2).Text
@@ -120,7 +120,7 @@ Public Class FrmEmpleado
         Call HabilitarControles(False, False, True, True, True)
     End Sub
 
-    Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
+    Private Sub BtnCancelar_Click(sender As Object, e As EventArgs)
         Call Limpiar()
         Call HabilitarControles(True, False, False, False, False)
     End Sub
@@ -299,7 +299,7 @@ Public Class FrmEmpleado
         Return estado
     End Function
 
-    Private Sub BtnModificar_Click(sender As Object, e As EventArgs) Handles BtnModificar.Click
+    Private Sub BtnModificar_Click(sender As Object, e As EventArgs)
         Call Actualizar()
         Call HabilitarControles(True, False, False, False, False)
         Call Limpiar()
@@ -308,13 +308,13 @@ Public Class FrmEmpleado
     Private Sub ChkMostrarTodo_CheckedChanged(sender As Object, e As EventArgs) Handles ChkMostrarTodo.CheckedChanged
         If ChkMostrarTodo.Checked = True Then
             Call MostrarTodo()
-            Me.Height = 541
+            Me.Height = 651
         Else
-            Me.Height = 420
+            Me.Height = 507
         End If
     End Sub
 
-    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
+    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         Call Eliminar()
         Call Limpiar()
         Call HabilitarControles(True, False, False, False, False)

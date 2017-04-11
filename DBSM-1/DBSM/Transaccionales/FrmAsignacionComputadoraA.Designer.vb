@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FrmAsignacionComputadoraA
+Partial Class FrmAsignacionComputadora
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -23,7 +23,7 @@ Partial Class FrmAsignacionComputadoraA
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAsignacionComputadoraA))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAsignacionComputadora))
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -54,8 +54,10 @@ Partial Class FrmAsignacionComputadoraA
         Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PlACA.SuspendLayout()
         Me.CmsOpciones.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label13
@@ -63,7 +65,7 @@ Partial Class FrmAsignacionComputadoraA
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(407, 290)
+        Me.Label13.Location = New System.Drawing.Point(399, 384)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(56, 15)
         Me.Label13.TabIndex = 112
@@ -74,7 +76,7 @@ Partial Class FrmAsignacionComputadoraA
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(302, 290)
+        Me.Label14.Location = New System.Drawing.Point(320, 384)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(39, 15)
         Me.Label14.TabIndex = 113
@@ -85,7 +87,7 @@ Partial Class FrmAsignacionComputadoraA
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(208, 290)
+        Me.Label15.Location = New System.Drawing.Point(235, 384)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(52, 15)
         Me.Label15.TabIndex = 114
@@ -96,7 +98,7 @@ Partial Class FrmAsignacionComputadoraA
         Me.Label19.AutoSize = True
         Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(131, 290)
+        Me.Label19.Location = New System.Drawing.Point(158, 384)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(42, 15)
         Me.Label19.TabIndex = 115
@@ -107,11 +109,12 @@ Partial Class FrmAsignacionComputadoraA
         Me.BtnCancelar.BackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.BackgroundImage = CType(resources.GetObject("BtnCancelar.BackgroundImage"), System.Drawing.Image)
         Me.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.FlatAppearance.BorderSize = 0
         Me.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancelar.Location = New System.Drawing.Point(408, 219)
+        Me.BtnCancelar.Location = New System.Drawing.Point(398, 328)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(55, 49)
         Me.BtnCancelar.TabIndex = 108
@@ -122,11 +125,12 @@ Partial Class FrmAsignacionComputadoraA
         Me.BtnEditar.BackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.BackgroundImage = CType(resources.GetObject("BtnEditar.BackgroundImage"), System.Drawing.Image)
         Me.BtnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnEditar.FlatAppearance.BorderSize = 0
         Me.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEditar.Location = New System.Drawing.Point(305, 219)
+        Me.BtnEditar.Location = New System.Drawing.Point(314, 328)
         Me.BtnEditar.Name = "BtnEditar"
         Me.BtnEditar.Size = New System.Drawing.Size(55, 49)
         Me.BtnEditar.TabIndex = 109
@@ -137,11 +141,12 @@ Partial Class FrmAsignacionComputadoraA
         Me.BtnGuardar.BackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.BackgroundImage = CType(resources.GetObject("BtnGuardar.BackgroundImage"), System.Drawing.Image)
         Me.BtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnGuardar.FlatAppearance.BorderSize = 0
         Me.BtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnGuardar.Location = New System.Drawing.Point(211, 219)
+        Me.BtnGuardar.Location = New System.Drawing.Point(231, 328)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(55, 49)
         Me.BtnGuardar.TabIndex = 110
@@ -152,11 +157,12 @@ Partial Class FrmAsignacionComputadoraA
         Me.BtnNuevo.BackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.BackgroundImage = CType(resources.GetObject("BtnNuevo.BackgroundImage"), System.Drawing.Image)
         Me.BtnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNuevo.FlatAppearance.BorderSize = 0
         Me.BtnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnNuevo.Location = New System.Drawing.Point(134, 219)
+        Me.BtnNuevo.Location = New System.Drawing.Point(152, 328)
         Me.BtnNuevo.Name = "BtnNuevo"
         Me.BtnNuevo.Size = New System.Drawing.Size(55, 49)
         Me.BtnNuevo.TabIndex = 111
@@ -166,7 +172,7 @@ Partial Class FrmAsignacionComputadoraA
         '
         Me.ChkVertodo.AutoSize = True
         Me.ChkVertodo.BackColor = System.Drawing.Color.Transparent
-        Me.ChkVertodo.Location = New System.Drawing.Point(532, 251)
+        Me.ChkVertodo.Location = New System.Drawing.Point(541, 270)
         Me.ChkVertodo.Name = "ChkVertodo"
         Me.ChkVertodo.Size = New System.Drawing.Size(70, 17)
         Me.ChkVertodo.TabIndex = 107
@@ -187,18 +193,18 @@ Partial Class FrmAsignacionComputadoraA
         Me.PlACA.Controls.Add(Me.CboAlumno)
         Me.PlACA.Controls.Add(Me.Label1)
         Me.PlACA.Controls.Add(Me.Label9)
-        Me.PlACA.Location = New System.Drawing.Point(36, 21)
+        Me.PlACA.Location = New System.Drawing.Point(36, 121)
         Me.PlACA.Name = "PlACA"
-        Me.PlACA.Size = New System.Drawing.Size(613, 192)
+        Me.PlACA.Size = New System.Drawing.Size(485, 192)
         Me.PlACA.TabIndex = 106
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(28, 23)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(32, 23)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(183, 16)
+        Me.Label5.Size = New System.Drawing.Size(161, 16)
         Me.Label5.TabIndex = 81
         Me.Label5.Text = "Codigo De Computadora:"
         '
@@ -212,7 +218,7 @@ Partial Class FrmAsignacionComputadoraA
         '
         'TxtAsignacioC
         '
-        Me.TxtAsignacioC.Location = New System.Drawing.Point(374, 146)
+        Me.TxtAsignacioC.Location = New System.Drawing.Point(327, 145)
         Me.TxtAsignacioC.Name = "TxtAsignacioC"
         Me.TxtAsignacioC.Size = New System.Drawing.Size(100, 20)
         Me.TxtAsignacioC.TabIndex = 79
@@ -220,10 +226,10 @@ Partial Class FrmAsignacionComputadoraA
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(53, 146)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(55, 146)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(283, 16)
+        Me.Label4.Size = New System.Drawing.Size(247, 16)
         Me.Label4.TabIndex = 78
         Me.Label4.Text = "Estado de Asignacion de Computadora:"
         '
@@ -237,10 +243,10 @@ Partial Class FrmAsignacionComputadoraA
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(53, 109)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(75, 112)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(135, 16)
+        Me.Label3.Size = New System.Drawing.Size(118, 16)
         Me.Label3.TabIndex = 76
         Me.Label3.Text = "Fecha de Entrega:"
         '
@@ -254,10 +260,10 @@ Partial Class FrmAsignacionComputadoraA
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(53, 82)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(55, 82)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(158, 16)
+        Me.Label2.Size = New System.Drawing.Size(138, 16)
         Me.Label2.TabIndex = 73
         Me.Label2.Text = "Fecha de Asignacion:"
         '
@@ -272,10 +278,10 @@ Partial Class FrmAsignacionComputadoraA
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(68, 52)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(143, 16)
+        Me.Label1.Size = New System.Drawing.Size(125, 16)
         Me.Label1.TabIndex = 69
         Me.Label1.Text = "Codigo del Alumno:"
         '
@@ -289,14 +295,14 @@ Partial Class FrmAsignacionComputadoraA
         '
         'LsvAsignacionCA
         '
-        Me.LsvAsignacionCA.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.LsvAsignacionCA.BackColor = System.Drawing.Color.White
         Me.LsvAsignacionCA.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChIdComputadora, Me.ChCodigoAlumno, Me.ChFechaAsignacion, Me.ChFechaEntrega, Me.ChDesc})
         Me.LsvAsignacionCA.ContextMenuStrip = Me.CmsOpciones
         Me.LsvAsignacionCA.FullRowSelect = True
         Me.LsvAsignacionCA.GridLines = True
-        Me.LsvAsignacionCA.Location = New System.Drawing.Point(2, 337)
+        Me.LsvAsignacionCA.Location = New System.Drawing.Point(0, 426)
         Me.LsvAsignacionCA.Name = "LsvAsignacionCA"
-        Me.LsvAsignacionCA.Size = New System.Drawing.Size(683, 116)
+        Me.LsvAsignacionCA.Size = New System.Drawing.Size(686, 152)
         Me.LsvAsignacionCA.TabIndex = 105
         Me.LsvAsignacionCA.UseCompatibleStateImageBehavior = False
         Me.LsvAsignacionCA.View = System.Windows.Forms.View.Details
@@ -319,12 +325,12 @@ Partial Class FrmAsignacionComputadoraA
         'ChFechaEntrega
         '
         Me.ChFechaEntrega.Text = "Fecha Entrega"
-        Me.ChFechaEntrega.Width = 94
+        Me.ChFechaEntrega.Width = 107
         '
         'ChDesc
         '
         Me.ChDesc.Text = "Estado de Asignacion de Computadora"
-        Me.ChDesc.Width = 274
+        Me.ChDesc.Width = 250
         '
         'CmsOpciones
         '
@@ -347,11 +353,25 @@ Partial Class FrmAsignacionComputadoraA
         Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
-        'FrmAsignacionComputadoraA
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(23, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(678, 80)
+        Me.PictureBox1.TabIndex = 116
+        Me.PictureBox1.TabStop = False
+        '
+        'FrmAsignacionComputadora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(686, 465)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(686, 416)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label15)
@@ -363,11 +383,15 @@ Partial Class FrmAsignacionComputadoraA
         Me.Controls.Add(Me.ChkVertodo)
         Me.Controls.Add(Me.PlACA)
         Me.Controls.Add(Me.LsvAsignacionCA)
-        Me.Name = "FrmAsignacionComputadoraA"
-        Me.Text = "FrmAsignacionComputadoraA"
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Name = "FrmAsignacionComputadora"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Asignación Computadora"
         Me.PlACA.ResumeLayout(False)
         Me.PlACA.PerformLayout()
         Me.CmsOpciones.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -403,4 +427,5 @@ Partial Class FrmAsignacionComputadoraA
     Friend WithEvents CmsOpciones As ContextMenuStrip
     Friend WithEvents EditarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

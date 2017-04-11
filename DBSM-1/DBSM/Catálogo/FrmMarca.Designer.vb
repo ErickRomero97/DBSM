@@ -45,15 +45,17 @@ Partial Class FrmMarca
         Me.BtnEditar = New System.Windows.Forms.Button()
         Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.BtnNuevo = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PlMarca.SuspendLayout()
         Me.CmsOpciones.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ChkVertodo
         '
         Me.ChkVertodo.AutoSize = True
         Me.ChkVertodo.BackColor = System.Drawing.Color.Transparent
-        Me.ChkVertodo.Location = New System.Drawing.Point(445, 179)
+        Me.ChkVertodo.Location = New System.Drawing.Point(436, 149)
         Me.ChkVertodo.Name = "ChkVertodo"
         Me.ChkVertodo.Size = New System.Drawing.Size(70, 17)
         Me.ChkVertodo.TabIndex = 64
@@ -68,7 +70,7 @@ Partial Class FrmMarca
         Me.PlMarca.Controls.Add(Me.Label1)
         Me.PlMarca.Controls.Add(Me.Label11)
         Me.PlMarca.Controls.Add(Me.Label9)
-        Me.PlMarca.Location = New System.Drawing.Point(24, 115)
+        Me.PlMarca.Location = New System.Drawing.Point(36, 85)
         Me.PlMarca.Name = "PlMarca"
         Me.PlMarca.Size = New System.Drawing.Size(394, 81)
         Me.PlMarca.TabIndex = 63
@@ -91,20 +93,20 @@ Partial Class FrmMarca
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(20, 49)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(34, 49)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(153, 16)
+        Me.Label1.Size = New System.Drawing.Size(134, 16)
         Me.Label1.TabIndex = 69
         Me.Label1.Text = "Nombre de la Marca:"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(25, 18)
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(39, 18)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(148, 16)
+        Me.Label11.Size = New System.Drawing.Size(129, 16)
         Me.Label11.TabIndex = 69
         Me.Label11.Text = "Codigó de la Marca:"
         '
@@ -118,14 +120,14 @@ Partial Class FrmMarca
         '
         'lsvMarca
         '
-        Me.lsvMarca.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lsvMarca.BackColor = System.Drawing.Color.White
         Me.lsvMarca.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chIdMarca, Me.chNombreMarca})
         Me.lsvMarca.ContextMenuStrip = Me.CmsOpciones
         Me.lsvMarca.FullRowSelect = True
         Me.lsvMarca.GridLines = True
-        Me.lsvMarca.Location = New System.Drawing.Point(12, 298)
+        Me.lsvMarca.Location = New System.Drawing.Point(12, 272)
         Me.lsvMarca.Name = "lsvMarca"
-        Me.lsvMarca.Size = New System.Drawing.Size(522, 116)
+        Me.lsvMarca.Size = New System.Drawing.Size(522, 143)
         Me.lsvMarca.TabIndex = 61
         Me.lsvMarca.UseCompatibleStateImageBehavior = False
         Me.lsvMarca.View = System.Windows.Forms.View.Details
@@ -166,7 +168,7 @@ Partial Class FrmMarca
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(374, 250)
+        Me.Label13.Location = New System.Drawing.Point(368, 230)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(56, 15)
         Me.Label13.TabIndex = 90
@@ -177,7 +179,7 @@ Partial Class FrmMarca
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(290, 250)
+        Me.Label14.Location = New System.Drawing.Point(284, 230)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(39, 15)
         Me.Label14.TabIndex = 91
@@ -188,7 +190,7 @@ Partial Class FrmMarca
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(192, 250)
+        Me.Label15.Location = New System.Drawing.Point(186, 230)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(52, 15)
         Me.Label15.TabIndex = 92
@@ -199,7 +201,7 @@ Partial Class FrmMarca
         Me.Label19.AutoSize = True
         Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(109, 250)
+        Me.Label19.Location = New System.Drawing.Point(103, 230)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(42, 15)
         Me.Label19.TabIndex = 93
@@ -210,11 +212,12 @@ Partial Class FrmMarca
         Me.BtnCancelar.BackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.BackgroundImage = CType(resources.GetObject("BtnCancelar.BackgroundImage"), System.Drawing.Image)
         Me.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.FlatAppearance.BorderSize = 0
         Me.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancelar.Location = New System.Drawing.Point(373, 202)
+        Me.BtnCancelar.Location = New System.Drawing.Point(367, 182)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(55, 49)
         Me.BtnCancelar.TabIndex = 86
@@ -225,11 +228,12 @@ Partial Class FrmMarca
         Me.BtnEditar.BackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.BackgroundImage = CType(resources.GetObject("BtnEditar.BackgroundImage"), System.Drawing.Image)
         Me.BtnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnEditar.FlatAppearance.BorderSize = 0
         Me.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEditar.Location = New System.Drawing.Point(279, 202)
+        Me.BtnEditar.Location = New System.Drawing.Point(273, 182)
         Me.BtnEditar.Name = "BtnEditar"
         Me.BtnEditar.Size = New System.Drawing.Size(55, 49)
         Me.BtnEditar.TabIndex = 87
@@ -240,11 +244,12 @@ Partial Class FrmMarca
         Me.BtnGuardar.BackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.BackgroundImage = CType(resources.GetObject("BtnGuardar.BackgroundImage"), System.Drawing.Image)
         Me.BtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnGuardar.FlatAppearance.BorderSize = 0
         Me.BtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnGuardar.Location = New System.Drawing.Point(189, 202)
+        Me.BtnGuardar.Location = New System.Drawing.Point(183, 182)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(55, 49)
         Me.BtnGuardar.TabIndex = 88
@@ -255,23 +260,36 @@ Partial Class FrmMarca
         Me.BtnNuevo.BackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.BackgroundImage = CType(resources.GetObject("BtnNuevo.BackgroundImage"), System.Drawing.Image)
         Me.BtnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNuevo.FlatAppearance.BorderSize = 0
         Me.BtnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnNuevo.Location = New System.Drawing.Point(102, 202)
+        Me.BtnNuevo.Location = New System.Drawing.Point(96, 182)
         Me.BtnNuevo.Name = "BtnNuevo"
         Me.BtnNuevo.Size = New System.Drawing.Size(55, 49)
         Me.BtnNuevo.TabIndex = 89
         Me.BtnNuevo.UseVisualStyleBackColor = False
         '
-        'Marca
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(540, 64)
+        Me.PictureBox1.TabIndex = 109
+        Me.PictureBox1.TabStop = False
+        '
+        'FrmMarca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(550, 432)
+        Me.ClientSize = New System.Drawing.Size(550, 258)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label15)
@@ -286,11 +304,13 @@ Partial Class FrmMarca
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "Marca"
+        Me.Name = "FrmMarca"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Marca"
         Me.PlMarca.ResumeLayout(False)
         Me.PlMarca.PerformLayout()
         Me.CmsOpciones.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -316,4 +336,5 @@ Partial Class FrmMarca
     Friend WithEvents BtnEditar As Button
     Friend WithEvents BtnGuardar As Button
     Friend WithEvents BtnNuevo As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
