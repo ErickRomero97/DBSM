@@ -91,6 +91,12 @@
     <Compile Include="Busqueda\FrmBuscarPrograma.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Busqueda\FrmBusquedaAlumno.Designer.vb">
+      <DependentUpon>FrmBusquedaAlumno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda\FrmBusquedaAlumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Conexion.vb" />
     <Compile Include="FrmLogAuditoria.Designer.vb">
       <DependentUpon>FrmLogAuditoria.vb</DependentUpon>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Busqueda\FrmBuscarPrograma.resx">
       <DependentUpon>FrmBuscarPrograma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda\FrmBusquedaAlumno.resx">
+      <DependentUpon>FrmBusquedaAlumno.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogAuditoria.resx">
       <DependentUpon>FrmLogAuditoria.vb</DependentUpon>

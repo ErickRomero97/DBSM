@@ -100,7 +100,7 @@ Partial Class FrmBuscarUsuario
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.RdbId)
         Me.GroupBox1.Controls.Add(Me.RdbNombre)
-        Me.GroupBox1.Location = New System.Drawing.Point(50, 93)
+        Me.GroupBox1.Location = New System.Drawing.Point(50, 94)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(297, 57)
         Me.GroupBox1.TabIndex = 35

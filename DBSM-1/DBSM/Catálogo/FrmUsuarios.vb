@@ -26,12 +26,12 @@ Public Class FrmUsuarios
         CboTipoUsuario.SelectedIndex = -1
     End Sub
 
-    Private Sub BtnNuevo_Click(sender As Object, e As EventArgs)
+    Private Sub BtnNuevo_Click(sender As Object, e As EventArgs) Handles BtnNuevo.Click
         Call MostrarIdUsuario()
         Call HabilitarControles(False, True, False, True, True)
     End Sub
 
-    Private Sub BtnGuardar_Click(sender As Object, e As EventArgs)
+    Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
         Call HabilitarControles(True, False, False, False, False)
 
         If Validar() Then
@@ -41,12 +41,12 @@ Public Class FrmUsuarios
 
     End Sub
 
-    Private Sub BtnCancelar_Click(sender As Object, e As EventArgs)
+    Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
         Call HabilitarControles(True, False, False, False, False)
         Call limpiar()
     End Sub
 
-    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarToolStripMenuItem.Click
         TxtIdUsuario.Text = LsvMostrarUsuario.FocusedItem.SubItems(0).Text
         TxtUsuario.Text = LsvMostrarUsuario.FocusedItem.SubItems(1).Text
         TxtContraseña.Text = LsvMostrarUsuario.FocusedItem.SubItems(2).Text
@@ -57,7 +57,7 @@ Public Class FrmUsuarios
         Call HabilitarControles(False, False, True, True, True)
     End Sub
 
-    Private Sub BtnModificar_Click(sender As Object, e As EventArgs)
+    Private Sub BtnModificar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
         Call HabilitarControles(True, False, False, False, False)
         Call ActualizarUsuario()
         Call limpiar()

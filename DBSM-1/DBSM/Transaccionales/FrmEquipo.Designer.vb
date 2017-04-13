@@ -25,6 +25,8 @@ Partial Class FrmEquipo
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmEquipo))
         Me.PlCom = New System.Windows.Forms.Panel()
+        Me.BtnActualizarModelo = New System.Windows.Forms.Button()
+        Me.BtnActualizarMarca = New System.Windows.Forms.Button()
         Me.CboEstadoA = New System.Windows.Forms.ComboBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
@@ -87,8 +89,6 @@ Partial Class FrmEquipo
         Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.BtnActualizarMarca = New System.Windows.Forms.Button()
-        Me.BtnActualizarModelo = New System.Windows.Forms.Button()
         Me.PlCom.SuspendLayout()
         Me.CmsOpciones.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -133,15 +133,33 @@ Partial Class FrmEquipo
         Me.PlCom.Controls.Add(Me.Label3)
         Me.PlCom.Controls.Add(Me.Label4)
         Me.PlCom.Controls.Add(Me.Label9)
-        Me.PlCom.Location = New System.Drawing.Point(23, 100)
+        Me.PlCom.Location = New System.Drawing.Point(0, 100)
         Me.PlCom.Name = "PlCom"
-        Me.PlCom.Size = New System.Drawing.Size(751, 253)
+        Me.PlCom.Size = New System.Drawing.Size(802, 253)
         Me.PlCom.TabIndex = 53
+        '
+        'BtnActualizarModelo
+        '
+        Me.BtnActualizarModelo.Location = New System.Drawing.Point(392, 102)
+        Me.BtnActualizarModelo.Name = "BtnActualizarModelo"
+        Me.BtnActualizarModelo.Size = New System.Drawing.Size(25, 23)
+        Me.BtnActualizarModelo.TabIndex = 80
+        Me.BtnActualizarModelo.Text = "..."
+        Me.BtnActualizarModelo.UseVisualStyleBackColor = True
+        '
+        'BtnActualizarMarca
+        '
+        Me.BtnActualizarMarca.Location = New System.Drawing.Point(392, 75)
+        Me.BtnActualizarMarca.Name = "BtnActualizarMarca"
+        Me.BtnActualizarMarca.Size = New System.Drawing.Size(25, 23)
+        Me.BtnActualizarMarca.TabIndex = 79
+        Me.BtnActualizarMarca.Text = "..."
+        Me.BtnActualizarMarca.UseVisualStyleBackColor = True
         '
         'CboEstadoA
         '
         Me.CboEstadoA.FormattingEnabled = True
-        Me.CboEstadoA.Location = New System.Drawing.Point(162, 221)
+        Me.CboEstadoA.Location = New System.Drawing.Point(188, 221)
         Me.CboEstadoA.Name = "CboEstadoA"
         Me.CboEstadoA.Size = New System.Drawing.Size(170, 21)
         Me.CboEstadoA.TabIndex = 78
@@ -150,7 +168,7 @@ Partial Class FrmEquipo
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(19, 222)
+        Me.Label22.Location = New System.Drawing.Point(47, 221)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(124, 16)
         Me.Label22.TabIndex = 77
@@ -160,7 +178,7 @@ Partial Class FrmEquipo
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(400, 197)
+        Me.Label21.Location = New System.Drawing.Point(430, 198)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(154, 16)
         Me.Label21.TabIndex = 76
@@ -170,7 +188,7 @@ Partial Class FrmEquipo
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(31, 191)
+        Me.Label20.Location = New System.Drawing.Point(59, 191)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(112, 16)
         Me.Label20.TabIndex = 75
@@ -178,28 +196,28 @@ Partial Class FrmEquipo
         '
         'TxtSerieMonitor
         '
-        Me.TxtSerieMonitor.Location = New System.Drawing.Point(162, 187)
+        Me.TxtSerieMonitor.Location = New System.Drawing.Point(188, 187)
         Me.TxtSerieMonitor.Name = "TxtSerieMonitor"
         Me.TxtSerieMonitor.Size = New System.Drawing.Size(170, 20)
         Me.TxtSerieMonitor.TabIndex = 74
         '
         'TxtRevoDisco
         '
-        Me.TxtRevoDisco.Location = New System.Drawing.Point(567, 196)
+        Me.TxtRevoDisco.Location = New System.Drawing.Point(598, 197)
         Me.TxtRevoDisco.Name = "TxtRevoDisco"
         Me.TxtRevoDisco.Size = New System.Drawing.Size(170, 20)
         Me.TxtRevoDisco.TabIndex = 73
         '
         'TxtCapRAM
         '
-        Me.TxtCapRAM.Location = New System.Drawing.Point(566, 109)
+        Me.TxtCapRAM.Location = New System.Drawing.Point(598, 110)
         Me.TxtCapRAM.Name = "TxtCapRAM"
         Me.TxtCapRAM.Size = New System.Drawing.Size(170, 20)
         Me.TxtCapRAM.TabIndex = 72
         '
         'TxtCapDisco
         '
-        Me.TxtCapDisco.Location = New System.Drawing.Point(162, 161)
+        Me.TxtCapDisco.Location = New System.Drawing.Point(188, 161)
         Me.TxtCapDisco.Name = "TxtCapDisco"
         Me.TxtCapDisco.Size = New System.Drawing.Size(170, 20)
         Me.TxtCapDisco.TabIndex = 71
@@ -207,7 +225,7 @@ Partial Class FrmEquipo
         'CboTipoMonitor
         '
         Me.CboTipoMonitor.FormattingEnabled = True
-        Me.CboTipoMonitor.Location = New System.Drawing.Point(566, 17)
+        Me.CboTipoMonitor.Location = New System.Drawing.Point(597, 18)
         Me.CboTipoMonitor.Name = "CboTipoMonitor"
         Me.CboTipoMonitor.Size = New System.Drawing.Size(171, 21)
         Me.CboTipoMonitor.TabIndex = 70
@@ -215,7 +233,7 @@ Partial Class FrmEquipo
         'CboMouse
         '
         Me.CboMouse.FormattingEnabled = True
-        Me.CboMouse.Location = New System.Drawing.Point(566, 77)
+        Me.CboMouse.Location = New System.Drawing.Point(598, 78)
         Me.CboMouse.Name = "CboMouse"
         Me.CboMouse.Size = New System.Drawing.Size(170, 21)
         Me.CboMouse.TabIndex = 70
@@ -223,7 +241,7 @@ Partial Class FrmEquipo
         'CboTipoPC
         '
         Me.CboTipoPC.FormattingEnabled = True
-        Me.CboTipoPC.Location = New System.Drawing.Point(162, 130)
+        Me.CboTipoPC.Location = New System.Drawing.Point(188, 129)
         Me.CboTipoPC.Name = "CboTipoPC"
         Me.CboTipoPC.Size = New System.Drawing.Size(170, 21)
         Me.CboTipoPC.TabIndex = 70
@@ -231,7 +249,7 @@ Partial Class FrmEquipo
         'CboTeclado
         '
         Me.CboTeclado.FormattingEnabled = True
-        Me.CboTeclado.Location = New System.Drawing.Point(567, 48)
+        Me.CboTeclado.Location = New System.Drawing.Point(598, 51)
         Me.CboTeclado.Name = "CboTeclado"
         Me.CboTeclado.Size = New System.Drawing.Size(170, 21)
         Me.CboTeclado.TabIndex = 70
@@ -239,7 +257,7 @@ Partial Class FrmEquipo
         'CboModelo
         '
         Me.CboModelo.FormattingEnabled = True
-        Me.CboModelo.Location = New System.Drawing.Point(162, 102)
+        Me.CboModelo.Location = New System.Drawing.Point(188, 105)
         Me.CboModelo.Name = "CboModelo"
         Me.CboModelo.Size = New System.Drawing.Size(139, 21)
         Me.CboModelo.TabIndex = 70
@@ -247,14 +265,14 @@ Partial Class FrmEquipo
         'CboMarca
         '
         Me.CboMarca.FormattingEnabled = True
-        Me.CboMarca.Location = New System.Drawing.Point(162, 74)
+        Me.CboMarca.Location = New System.Drawing.Point(188, 75)
         Me.CboMarca.Name = "CboMarca"
         Me.CboMarca.Size = New System.Drawing.Size(139, 21)
         Me.CboMarca.TabIndex = 70
         '
         'TxtDescPro
         '
-        Me.TxtDescPro.Location = New System.Drawing.Point(566, 135)
+        Me.TxtDescPro.Location = New System.Drawing.Point(598, 136)
         Me.TxtDescPro.Multiline = True
         Me.TxtDescPro.Name = "TxtDescPro"
         Me.TxtDescPro.Size = New System.Drawing.Size(170, 49)
@@ -262,14 +280,14 @@ Partial Class FrmEquipo
         '
         'TxtSerieCompu
         '
-        Me.TxtSerieCompu.Location = New System.Drawing.Point(162, 46)
+        Me.TxtSerieCompu.Location = New System.Drawing.Point(188, 48)
         Me.TxtSerieCompu.Name = "TxtSerieCompu"
         Me.TxtSerieCompu.Size = New System.Drawing.Size(170, 20)
         Me.TxtSerieCompu.TabIndex = 69
         '
         'TxtNumMaquina
         '
-        Me.TxtNumMaquina.Location = New System.Drawing.Point(162, 18)
+        Me.TxtNumMaquina.Location = New System.Drawing.Point(188, 19)
         Me.TxtNumMaquina.Name = "TxtNumMaquina"
         Me.TxtNumMaquina.Size = New System.Drawing.Size(66, 20)
         Me.TxtNumMaquina.TabIndex = 69
@@ -280,15 +298,15 @@ Partial Class FrmEquipo
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(423, 110)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(130, 16)
+        Me.Label7.Size = New System.Drawing.Size(169, 16)
         Me.Label7.TabIndex = 68
-        Me.Label7.Text = "Capacidad de RAM:"
+        Me.Label7.Text = "Capacidad de RAM en Gb:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(396, 138)
+        Me.Label6.Location = New System.Drawing.Point(430, 136)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(157, 16)
         Me.Label6.TabIndex = 68
@@ -300,15 +318,15 @@ Partial Class FrmEquipo
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(8, 165)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(135, 16)
+        Me.Label5.Size = New System.Drawing.Size(174, 16)
         Me.Label5.TabIndex = 68
-        Me.Label5.Text = "Capacidad de Disco:"
+        Me.Label5.Text = "Capacidad de Disco en Gb:"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(502, 78)
+        Me.Label10.Location = New System.Drawing.Point(535, 82)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(52, 16)
         Me.Label10.TabIndex = 68
@@ -318,7 +336,7 @@ Partial Class FrmEquipo
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(467, 19)
+        Me.Label16.Location = New System.Drawing.Point(499, 23)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(86, 16)
         Me.Label16.TabIndex = 68
@@ -328,7 +346,7 @@ Partial Class FrmEquipo
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(491, 49)
+        Me.Label8.Location = New System.Drawing.Point(522, 49)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(62, 16)
         Me.Label8.TabIndex = 68
@@ -338,7 +356,7 @@ Partial Class FrmEquipo
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(83, 135)
+        Me.Label17.Location = New System.Drawing.Point(122, 135)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(60, 16)
         Me.Label17.TabIndex = 68
@@ -348,7 +366,7 @@ Partial Class FrmEquipo
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(15, 49)
+        Me.Label12.Location = New System.Drawing.Point(51, 53)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(128, 16)
         Me.Label12.TabIndex = 68
@@ -358,7 +376,7 @@ Partial Class FrmEquipo
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(86, 103)
+        Me.Label18.Location = New System.Drawing.Point(122, 105)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(57, 16)
         Me.Label18.TabIndex = 68
@@ -368,7 +386,7 @@ Partial Class FrmEquipo
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(94, 77)
+        Me.Label1.Location = New System.Drawing.Point(130, 77)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 16)
         Me.Label1.TabIndex = 68
@@ -378,7 +396,7 @@ Partial Class FrmEquipo
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(10, 19)
+        Me.Label11.Location = New System.Drawing.Point(49, 22)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(133, 16)
         Me.Label11.TabIndex = 68
@@ -386,7 +404,7 @@ Partial Class FrmEquipo
         '
         'BtnIrModelo
         '
-        Me.BtnIrModelo.Location = New System.Drawing.Point(307, 100)
+        Me.BtnIrModelo.Location = New System.Drawing.Point(350, 100)
         Me.BtnIrModelo.Name = "BtnIrModelo"
         Me.BtnIrModelo.Size = New System.Drawing.Size(25, 23)
         Me.BtnIrModelo.TabIndex = 65
@@ -395,7 +413,7 @@ Partial Class FrmEquipo
         '
         'BtnIrMarca
         '
-        Me.BtnIrMarca.Location = New System.Drawing.Point(307, 72)
+        Me.BtnIrMarca.Location = New System.Drawing.Point(350, 70)
         Me.BtnIrMarca.Name = "BtnIrMarca"
         Me.BtnIrMarca.Size = New System.Drawing.Size(25, 23)
         Me.BtnIrMarca.TabIndex = 65
@@ -445,7 +463,7 @@ Partial Class FrmEquipo
         Me.ChkVerTodo.AutoSize = True
         Me.ChkVerTodo.BackColor = System.Drawing.Color.Transparent
         Me.ChkVerTodo.FlatAppearance.BorderSize = 0
-        Me.ChkVerTodo.Location = New System.Drawing.Point(780, 299)
+        Me.ChkVerTodo.Location = New System.Drawing.Point(808, 296)
         Me.ChkVerTodo.Name = "ChkVerTodo"
         Me.ChkVerTodo.Size = New System.Drawing.Size(66, 17)
         Me.ChkVerTodo.TabIndex = 54
@@ -606,12 +624,12 @@ Partial Class FrmEquipo
         '
         'chRam
         '
-        Me.chRam.Text = "Cap. Ram"
+        Me.chRam.Text = "Cap. Ram en Gb."
         Me.chRam.Width = 45
         '
         'chDiscoDuro
         '
-        Me.chDiscoDuro.Text = "Cap. DiscoDuro"
+        Me.chDiscoDuro.Text = "Cap. DiscoDuro en Gb"
         Me.chDiscoDuro.Width = 75
         '
         'chDescripcion
@@ -668,31 +686,13 @@ Partial Class FrmEquipo
         Me.PictureBox1.TabIndex = 125
         Me.PictureBox1.TabStop = False
         '
-        'BtnActualizarMarca
-        '
-        Me.BtnActualizarMarca.Location = New System.Drawing.Point(338, 72)
-        Me.BtnActualizarMarca.Name = "BtnActualizarMarca"
-        Me.BtnActualizarMarca.Size = New System.Drawing.Size(25, 23)
-        Me.BtnActualizarMarca.TabIndex = 79
-        Me.BtnActualizarMarca.Text = "..."
-        Me.BtnActualizarMarca.UseVisualStyleBackColor = True
-        '
-        'BtnActualizarModelo
-        '
-        Me.BtnActualizarModelo.Location = New System.Drawing.Point(338, 100)
-        Me.BtnActualizarModelo.Name = "BtnActualizarModelo"
-        Me.BtnActualizarModelo.Size = New System.Drawing.Size(25, 23)
-        Me.BtnActualizarModelo.TabIndex = 80
-        Me.BtnActualizarModelo.Text = "..."
-        Me.BtnActualizarModelo.UseVisualStyleBackColor = True
-        '
         'FrmEquipo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(886, 468)
+        Me.ClientSize = New System.Drawing.Size(886, 458)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LsvEquipo)
         Me.Controls.Add(Me.Label13)

@@ -91,10 +91,6 @@ Public Class FrmBusquedaComputadora
                             .SubItems.Add(VerEquipo("RevolucionesDisco").ToString)
                             .SubItems.Add(VerEquipo("EstadoAsignacion").ToString)
                             .SubItems.Add(VerEquipo("SerieComputadora").ToString)
-                            .SubItems.Add(VerEquipo("IdMarca").ToString)
-                            .SubItems.Add(VerEquipo("IdModelo").ToString)
-                            .SubItems.Add(VerEquipo("IdTipoMonitor").ToString)
-                            .SubItems.Add(VerEquipo("IdTipoPC").ToString)
                         End With
                     End While
                 Catch ex As Exception
@@ -141,10 +137,6 @@ Public Class FrmBusquedaComputadora
                             .SubItems.Add(VerEquipo("RevolucionesDisco").ToString)
                             .SubItems.Add(VerEquipo("EstadoAsignacion").ToString)
                             .SubItems.Add(VerEquipo("SerieComputadora").ToString)
-                            .SubItems.Add(VerEquipo("IdMarca").ToString)
-                            .SubItems.Add(VerEquipo("IdModelo").ToString)
-                            .SubItems.Add(VerEquipo("IdTipoMonitor").ToString)
-                            .SubItems.Add(VerEquipo("IdTipoPC").ToString)
                         End With
                     End While
                 Catch ex As Exception
@@ -165,30 +157,26 @@ Public Class FrmBusquedaComputadora
         MostrarEquipo()
     End Sub
 
-    Private Sub rdoMaquina_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub rdoMaquina_CheckedChanged(sender As Object, e As EventArgs) Handles RdoNumMaquina.CheckedChanged
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
         BtnBuscar.Enabled = True
-        TxtBuscar.Text = ""
-        LsvEquipo.Items.Clear()
     End Sub
 
-    Private Sub rdoSerie_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub rdoSerie_CheckedChanged(sender As Object, e As EventArgs) Handles RdoSerieCom.CheckedChanged
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
         BtnBuscar.Enabled = True
-        TxtBuscar.Text = ""
-        LsvEquipo.Items.Clear()
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         If RdoNumMaquina.Checked = True Then
             If TxtBuscar.Text.Trim = Nothing Then
                 MessageBox.Show("El número de maquina de la computadora es necesario", "DBSM", MessageBoxButtons.OK)
                 TxtBuscar.Focus()
             Else
                 MostrarEquipoxMaquina()
-                TxtBuscar.Text = ""
+                TxtBuscar.Focus()
             End If
         End If
 
@@ -198,7 +186,7 @@ Public Class FrmBusquedaComputadora
                 TxtBuscar.Focus()
             Else
                 MostrarEquipoxSerie()
-                TxtBuscar.Text = ""
+                TxtBuscar.Focus()
             End If
         End If
     End Sub
@@ -270,24 +258,9 @@ Public Class FrmBusquedaComputadora
         Return Val
     End Function
 
-    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs)
-        If RdoNumMaquina.Checked = True Then
-            e.Handled = txtNumerico(TxtBuscar, e.KeyChar, True)
+    Private Sub TxtBuscar_TextChanged(sender As Object, e As EventArgs) Handles TxtBuscar.TextChanged
+        If TxtBuscar.Text = "" Then
+            MostrarEquipo()
         End If
     End Sub
-
-
-    Private Function txtNumerico(ByVal txtControl As TextBox, ByVal caracter As Char, ByVal decimales As Boolean) As Boolean
-        If (Char.IsNumber(caracter, 0) = True) Or caracter = Convert.ToChar(8) Or caracter = "." Then
-            If caracter = "." Then
-                If decimales = True Then
-                    If txtControl.Text.IndexOf(".") <> -1 Then Return True
-                Else : Return True
-                End If
-            End If
-            Return False
-        Else
-            Return True
-        End If
-    End Function
 End Class

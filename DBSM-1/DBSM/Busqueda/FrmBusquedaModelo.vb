@@ -34,14 +34,14 @@ Public Class FrmBusquedaModelo
         End Using
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         If RdoCodigoMo.Checked = True Then
             If TxtBuscarMo.Text.Trim = Nothing Then
                 MessageBox.Show("El código de modelo es necesario", "DBSM", MessageBoxButtons.OK)
                 TxtBuscarMo.Focus()
             Else
                 MostrarModeloCodigo()
-                TxtBuscarMo.Text = ""
+                TxtBuscarMo.Focus()
             End If
         End If
 
@@ -51,7 +51,7 @@ Public Class FrmBusquedaModelo
                 TxtBuscarMo.Focus()
             Else
                 MostrarModeloNombre()
-                TxtBuscarMo.Text = ""
+                TxtBuscarMo.Focus()
             End If
         End If
     End Sub
@@ -190,41 +190,20 @@ Public Class FrmBusquedaModelo
         End Using
         Return Val
     End Function
-
-    Private Function txtNumerico(ByVal txtControl As TextBox, ByVal caracter As Char, ByVal decimales As Boolean) As Boolean
-        If (Char.IsNumber(caracter, 0) = True) Or caracter = Convert.ToChar(8) Or caracter = "." Then
-            If caracter = "." Then
-                If decimales = True Then
-                    If txtControl.Text.IndexOf(".") <> -1 Then Return True
-                Else : Return True
-                End If
-            End If
-            Return False
-        Else
-            Return True
-        End If
-    End Function
-
     Private Sub RdoCodigoMo_CheckedChanged(sender As Object, e As EventArgs) Handles RdoCodigoMo.CheckedChanged
         TxtBuscarMo.Enabled = True
         TxtBuscarMo.Focus()
         BtnBuscar.Enabled = True
-        TxtBuscarMo.Text = ""
-        LsvModeloBu.Items.Clear()
     End Sub
-
     Private Sub RdoNombreMo_CheckedChanged(sender As Object, e As EventArgs) Handles RdoNombreMo.CheckedChanged
         TxtBuscarMo.Enabled = True
         TxtBuscarMo.Focus()
         BtnBuscar.Enabled = True
-        TxtBuscarMo.Text = ""
-        LsvModeloBu.Items.Clear()
     End Sub
 
-    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs)
-        If RdoCodigoMo.Checked = True Then
-            e.Handled = txtNumerico(TxtBuscarMo, e.KeyChar, True)
+    Private Sub TxtBuscarMo_TextChanged(sender As Object, e As EventArgs) Handles TxtBuscarMo.TextChanged
+        If TxtBuscarMo.Text = "" Then
+            MostrarModelos()
         End If
     End Sub
-
 End Class

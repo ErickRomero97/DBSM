@@ -175,50 +175,26 @@ Public Class FrmBusquedaAsignacionComputadora
         Return Val
     End Function
 
-    Private Function txtNumerico(ByVal txtControl As TextBox, ByVal caracter As Char, ByVal decimales As Boolean) As Boolean
-        If (Char.IsNumber(caracter, 0) = True) Or caracter = Convert.ToChar(8) Or caracter = "." Then
-            If caracter = "." Then
-                If decimales = True Then
-                    If txtControl.Text.IndexOf(".") <> -1 Then Return True
-                Else : Return True
-                End If
-            End If
-            Return False
-        Else
-            Return True
-        End If
-    End Function
-
     Private Sub rdoCodMarca_CheckedChanged(sender As Object, e As EventArgs) Handles RdoCodCompuA.CheckedChanged
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
         BtnBuscar.Enabled = True
-        TxtBuscar.Text = ""
-        LsvBusquedaCompuA.Items.Clear()
     End Sub
 
     Private Sub rdoNombreMarca_CheckedChanged(sender As Object, e As EventArgs) Handles RdoCodAlumnoA.CheckedChanged
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
         BtnBuscar.Enabled = True
-        TxtBuscar.Text = ""
-        LsvBusquedaCompuA.Items.Clear()
     End Sub
 
-    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs)
-        If RdoCodCompuA.Checked = True Then
-            e.Handled = txtNumerico(TxtBuscar, e.KeyChar, True)
-        End If
-    End Sub
-
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         If RdoCodCompuA.Checked = True Then
             If TxtBuscar.Text.Trim = Nothing Then
                 MessageBox.Show("El código de la computadora es requerido", "DBSM", MessageBoxButtons.OK)
                 TxtBuscar.Focus()
             Else
                 MostrarxNumComputadora()
-                TxtBuscar.Text = ""
+                TxtBuscar.Focus()
             End If
         End If
 
@@ -228,10 +204,14 @@ Public Class FrmBusquedaAsignacionComputadora
                 TxtBuscar.Focus()
             Else
                 MostrarXIdAlumno()
-                TxtBuscar.Text = ""
+                TxtBuscar.Focus()
             End If
         End If
     End Sub
 
-
+    Private Sub TxtBuscar_TextChanged(sender As Object, e As EventArgs) Handles TxtBuscar.TextChanged
+        If TxtBuscar.Text = "" Then
+            Mostrar()
+        End If
+    End Sub
 End Class

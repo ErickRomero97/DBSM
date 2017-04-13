@@ -25,7 +25,7 @@ Partial Class FrmAsignacionPrograma
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAsignacionPrograma))
         Me.PlDatos = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnLlenarPrograma = New System.Windows.Forms.Button()
         Me.BtnPrograma = New System.Windows.Forms.Button()
         Me.CboPrograma = New System.Windows.Forms.ComboBox()
         Me.DtpFechaInstalacion = New System.Windows.Forms.DateTimePicker()
@@ -73,7 +73,7 @@ Partial Class FrmAsignacionPrograma
         'PlDatos
         '
         Me.PlDatos.BackColor = System.Drawing.Color.Transparent
-        Me.PlDatos.Controls.Add(Me.Button1)
+        Me.PlDatos.Controls.Add(Me.BtnLlenarPrograma)
         Me.PlDatos.Controls.Add(Me.BtnPrograma)
         Me.PlDatos.Controls.Add(Me.CboPrograma)
         Me.PlDatos.Controls.Add(Me.DtpFechaInstalacion)
@@ -96,16 +96,16 @@ Partial Class FrmAsignacionPrograma
         Me.PlDatos.Size = New System.Drawing.Size(568, 250)
         Me.PlDatos.TabIndex = 43
         '
-        'Button1
+        'BtnLlenarPrograma
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Control
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(493, 181)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(29, 23)
-        Me.Button1.TabIndex = 106
-        Me.Button1.Text = "..."
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BtnLlenarPrograma.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnLlenarPrograma.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnLlenarPrograma.Location = New System.Drawing.Point(493, 181)
+        Me.BtnLlenarPrograma.Name = "BtnLlenarPrograma"
+        Me.BtnLlenarPrograma.Size = New System.Drawing.Size(29, 23)
+        Me.BtnLlenarPrograma.TabIndex = 106
+        Me.BtnLlenarPrograma.Text = "..."
+        Me.BtnLlenarPrograma.UseVisualStyleBackColor = False
         '
         'BtnPrograma
         '
@@ -276,6 +276,7 @@ Partial Class FrmAsignacionPrograma
         'LsvAsignacion
         '
         Me.LsvAsignacion.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChCodigoSoftware, Me.ChEstado, Me.ChNumLicencia, Me.ChFecha1, Me.ChFecha2, Me.ChNumComputadora, Me.ChPrograma, Me.ChFecha3})
+        Me.LsvAsignacion.ContextMenuStrip = Me.CmsOpciones
         Me.LsvAsignacion.FullRowSelect = True
         Me.LsvAsignacion.GridLines = True
         Me.LsvAsignacion.Location = New System.Drawing.Point(-6, 519)
@@ -449,20 +450,20 @@ Partial Class FrmAsignacionPrograma
         Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
         Me.CmsOpciones.Name = "CmsOpciones"
-        Me.CmsOpciones.Size = New System.Drawing.Size(157, 78)
+        Me.CmsOpciones.Size = New System.Drawing.Size(122, 56)
         '
         'EditarToolStripMenuItem
         '
         Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.EditarToolStripMenuItem.Text = "Editar"
         '
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'FrmAsignacionPrograma
@@ -471,7 +472,7 @@ Partial Class FrmAsignacionPrograma
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(840, 498)
+        Me.ClientSize = New System.Drawing.Size(840, 479)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
@@ -534,7 +535,7 @@ Partial Class FrmAsignacionPrograma
     Friend WithEvents BtnNuevo As Button
     Friend WithEvents CboPrograma As ComboBox
     Friend WithEvents BtnPrograma As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnLlenarPrograma As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents CmsOpciones As ContextMenuStrip
     Friend WithEvents EditarToolStripMenuItem As ToolStripMenuItem

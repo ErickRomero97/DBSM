@@ -1,5 +1,4 @@
 ﻿Imports System.Data.SqlClient
-
 Public Class FrmAlumno
     Private Sub FrmAlumno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         HabilitarBotones(True, False, False, False, False)
@@ -54,7 +53,7 @@ Public Class FrmAlumno
     Function Validar(Control As Control, Mensaje As String) As Boolean
 
         If Control.Text.Trim = Nothing Then
-            ErrorProvider1.SetError(Control, Mensaje)
+            MessageBox.Show(Mensaje, "DBSM", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Control.Focus()
             Validar = True
         Else
@@ -81,13 +80,9 @@ Public Class FrmAlumno
         ElseIf Validar(CboSexo, "Debe seleccionar un sexo") Then
         Else
             HabilitarBotones(True, False, False, False, False)
-
-
             AgregarCliente()
             MostrarAlumno()
-
         End If
-
     End Sub
 
     Private Function ExistenciaAlumno() As Boolean
@@ -199,6 +194,7 @@ Public Class FrmAlumno
 
     Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
         EliminarAlumno()
+        HabilitarBotones(True, False, False, False, False)
         MostrarAlumno()
     End Sub
     Private Sub EliminarAlumno()
@@ -210,7 +206,7 @@ Public Class FrmAlumno
             cnn.Open()
             Using cmd As New SqlCommand
                 With cmd
-                    .CommandText = "Sp_EliminaAlumno"
+                    .CommandText = "Sp_EliminarAlumno"
                     .CommandType = CommandType.StoredProcedure
                     .Connection = cnn
                     'estableser los parametros
@@ -267,7 +263,7 @@ Public Class FrmAlumno
                     .Parameters.Add("@Direccion", SqlDbType.NVarChar, 300).Value = TxtDireccion.Text.Trim
                     .Parameters.Add("@IdSexo", SqlDbType.Int).Value = CInt(CboSexo.SelectedValue)
                     .ExecuteNonQuery()
-                    MessageBox.Show("El registro a sido editado", "DBS", MessageBoxButtons.OK)
+                    MessageBox.Show("El registro a sido editado", "DBSM", MessageBoxButtons.OK)
                     Limpiar()
                 End With
             End Using

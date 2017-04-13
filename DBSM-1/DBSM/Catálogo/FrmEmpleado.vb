@@ -92,12 +92,12 @@ Public Class FrmEmpleado
         End Using
     End Sub
 
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs)
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnNuevo.Click
         Call HabilitarControles(False, True, False, True, True)
         MtbCodEmpleado.Focus()
     End Sub
 
-    Private Sub BtnGuardar_Click(sender As Object, e As EventArgs)
+    Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
         Call HabilitarControles(True, False, False, False, False)
 
         If Validar() Then
@@ -108,7 +108,7 @@ Public Class FrmEmpleado
 
     End Sub
 
-    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarToolStripMenuItem.Click
         MtbCodEmpleado.Text = LsvDatosEmpleado.FocusedItem.SubItems(0).Text
         TxtNombre.Text = LsvDatosEmpleado.FocusedItem.SubItems(1).Text
         TxtApellido.Text = LsvDatosEmpleado.FocusedItem.SubItems(2).Text
@@ -120,7 +120,7 @@ Public Class FrmEmpleado
         Call HabilitarControles(False, False, True, True, True)
     End Sub
 
-    Private Sub BtnCancelar_Click(sender As Object, e As EventArgs)
+    Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
         Call Limpiar()
         Call HabilitarControles(True, False, False, False, False)
     End Sub
@@ -299,7 +299,7 @@ Public Class FrmEmpleado
         Return estado
     End Function
 
-    Private Sub BtnModificar_Click(sender As Object, e As EventArgs)
+    Private Sub BtnModificar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
         Call Actualizar()
         Call HabilitarControles(True, False, False, False, False)
         Call Limpiar()
@@ -314,7 +314,7 @@ Public Class FrmEmpleado
         End If
     End Sub
 
-    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
         Call Eliminar()
         Call Limpiar()
         Call HabilitarControles(True, False, False, False, False)

@@ -79,6 +79,7 @@ Partial Class FrmEmpleado
         'LsvDatosEmpleado
         '
         Me.LsvDatosEmpleado.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChIdEmpleado, Me.ChNombre, Me.ChApellido, Me.ChDireccion, Me.ChTelefono, Me.ChCorreo, Me.ChSexo})
+        Me.LsvDatosEmpleado.ContextMenuStrip = Me.CmsOpciones
         Me.LsvDatosEmpleado.FullRowSelect = True
         Me.LsvDatosEmpleado.GridLines = True
         Me.LsvDatosEmpleado.Location = New System.Drawing.Point(9, 489)
@@ -389,20 +390,20 @@ Partial Class FrmEmpleado
         Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
         Me.CmsOpciones.Name = "CmsOpciones"
-        Me.CmsOpciones.Size = New System.Drawing.Size(157, 78)
+        Me.CmsOpciones.Size = New System.Drawing.Size(122, 56)
         '
         'EditarToolStripMenuItem
         '
         Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.EditarToolStripMenuItem.Text = "Editar"
         '
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'FrmEmpleado
@@ -411,7 +412,7 @@ Partial Class FrmEmpleado
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(600, 468)
+        Me.ClientSize = New System.Drawing.Size(600, 459)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label15)

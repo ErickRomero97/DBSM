@@ -251,7 +251,7 @@ Public Class FrmPrograma
         Return Estado
     End Function
 
-    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarToolStripMenuItem.Click
         TxtCodPrograma.Text = LsvPrograma.FocusedItem.SubItems(0).Text
         TxtNombreMPrograma.Text = LsvPrograma.FocusedItem.SubItems(1).Text
         TxtDescripcion.Text = LsvPrograma.FocusedItem.SubItems(2).Text
@@ -267,5 +267,4 @@ Public Class FrmPrograma
             Me.Height = 370
         End If
     End Sub
-
 End Class

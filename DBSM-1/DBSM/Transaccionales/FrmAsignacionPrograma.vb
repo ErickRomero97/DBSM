@@ -22,10 +22,10 @@ Public Class FrmAsignacionPrograma
 
     Private Sub Limpiar()
         TxtCodSoftware.Clear()
-        CboEstado.SelectedItem = -1
+        CboEstado.SelectedIndex = -1
         TxtNumLicencia.Clear()
-        CboNumComputadora.SelectedItem = -1
-        CboPrograma.SelectedItem = -1
+        CboNumComputadora.SelectedIndex = -1
+        CboPrograma.SelectedIndex = -1
     End Sub
 
     Private Sub chkVer_CheckedChanged(sender As Object, e As EventArgs) Handles chkVer.CheckedChanged
@@ -39,6 +39,7 @@ Public Class FrmAsignacionPrograma
     Private Sub BtnNuevo_Click(sender As Object, e As EventArgs) Handles BtnNuevo.Click
         Call HabilitarControles(False, True, False, True, True)
         Call MostrarCodSofwareIdentity()
+        Limpiar()
     End Sub
 
     Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
@@ -46,8 +47,9 @@ Public Class FrmAsignacionPrograma
         If Validar() Then
             If ExisteAsignacion() = False Then
                 Call InsertarAsignacion()
+                Call Limpiar()
             End If
-            Call Limpiar()
+
         End If
     End Sub
 
@@ -385,7 +387,7 @@ Public Class FrmAsignacionPrograma
         Return estado
     End Function
 
-    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+    Private Sub EditarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarToolStripMenuItem.Click
         Call HabilitarControles(False, False, True, True, True)
 
         TxtCodSoftware.Text = LsvAsignacion.FocusedItem.SubItems(0).Text
@@ -398,7 +400,7 @@ Public Class FrmAsignacionPrograma
         DtpFechaInstalacion.Text = LsvAsignacion.FocusedItem.SubItems(7).Text
     End Sub
 
-    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
         Call EliminarAsignacion()
     End Sub
 
@@ -406,7 +408,7 @@ Public Class FrmAsignacionPrograma
         FrmPrograma.ShowDialog()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnLlenarPrograma.Click
         Call LlenarComboboxPrograma()
     End Sub
 End Class

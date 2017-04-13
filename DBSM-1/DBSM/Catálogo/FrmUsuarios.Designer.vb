@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmUsuarios
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmUsuarios
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmUsuarios))
@@ -31,6 +31,8 @@ Partial Class FrmUsuarios
         Me.ChEstado = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChEmpleado = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChTipoUsuario = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChkMostrarTodo = New System.Windows.Forms.CheckBox()
         Me.GbDatosUsuario = New System.Windows.Forms.GroupBox()
         Me.MtbIdEmpleado = New System.Windows.Forms.MaskedTextBox()
@@ -55,17 +57,15 @@ Partial Class FrmUsuarios
         Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.BtnNuevo = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CmsOpciones.SuspendLayout()
         Me.GbDatosUsuario.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CmsOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
         'LsvMostrarUsuario
         '
         Me.LsvMostrarUsuario.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChIdUsuario, Me.ChUsuario, Me.ChContraseña, Me.ChEstado, Me.ChEmpleado, Me.ChTipoUsuario})
+        Me.LsvMostrarUsuario.ContextMenuStrip = Me.CmsOpciones
         Me.LsvMostrarUsuario.FullRowSelect = True
         Me.LsvMostrarUsuario.GridLines = True
         Me.LsvMostrarUsuario.Location = New System.Drawing.Point(12, 401)
@@ -104,6 +104,20 @@ Partial Class FrmUsuarios
         '
         Me.ChTipoUsuario.Text = "Tipo Usuario"
         Me.ChTipoUsuario.Width = 99
+        '
+        'CmsOpciones
+        '
+        Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem})
+        Me.CmsOpciones.Name = "CmsOpciones"
+        Me.CmsOpciones.Size = New System.Drawing.Size(109, 30)
+        '
+        'EditarToolStripMenuItem
+        '
+        Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(108, 26)
+        Me.EditarToolStripMenuItem.Text = "Editar"
         '
         'ChkMostrarTodo
         '
@@ -368,34 +382,13 @@ Partial Class FrmUsuarios
         Me.PictureBox1.TabIndex = 110
         Me.PictureBox1.TabStop = False
         '
-        'CmsOpciones
-        '
-        Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
-        Me.CmsOpciones.Name = "CmsOpciones"
-        Me.CmsOpciones.Size = New System.Drawing.Size(157, 78)
-        '
-        'EditarToolStripMenuItem
-        '
-        Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
-        Me.EditarToolStripMenuItem.Text = "Editar"
-        '
-        'EliminarToolStripMenuItem
-        '
-        Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
-        '
         'FrmUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(554, 395)
+        Me.ClientSize = New System.Drawing.Size(554, 393)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
@@ -413,10 +406,10 @@ Partial Class FrmUsuarios
         Me.Name = "FrmUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gestión Usuarios"
+        Me.CmsOpciones.ResumeLayout(False)
         Me.GbDatosUsuario.ResumeLayout(False)
         Me.GbDatosUsuario.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.CmsOpciones.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -455,5 +448,4 @@ Partial Class FrmUsuarios
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents CmsOpciones As ContextMenuStrip
     Friend WithEvents EditarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
 End Class

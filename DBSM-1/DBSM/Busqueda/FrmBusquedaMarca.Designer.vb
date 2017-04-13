@@ -23,16 +23,40 @@ Partial Class FrmBusquedaMarca
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBusquedaMarca))
+        Me.RdoNombreMarca = New System.Windows.Forms.RadioButton()
+        Me.RdoCodMarca = New System.Windows.Forms.RadioButton()
         Me.LsvMarca = New System.Windows.Forms.ListView()
         Me.chIdMarca = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chNombreMarca = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RdoNombreMarca = New System.Windows.Forms.RadioButton()
-        Me.RdoCodMarca = New System.Windows.Forms.RadioButton()
-        Me.GroupBox1.SuspendLayout()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'RdoNombreMarca
+        '
+        Me.RdoNombreMarca.AutoSize = True
+        Me.RdoNombreMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RdoNombreMarca.Location = New System.Drawing.Point(152, 22)
+        Me.RdoNombreMarca.Name = "RdoNombreMarca"
+        Me.RdoNombreMarca.Size = New System.Drawing.Size(109, 17)
+        Me.RdoNombreMarca.TabIndex = 3
+        Me.RdoNombreMarca.TabStop = True
+        Me.RdoNombreMarca.Text = "Nombre de marca"
+        Me.RdoNombreMarca.UseVisualStyleBackColor = True
+        '
+        'RdoCodMarca
+        '
+        Me.RdoCodMarca.AutoSize = True
+        Me.RdoCodMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RdoCodMarca.Location = New System.Drawing.Point(20, 22)
+        Me.RdoCodMarca.Name = "RdoCodMarca"
+        Me.RdoCodMarca.Size = New System.Drawing.Size(105, 17)
+        Me.RdoCodMarca.TabIndex = 2
+        Me.RdoCodMarca.TabStop = True
+        Me.RdoCodMarca.Text = "Código de marca"
+        Me.RdoCodMarca.UseVisualStyleBackColor = True
         '
         'LsvMarca
         '
@@ -56,57 +80,33 @@ Partial Class FrmBusquedaMarca
         Me.chNombreMarca.Text = "Nombre Marca"
         Me.chNombreMarca.Width = 372
         '
+        'TxtBuscar
+        '
+        Me.TxtBuscar.Location = New System.Drawing.Point(73, 161)
+        Me.TxtBuscar.Name = "TxtBuscar"
+        Me.TxtBuscar.Size = New System.Drawing.Size(323, 20)
+        Me.TxtBuscar.TabIndex = 108
+        '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(411, 158)
+        Me.BtnBuscar.Location = New System.Drawing.Point(421, 158)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnBuscar.TabIndex = 106
+        Me.BtnBuscar.TabIndex = 109
         Me.BtnBuscar.Text = "Buscar"
         Me.BtnBuscar.UseVisualStyleBackColor = True
         '
-        'TxtBuscar
+        'GroupBox2
         '
-        Me.TxtBuscar.Location = New System.Drawing.Point(73, 159)
-        Me.TxtBuscar.Name = "TxtBuscar"
-        Me.TxtBuscar.Size = New System.Drawing.Size(323, 20)
-        Me.TxtBuscar.TabIndex = 105
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Controls.Add(Me.RdoNombreMarca)
-        Me.GroupBox1.Controls.Add(Me.RdoCodMarca)
-        Me.GroupBox1.Location = New System.Drawing.Point(73, 97)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(323, 56)
-        Me.GroupBox1.TabIndex = 107
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Opciones de búsqueda:"
-        '
-        'RdoNombreMarca
-        '
-        Me.RdoNombreMarca.AutoSize = True
-        Me.RdoNombreMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RdoNombreMarca.Location = New System.Drawing.Point(170, 23)
-        Me.RdoNombreMarca.Name = "RdoNombreMarca"
-        Me.RdoNombreMarca.Size = New System.Drawing.Size(109, 17)
-        Me.RdoNombreMarca.TabIndex = 3
-        Me.RdoNombreMarca.TabStop = True
-        Me.RdoNombreMarca.Text = "Nombre de marca"
-        Me.RdoNombreMarca.UseVisualStyleBackColor = True
-        '
-        'RdoCodMarca
-        '
-        Me.RdoCodMarca.AutoSize = True
-        Me.RdoCodMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RdoCodMarca.Location = New System.Drawing.Point(16, 23)
-        Me.RdoCodMarca.Name = "RdoCodMarca"
-        Me.RdoCodMarca.Size = New System.Drawing.Size(105, 17)
-        Me.RdoCodMarca.TabIndex = 2
-        Me.RdoCodMarca.TabStop = True
-        Me.RdoCodMarca.Text = "Código de marca"
-        Me.RdoCodMarca.UseVisualStyleBackColor = True
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.Controls.Add(Me.RdoNombreMarca)
+        Me.GroupBox2.Controls.Add(Me.RdoCodMarca)
+        Me.GroupBox2.Location = New System.Drawing.Point(121, 98)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(297, 57)
+        Me.GroupBox2.TabIndex = 110
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Opciones de busqueda"
         '
         'FrmBusquedaMarca
         '
@@ -115,7 +115,7 @@ Partial Class FrmBusquedaMarca
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(575, 379)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.TxtBuscar)
         Me.Controls.Add(Me.LsvMarca)
@@ -124,8 +124,9 @@ Partial Class FrmBusquedaMarca
         Me.Name = "FrmBusquedaMarca"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Busqueda Marca"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.TopMost = True
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -133,9 +134,9 @@ Partial Class FrmBusquedaMarca
     Friend WithEvents LsvMarca As ListView
     Friend WithEvents chIdMarca As ColumnHeader
     Friend WithEvents chNombreMarca As ColumnHeader
-    Friend WithEvents BtnBuscar As Button
-    Friend WithEvents TxtBuscar As TextBox
-    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RdoNombreMarca As RadioButton
     Friend WithEvents RdoCodMarca As RadioButton
+    Friend WithEvents TxtBuscar As TextBox
+    Friend WithEvents BtnBuscar As Button
+    Friend WithEvents GroupBox2 As GroupBox
 End Class

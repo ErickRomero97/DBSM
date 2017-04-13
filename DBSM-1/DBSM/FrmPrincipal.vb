@@ -92,4 +92,9 @@
         Dim Asignacion As New FrmAsignacionPrograma
         FrmAsignacionPrograma.Show()
     End Sub
+
+    Private Sub BuscarAlumnoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuscarAlumnoToolStripMenuItem.Click
+        Dim BusquedaAlumno As New FrmBusquedaAlumno
+        FrmBusquedaAlumno.Show()
+    End Sub
 End Class

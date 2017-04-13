@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmPrograma
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmPrograma
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPrograma))
@@ -51,7 +51,6 @@ Partial Class FrmPrograma
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GbPrograma.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CmsOpciones.SuspendLayout()
@@ -71,6 +70,7 @@ Partial Class FrmPrograma
         'LsvPrograma
         '
         Me.LsvPrograma.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ChCodPrograma, Me.ChNombre, Me.ChDescripcion, Me.ChTipo})
+        Me.LsvPrograma.ContextMenuStrip = Me.CmsOpciones
         Me.LsvPrograma.FullRowSelect = True
         Me.LsvPrograma.Location = New System.Drawing.Point(13, 345)
         Me.LsvPrograma.Name = "LsvPrograma"
@@ -318,23 +318,16 @@ Partial Class FrmPrograma
         'CmsOpciones
         '
         Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
+        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem})
         Me.CmsOpciones.Name = "CmsOpciones"
-        Me.CmsOpciones.Size = New System.Drawing.Size(157, 78)
+        Me.CmsOpciones.Size = New System.Drawing.Size(109, 30)
         '
         'EditarToolStripMenuItem
         '
         Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(108, 26)
         Me.EditarToolStripMenuItem.Text = "Editar"
-        '
-        'EliminarToolStripMenuItem
-        '
-        Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'FrmPrograma
         '
@@ -342,7 +335,7 @@ Partial Class FrmPrograma
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(509, 331)
+        Me.ClientSize = New System.Drawing.Size(509, 330)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ChkMostrarTodo)
         Me.Controls.Add(Me.LsvPrograma)
@@ -396,5 +389,4 @@ Partial Class FrmPrograma
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents CmsOpciones As ContextMenuStrip
     Friend WithEvents EditarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
 End Class

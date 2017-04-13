@@ -165,50 +165,29 @@ Public Class FrmBusquedaMarca
         Return Val
     End Function
 
-    Private Function txtNumerico(ByVal txtControl As TextBox, ByVal caracter As Char, ByVal decimales As Boolean) As Boolean
-        If (Char.IsNumber(caracter, 0) = True) Or caracter = Convert.ToChar(8) Or caracter = "." Then
-            If caracter = "." Then
-                If decimales = True Then
-                    If txtControl.Text.IndexOf(".") <> -1 Then Return True
-                Else : Return True
-                End If
-            End If
-            Return False
-        Else
-            Return True
-        End If
-    End Function
-
-    Private Sub rdoCodMarca_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub rdoCodMarca_CheckedChanged(sender As Object, e As EventArgs) Handles RdoCodMarca.CheckedChanged
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
         BtnBuscar.Enabled = True
-        TxtBuscar.Text = ""
-        LsvMarca.Items.Clear()
+
     End Sub
 
-    Private Sub rdoNombreMarca_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub rdoNombreMarca_CheckedChanged(sender As Object, e As EventArgs) Handles RdoNombreMarca.CheckedChanged
         TxtBuscar.Enabled = True
         TxtBuscar.Focus()
         BtnBuscar.Enabled = True
-        TxtBuscar.Text = ""
-        LsvMarca.Items.Clear()
     End Sub
 
-    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs)
-        If RdoCodMarca.Checked = True Then
-            e.Handled = txtNumerico(TxtBuscar, e.KeyChar, True)
-        End If
-    End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
+
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         If RdoCodMarca.Checked = True Then
             If TxtBuscar.Text.Trim = Nothing Then
                 MessageBox.Show("El código de la marca es requerido", "DBSM", MessageBoxButtons.OK)
                 TxtBuscar.Focus()
             Else
                 MostrarXCodMarca()
-                TxtBuscar.Text = ""
+                TxtBuscar.Focus()
             End If
         End If
 
@@ -218,8 +197,14 @@ Public Class FrmBusquedaMarca
                 TxtBuscar.Focus()
             Else
                 MostrarxNombreMarca()
-                TxtBuscar.Text = ""
+                TxtBuscar.Focus()
             End If
+        End If
+    End Sub
+
+    Private Sub TxtBuscar_TextChanged(sender As Object, e As EventArgs) Handles TxtBuscar.TextChanged
+        If TxtBuscar.Text = "" Then
+            MostrarMarcas()
         End If
     End Sub
 End Class
