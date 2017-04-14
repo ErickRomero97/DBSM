@@ -30,8 +30,8 @@ Partial Class FrmBusquedaModelo
         Me.RdoNombreMo = New System.Windows.Forms.RadioButton()
         Me.RdoCodigoMo = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.TxtBuscarMo = New System.Windows.Forms.TextBox()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -98,21 +98,28 @@ Partial Class FrmBusquedaModelo
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Opciones de búsqueda:"
         '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.Location = New System.Drawing.Point(438, 170)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnBuscar.TabIndex = 109
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
-        '
         'TxtBuscarMo
         '
         Me.TxtBuscarMo.Location = New System.Drawing.Point(100, 171)
         Me.TxtBuscarMo.Name = "TxtBuscarMo"
         Me.TxtBuscarMo.Size = New System.Drawing.Size(323, 20)
         Me.TxtBuscarMo.TabIndex = 108
+        '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnBuscar.FlatAppearance.BorderSize = 0
+        Me.BtnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBuscar.Location = New System.Drawing.Point(429, 162)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(39, 36)
+        Me.BtnBuscar.TabIndex = 124
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'FrmBusquedaModelo
         '
@@ -121,12 +128,14 @@ Partial Class FrmBusquedaModelo
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(578, 414)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BtnBuscar)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TxtBuscarMo)
         Me.Controls.Add(Me.LsvModeloBu)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmBusquedaModelo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Busqueda Modelo"
@@ -143,6 +152,6 @@ Partial Class FrmBusquedaModelo
     Friend WithEvents RdoNombreMo As RadioButton
     Friend WithEvents RdoCodigoMo As RadioButton
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents BtnBuscar As Button
     Friend WithEvents TxtBuscarMo As TextBox
+    Friend WithEvents BtnBuscar As Button
 End Class

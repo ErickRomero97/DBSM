@@ -40,8 +40,8 @@ Public Class FrmLogin
                             FrmPrincipal.UsuariosToolStripMenuItem.Enabled = False
                             FrmPrincipal.Show()
                         End If
-                        Me.Hide()
-                        Else
+                        Me.Close()
+                    Else
                             MsgBox("Este usuario está inactivo.")
 
                     End If
@@ -77,11 +77,6 @@ Public Class FrmLogin
         Return estado
     End Function
 
-    Private Sub FrmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-
 
 
     Private Sub TxtPassword_Click(sender As Object, e As EventArgs) Handles TxtPassword.Click
@@ -105,10 +100,6 @@ Public Class FrmLogin
 
     Private Sub Panel1_MouseLeave(sender As Object, e As EventArgs) Handles PnlVer.MouseLeave
         TxtPassword.PasswordChar = "*"
-    End Sub
-
-    Private Sub TxtPassword_TextChanged(sender As Object, e As EventArgs) Handles TxtPassword.TextChanged
-
     End Sub
 
     Private Sub TxtUserName_TextChanged(sender As Object, e As EventArgs) Handles TxtUserName.TextChanged

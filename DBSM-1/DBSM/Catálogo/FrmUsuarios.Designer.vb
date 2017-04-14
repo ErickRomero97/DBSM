@@ -165,11 +165,17 @@ Partial Class FrmUsuarios
         '
         'BtnBuscarEmpleado
         '
+        Me.BtnBuscarEmpleado.BackgroundImage = CType(resources.GetObject("BtnBuscarEmpleado.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscarEmpleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnBuscarEmpleado.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnBuscarEmpleado.FlatAppearance.BorderSize = 0
+        Me.BtnBuscarEmpleado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscarEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBuscarEmpleado.Location = New System.Drawing.Point(247, 139)
         Me.BtnBuscarEmpleado.Name = "BtnBuscarEmpleado"
-        Me.BtnBuscarEmpleado.Size = New System.Drawing.Size(28, 22)
+        Me.BtnBuscarEmpleado.Size = New System.Drawing.Size(26, 23)
         Me.BtnBuscarEmpleado.TabIndex = 13
-        Me.BtnBuscarEmpleado.Text = "..."
         Me.BtnBuscarEmpleado.UseVisualStyleBackColor = True
         '
         'CboTipoUsuario
@@ -178,7 +184,7 @@ Partial Class FrmUsuarios
         Me.CboTipoUsuario.FormattingEnabled = True
         Me.CboTipoUsuario.Location = New System.Drawing.Point(141, 167)
         Me.CboTipoUsuario.Name = "CboTipoUsuario"
-        Me.CboTipoUsuario.Size = New System.Drawing.Size(121, 21)
+        Me.CboTipoUsuario.Size = New System.Drawing.Size(132, 21)
         Me.CboTipoUsuario.TabIndex = 12
         '
         'CboEstado
@@ -187,7 +193,7 @@ Partial Class FrmUsuarios
         Me.CboEstado.FormattingEnabled = True
         Me.CboEstado.Location = New System.Drawing.Point(141, 112)
         Me.CboEstado.Name = "CboEstado"
-        Me.CboEstado.Size = New System.Drawing.Size(121, 21)
+        Me.CboEstado.Size = New System.Drawing.Size(132, 21)
         Me.CboEstado.TabIndex = 11
         '
         'TxtContraseña
@@ -195,14 +201,14 @@ Partial Class FrmUsuarios
         Me.TxtContraseña.Location = New System.Drawing.Point(141, 86)
         Me.TxtContraseña.Name = "TxtContraseña"
         Me.TxtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.TxtContraseña.Size = New System.Drawing.Size(100, 20)
+        Me.TxtContraseña.Size = New System.Drawing.Size(117, 20)
         Me.TxtContraseña.TabIndex = 9
         '
         'TxtUsuario
         '
         Me.TxtUsuario.Location = New System.Drawing.Point(141, 60)
         Me.TxtUsuario.Name = "TxtUsuario"
-        Me.TxtUsuario.Size = New System.Drawing.Size(100, 20)
+        Me.TxtUsuario.Size = New System.Drawing.Size(117, 20)
         Me.TxtUsuario.TabIndex = 8
         '
         'TxtIdUsuario
@@ -216,7 +222,7 @@ Partial Class FrmUsuarios
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(70, 170)
+        Me.Label7.Location = New System.Drawing.Point(63, 170)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(70, 13)
         Me.Label7.TabIndex = 5
@@ -225,7 +231,7 @@ Partial Class FrmUsuarios
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(47, 144)
+        Me.Label6.Location = New System.Drawing.Point(40, 144)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(93, 13)
         Me.Label6.TabIndex = 4
@@ -234,7 +240,7 @@ Partial Class FrmUsuarios
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(97, 117)
+        Me.Label5.Location = New System.Drawing.Point(90, 117)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(43, 13)
         Me.Label5.TabIndex = 3
@@ -243,7 +249,7 @@ Partial Class FrmUsuarios
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(76, 91)
+        Me.Label4.Location = New System.Drawing.Point(69, 89)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(64, 13)
         Me.Label4.TabIndex = 2
@@ -252,7 +258,7 @@ Partial Class FrmUsuarios
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(94, 67)
+        Me.Label3.Location = New System.Drawing.Point(87, 67)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(46, 13)
         Me.Label3.TabIndex = 1
@@ -261,7 +267,7 @@ Partial Class FrmUsuarios
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(58, 37)
+        Me.Label2.Location = New System.Drawing.Point(51, 37)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(82, 13)
         Me.Label2.TabIndex = 0
@@ -316,6 +322,7 @@ Partial Class FrmUsuarios
         Me.BtnCancelar.BackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.BackgroundImage = CType(resources.GetObject("BtnCancelar.BackgroundImage"), System.Drawing.Image)
         Me.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.FlatAppearance.BorderSize = 0
         Me.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -331,6 +338,7 @@ Partial Class FrmUsuarios
         Me.BtnEditar.BackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.BackgroundImage = CType(resources.GetObject("BtnEditar.BackgroundImage"), System.Drawing.Image)
         Me.BtnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnEditar.FlatAppearance.BorderSize = 0
         Me.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -346,6 +354,7 @@ Partial Class FrmUsuarios
         Me.BtnGuardar.BackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.BackgroundImage = CType(resources.GetObject("BtnGuardar.BackgroundImage"), System.Drawing.Image)
         Me.BtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnGuardar.FlatAppearance.BorderSize = 0
         Me.BtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -361,6 +370,7 @@ Partial Class FrmUsuarios
         Me.BtnNuevo.BackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.BackgroundImage = CType(resources.GetObject("BtnNuevo.BackgroundImage"), System.Drawing.Image)
         Me.BtnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNuevo.FlatAppearance.BorderSize = 0
         Me.BtnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -403,6 +413,8 @@ Partial Class FrmUsuarios
         Me.Controls.Add(Me.GbDatosUsuario)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gestión Usuarios"

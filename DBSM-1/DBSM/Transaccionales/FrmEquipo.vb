@@ -561,12 +561,10 @@ Public Class FrmEquipo
 
 
     Private Sub btnIrMarca_Click(sender As Object, e As EventArgs) Handles BtnIrMarca.Click
-        Me.Hide()
         FrmMarca.Show()
     End Sub
 
     Private Sub btnIrModelo_Click(sender As Object, e As EventArgs) Handles BtnIrModelo.Click
-        Me.Hide()
         FrmModelo.Show()
     End Sub
 

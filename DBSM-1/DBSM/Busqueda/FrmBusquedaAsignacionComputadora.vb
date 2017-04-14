@@ -187,7 +187,7 @@ Public Class FrmBusquedaAsignacionComputadora
         BtnBuscar.Enabled = True
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+    Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         If RdoCodCompuA.Checked = True Then
             If TxtBuscar.Text.Trim = Nothing Then
                 MessageBox.Show("El código de la computadora es requerido", "DBSM", MessageBoxButtons.OK)

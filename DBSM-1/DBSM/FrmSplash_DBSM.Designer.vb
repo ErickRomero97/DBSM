@@ -46,7 +46,7 @@ Partial Class FrmSplash_DBSM
         '
         Me.LblInitial.AutoSize = True
         Me.LblInitial.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblInitial.Location = New System.Drawing.Point(268, 303)
+        Me.LblInitial.Location = New System.Drawing.Point(263, 322)
         Me.LblInitial.Name = "LblInitial"
         Me.LblInitial.Size = New System.Drawing.Size(65, 16)
         Me.LblInitial.TabIndex = 0

@@ -39,10 +39,10 @@ Partial Class FrmBusquedaComputadora
         Me.ChEstadoA = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChSerieMo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
-        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RdoSerieCom = New System.Windows.Forms.RadioButton()
         Me.RdoNumMaquina = New System.Windows.Forms.RadioButton()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -133,15 +133,6 @@ Partial Class FrmBusquedaComputadora
         Me.TxtBuscar.Size = New System.Drawing.Size(323, 20)
         Me.TxtBuscar.TabIndex = 102
         '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.Location = New System.Drawing.Point(633, 176)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnBuscar.TabIndex = 104
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
-        '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
@@ -178,6 +169,22 @@ Partial Class FrmBusquedaComputadora
         Me.RdoNumMaquina.Text = "Número de máquina"
         Me.RdoNumMaquina.UseVisualStyleBackColor = True
         '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnBuscar.FlatAppearance.BorderSize = 0
+        Me.BtnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBuscar.Location = New System.Drawing.Point(624, 168)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(39, 36)
+        Me.BtnBuscar.TabIndex = 124
+        Me.BtnBuscar.UseVisualStyleBackColor = False
+        '
         'FrmBusquedaComputadora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -185,12 +192,14 @@ Partial Class FrmBusquedaComputadora
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(988, 449)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BtnBuscar)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TxtBuscar)
         Me.Controls.Add(Me.LsvEquipo)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmBusquedaComputadora"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Busqueda Computadora"
@@ -216,8 +225,8 @@ Partial Class FrmBusquedaComputadora
     Friend WithEvents ChEstadoA As ColumnHeader
     Friend WithEvents ChSerieMo As ColumnHeader
     Friend WithEvents TxtBuscar As TextBox
-    Friend WithEvents BtnBuscar As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RdoSerieCom As RadioButton
     Friend WithEvents RdoNumMaquina As RadioButton
+    Friend WithEvents BtnBuscar As Button
 End Class

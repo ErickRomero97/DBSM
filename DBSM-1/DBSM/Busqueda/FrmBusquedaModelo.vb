@@ -34,7 +34,7 @@ Public Class FrmBusquedaModelo
         End Using
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+    Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         If RdoCodigoMo.Checked = True Then
             If TxtBuscarMo.Text.Trim = Nothing Then
                 MessageBox.Show("El código de modelo es necesario", "DBSM", MessageBoxButtons.OK)

@@ -53,6 +53,9 @@ Partial Class FrmAsignacionPrograma
         Me.ChNumComputadora = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChPrograma = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChFecha3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -62,12 +65,9 @@ Partial Class FrmAsignacionPrograma
         Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.BtnNuevo = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PlDatos.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CmsOpciones.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PlDatos
@@ -98,24 +98,34 @@ Partial Class FrmAsignacionPrograma
         '
         'BtnLlenarPrograma
         '
-        Me.BtnLlenarPrograma.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnLlenarPrograma.BackColor = System.Drawing.Color.Transparent
+        Me.BtnLlenarPrograma.BackgroundImage = CType(resources.GetObject("BtnLlenarPrograma.BackgroundImage"), System.Drawing.Image)
+        Me.BtnLlenarPrograma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnLlenarPrograma.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnLlenarPrograma.FlatAppearance.BorderSize = 0
+        Me.BtnLlenarPrograma.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnLlenarPrograma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnLlenarPrograma.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnLlenarPrograma.Location = New System.Drawing.Point(493, 181)
+        Me.BtnLlenarPrograma.Location = New System.Drawing.Point(493, 180)
         Me.BtnLlenarPrograma.Name = "BtnLlenarPrograma"
-        Me.BtnLlenarPrograma.Size = New System.Drawing.Size(29, 23)
+        Me.BtnLlenarPrograma.Size = New System.Drawing.Size(26, 23)
         Me.BtnLlenarPrograma.TabIndex = 106
-        Me.BtnLlenarPrograma.Text = "..."
         Me.BtnLlenarPrograma.UseVisualStyleBackColor = False
         '
         'BtnPrograma
         '
-        Me.BtnPrograma.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnPrograma.BackColor = System.Drawing.Color.Transparent
+        Me.BtnPrograma.BackgroundImage = CType(resources.GetObject("BtnPrograma.BackgroundImage"), System.Drawing.Image)
+        Me.BtnPrograma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnPrograma.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnPrograma.FlatAppearance.BorderSize = 0
+        Me.BtnPrograma.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnPrograma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.BtnPrograma.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnPrograma.Location = New System.Drawing.Point(458, 181)
+        Me.BtnPrograma.Location = New System.Drawing.Point(461, 181)
         Me.BtnPrograma.Name = "BtnPrograma"
-        Me.BtnPrograma.Size = New System.Drawing.Size(29, 23)
+        Me.BtnPrograma.Size = New System.Drawing.Size(26, 23)
         Me.BtnPrograma.TabIndex = 105
-        Me.BtnPrograma.Text = "..."
         Me.BtnPrograma.UseVisualStyleBackColor = False
         '
         'CboPrograma
@@ -138,7 +148,7 @@ Partial Class FrmAsignacionPrograma
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(146, 213)
+        Me.Label6.Location = New System.Drawing.Point(159, 213)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(135, 16)
         Me.Label6.TabIndex = 103
@@ -148,7 +158,7 @@ Partial Class FrmAsignacionPrograma
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(210, 184)
+        Me.Label4.Location = New System.Drawing.Point(223, 184)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 16)
         Me.Label4.TabIndex = 100
@@ -165,7 +175,7 @@ Partial Class FrmAsignacionPrograma
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(157, 130)
+        Me.Label3.Location = New System.Drawing.Point(170, 130)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(124, 16)
         Me.Label3.TabIndex = 99
@@ -182,7 +192,7 @@ Partial Class FrmAsignacionPrograma
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(154, 80)
+        Me.Label2.Location = New System.Drawing.Point(167, 80)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(127, 16)
         Me.Label2.TabIndex = 96
@@ -201,7 +211,7 @@ Partial Class FrmAsignacionPrograma
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(178, 50)
+        Me.Label11.Location = New System.Drawing.Point(191, 50)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(103, 16)
         Me.Label11.TabIndex = 76
@@ -235,7 +245,7 @@ Partial Class FrmAsignacionPrograma
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(152, 20)
+        Me.Label12.Location = New System.Drawing.Point(165, 20)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(129, 16)
         Me.Label12.TabIndex = 72
@@ -245,7 +255,7 @@ Partial Class FrmAsignacionPrograma
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(160, 104)
+        Me.Label1.Location = New System.Drawing.Point(173, 104)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(121, 16)
         Me.Label1.TabIndex = 73
@@ -255,7 +265,7 @@ Partial Class FrmAsignacionPrograma
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(120, 157)
+        Me.Label5.Location = New System.Drawing.Point(133, 157)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(161, 16)
         Me.Label5.TabIndex = 73
@@ -325,6 +335,27 @@ Partial Class FrmAsignacionPrograma
         '
         Me.ChFecha3.Text = "Fecha Instalación"
         Me.ChFecha3.Width = 98
+        '
+        'CmsOpciones
+        '
+        Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
+        Me.CmsOpciones.Name = "CmsOpciones"
+        Me.CmsOpciones.Size = New System.Drawing.Size(122, 56)
+        '
+        'EditarToolStripMenuItem
+        '
+        Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
+        Me.EditarToolStripMenuItem.Text = "Editar"
+        '
+        'EliminarToolStripMenuItem
+        '
+        Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
+        Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'Label13
         '
@@ -445,27 +476,6 @@ Partial Class FrmAsignacionPrograma
         Me.PictureBox1.TabIndex = 124
         Me.PictureBox1.TabStop = False
         '
-        'CmsOpciones
-        '
-        Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
-        Me.CmsOpciones.Name = "CmsOpciones"
-        Me.CmsOpciones.Size = New System.Drawing.Size(122, 56)
-        '
-        'EditarToolStripMenuItem
-        '
-        Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
-        Me.EditarToolStripMenuItem.Text = "Editar"
-        '
-        'EliminarToolStripMenuItem
-        '
-        Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
-        '
         'FrmAsignacionPrograma
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -487,13 +497,15 @@ Partial Class FrmAsignacionPrograma
         Me.Controls.Add(Me.chkVer)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmAsignacionPrograma"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Software"
         Me.PlDatos.ResumeLayout(False)
         Me.PlDatos.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CmsOpciones.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -100,6 +100,9 @@ Partial Class FrmLogin
         Me.Controls.Add(Me.BtnSalir)
         Me.Controls.Add(Me.BtnIngresar)
         Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio de Sesión"

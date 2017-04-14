@@ -903,3 +903,4 @@ C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\obj\De
 C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.xml
 C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.pdb
 C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbprojResolveAssemblyReference.cache
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaAlumno.resources

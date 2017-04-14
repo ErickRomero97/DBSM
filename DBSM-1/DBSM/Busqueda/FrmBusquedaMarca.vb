@@ -180,7 +180,7 @@ Public Class FrmBusquedaMarca
 
 
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+    Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         If RdoCodMarca.Checked = True Then
             If TxtBuscar.Text.Trim = Nothing Then
                 MessageBox.Show("El código de la marca es requerido", "DBSM", MessageBoxButtons.OK)

@@ -82,7 +82,7 @@ Public Class FrmBusquedaAlumno
     Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         If TxtBuscar.Text = "" Then
             MostrarAlumno()
-            MessageBox.Show("El Nombre o Codigo del Alumno es Necesario parala Busqueda", "DBSM", MessageBoxButtons.OK)
+            MessageBox.Show("El Código o Nombre del alumno es necesario para la búsqueda", "DBSM", MessageBoxButtons.OK)
             TxtBuscar.Focus()
         Else
             BusquedaAlumno()

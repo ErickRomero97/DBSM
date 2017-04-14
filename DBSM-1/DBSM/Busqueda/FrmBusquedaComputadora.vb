@@ -169,7 +169,7 @@ Public Class FrmBusquedaComputadora
         BtnBuscar.Enabled = True
     End Sub
 
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+    Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         If RdoNumMaquina.Checked = True Then
             If TxtBuscar.Text.Trim = Nothing Then
                 MessageBox.Show("El número de maquina de la computadora es necesario", "DBSM", MessageBoxButtons.OK)

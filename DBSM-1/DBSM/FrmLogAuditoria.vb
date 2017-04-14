@@ -24,7 +24,7 @@ Public Class FrmLogAuditoria
                     With Me.LsvLogAuditoria.Items.Add(VerLog("IdLog").ToString)
                         .SubItems.Add(VerLog("IdUsuario").ToString)
                         .SubItems.Add(VerLog("Actividad").ToString)
-                        .SubItems.Add(VerLog("Fecha").ToString)
+                        .SubItems.Add(VerLog("Fecha"))
                     End With
                 End While
             Catch ex As Exception

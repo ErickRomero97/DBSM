@@ -62,12 +62,12 @@ Partial Class FrmLogAuditoria
         'ColumnHeader4
         '
         Me.ColumnHeader4.Text = "Código Usuario"
-        Me.ColumnHeader4.Width = 103
+        Me.ColumnHeader4.Width = 117
         '
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "Actividad"
-        Me.ColumnHeader2.Width = 81
+        Me.ColumnHeader2.Width = 97
         '
         'ColumnHeader3
         '
@@ -85,6 +85,8 @@ Partial Class FrmLogAuditoria
         Me.Controls.Add(Me.PictureBox1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmLogAuditoria"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LogAuditoria"

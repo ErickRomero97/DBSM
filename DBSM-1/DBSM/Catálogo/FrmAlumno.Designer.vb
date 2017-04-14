@@ -334,11 +334,11 @@ Partial Class FrmAlumno
         Me.lblapellidos.AutoSize = True
         Me.lblapellidos.BackColor = System.Drawing.Color.Transparent
         Me.lblapellidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblapellidos.Location = New System.Drawing.Point(174, 188)
+        Me.lblapellidos.Location = New System.Drawing.Point(171, 186)
         Me.lblapellidos.Name = "lblapellidos"
-        Me.lblapellidos.Size = New System.Drawing.Size(65, 16)
+        Me.lblapellidos.Size = New System.Drawing.Size(68, 16)
         Me.lblapellidos.TabIndex = 33
-        Me.lblapellidos.Text = "Apellidos"
+        Me.lblapellidos.Text = "Apellidos:"
         '
         'Label6
         '
@@ -347,64 +347,64 @@ Partial Class FrmAlumno
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(172, 130)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 16)
+        Me.Label6.Size = New System.Drawing.Size(67, 16)
         Me.Label6.TabIndex = 18
-        Me.Label6.Text = "IdAlumno"
+        Me.Label6.Text = "IdAlumno:"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(174, 160)
+        Me.Label8.Location = New System.Drawing.Point(172, 162)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(64, 16)
+        Me.Label8.Size = New System.Drawing.Size(67, 16)
         Me.Label8.TabIndex = 20
-        Me.Label8.Text = "Nombres"
+        Me.Label8.Text = "Nombres:"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(187, 212)
+        Me.Label12.Location = New System.Drawing.Point(194, 210)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(42, 16)
+        Me.Label12.Size = New System.Drawing.Size(45, 16)
         Me.Label12.TabIndex = 23
-        Me.Label12.Text = "Email"
+        Me.Label12.Text = "Email:"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.BackColor = System.Drawing.Color.Transparent
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(168, 264)
+        Me.Label16.Location = New System.Drawing.Point(171, 265)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(65, 16)
+        Me.Label16.Size = New System.Drawing.Size(68, 16)
         Me.Label16.TabIndex = 29
-        Me.Label16.Text = "Dirección"
+        Me.Label16.Text = "Dirección:"
         '
         'Label17
         '
         Me.Label17.AutoSize = True
         Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(171, 234)
+        Me.Label17.Location = New System.Drawing.Point(174, 235)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(62, 16)
+        Me.Label17.Size = New System.Drawing.Size(65, 16)
         Me.Label17.TabIndex = 27
-        Me.Label17.Text = "Teléfono"
+        Me.Label17.Text = "Teléfono:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(194, 297)
+        Me.Label1.Location = New System.Drawing.Point(197, 294)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 16)
+        Me.Label1.Size = New System.Drawing.Size(42, 16)
         Me.Label1.TabIndex = 107
-        Me.Label1.Text = "Sexo"
+        Me.Label1.Text = "Sexo:"
         '
         'ErrorProvider1
         '
@@ -451,6 +451,7 @@ Partial Class FrmAlumno
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmAlumno"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Alumno"

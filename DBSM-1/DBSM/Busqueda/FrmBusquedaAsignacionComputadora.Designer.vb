@@ -100,7 +100,7 @@ Partial Class FrmBusquedaAsignacionComputadora
         '
         'TxtBuscar
         '
-        Me.TxtBuscar.Location = New System.Drawing.Point(127, 180)
+        Me.TxtBuscar.Location = New System.Drawing.Point(127, 168)
         Me.TxtBuscar.Name = "TxtBuscar"
         Me.TxtBuscar.Size = New System.Drawing.Size(323, 20)
         Me.TxtBuscar.TabIndex = 101
@@ -110,7 +110,7 @@ Partial Class FrmBusquedaAsignacionComputadora
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.RdoCodAlumnoA)
         Me.GroupBox1.Controls.Add(Me.RdoCodCompuA)
-        Me.GroupBox1.Location = New System.Drawing.Point(127, 108)
+        Me.GroupBox1.Location = New System.Drawing.Point(127, 96)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(323, 66)
         Me.GroupBox1.TabIndex = 102
@@ -119,12 +119,19 @@ Partial Class FrmBusquedaAsignacionComputadora
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(456, 180)
+        Me.BtnBuscar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnBuscar.FlatAppearance.BorderSize = 0
+        Me.BtnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBuscar.Location = New System.Drawing.Point(456, 159)
         Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnBuscar.TabIndex = 103
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
+        Me.BtnBuscar.Size = New System.Drawing.Size(39, 36)
+        Me.BtnBuscar.TabIndex = 124
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'FrmBusquedaAsignacionComputadora
         '
@@ -139,6 +146,8 @@ Partial Class FrmBusquedaAsignacionComputadora
         Me.Controls.Add(Me.LsvBusquedaCompuA)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmBusquedaAsignacionComputadora"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Busqueda Asignacion Computadora"

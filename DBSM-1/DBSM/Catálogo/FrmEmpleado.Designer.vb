@@ -33,6 +33,9 @@ Partial Class FrmEmpleado
         Me.ChTelefono = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChCorreo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChSexo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GbEmpleado = New System.Windows.Forms.GroupBox()
         Me.MtbCodEmpleado = New System.Windows.Forms.MaskedTextBox()
         Me.TxtDireccion = New System.Windows.Forms.TextBox()
@@ -57,12 +60,9 @@ Partial Class FrmEmpleado
         Me.BtnEditar = New System.Windows.Forms.Button()
         Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.BtnNuevo = New System.Windows.Forms.Button()
-        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CmsOpciones.SuspendLayout()
         Me.GbEmpleado.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CmsOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
         'ChkMostrarTodo
@@ -124,6 +124,27 @@ Partial Class FrmEmpleado
         Me.ChSexo.Text = "Sexo"
         Me.ChSexo.Width = 74
         '
+        'CmsOpciones
+        '
+        Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
+        Me.CmsOpciones.Name = "CmsOpciones"
+        Me.CmsOpciones.Size = New System.Drawing.Size(122, 56)
+        '
+        'EditarToolStripMenuItem
+        '
+        Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
+        Me.EditarToolStripMenuItem.Text = "Editar"
+        '
+        'EliminarToolStripMenuItem
+        '
+        Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
+        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        '
         'GbEmpleado
         '
         Me.GbEmpleado.BackColor = System.Drawing.Color.Transparent
@@ -177,11 +198,11 @@ Partial Class FrmEmpleado
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 40)
+        Me.Label1.Location = New System.Drawing.Point(56, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
+        Me.Label1.Size = New System.Drawing.Size(66, 13)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "IdEmpleado"
+        Me.Label1.Text = "IdEmpleado:"
         '
         'CboSexo
         '
@@ -194,20 +215,20 @@ Partial Class FrmEmpleado
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(92, 225)
+        Me.Label8.Location = New System.Drawing.Point(88, 225)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(31, 13)
+        Me.Label8.Size = New System.Drawing.Size(34, 13)
         Me.Label8.TabIndex = 16
-        Me.Label8.Text = "Sexo"
+        Me.Label8.Text = "Sexo:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(30, 66)
+        Me.Label3.Location = New System.Drawing.Point(26, 66)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(93, 13)
+        Me.Label3.Size = New System.Drawing.Size(96, 13)
         Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Nombre empleado"
+        Me.Label3.Text = "Nombre empleado:"
         '
         'TxtCorreo
         '
@@ -226,29 +247,29 @@ Partial Class FrmEmpleado
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(85, 203)
+        Me.Label7.Location = New System.Drawing.Point(81, 203)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(38, 13)
+        Me.Label7.Size = New System.Drawing.Size(41, 13)
         Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Correo"
+        Me.Label7.Text = "Correo:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(79, 92)
+        Me.Label4.Location = New System.Drawing.Point(75, 92)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 13)
+        Me.Label4.Size = New System.Drawing.Size(47, 13)
         Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Apellido"
+        Me.Label4.Text = "Apellido:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(74, 173)
+        Me.Label6.Location = New System.Drawing.Point(70, 173)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(49, 13)
+        Me.Label6.Size = New System.Drawing.Size(52, 13)
         Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Teléfono"
+        Me.Label6.Text = "Teléfono:"
         '
         'TxtApellido
         '
@@ -260,11 +281,11 @@ Partial Class FrmEmpleado
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(71, 118)
+        Me.Label5.Location = New System.Drawing.Point(67, 118)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 13)
+        Me.Label5.Size = New System.Drawing.Size(55, 13)
         Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Dirección"
+        Me.Label5.Text = "Dirección:"
         '
         'PictureBox1
         '
@@ -385,27 +406,6 @@ Partial Class FrmEmpleado
         Me.BtnNuevo.TabIndex = 113
         Me.BtnNuevo.UseVisualStyleBackColor = False
         '
-        'CmsOpciones
-        '
-        Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem, Me.EliminarToolStripMenuItem})
-        Me.CmsOpciones.Name = "CmsOpciones"
-        Me.CmsOpciones.Size = New System.Drawing.Size(122, 56)
-        '
-        'EditarToolStripMenuItem
-        '
-        Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
-        Me.EditarToolStripMenuItem.Text = "Editar"
-        '
-        'EliminarToolStripMenuItem
-        '
-        Me.EliminarToolStripMenuItem.Image = CType(resources.GetObject("EliminarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
-        '
         'FrmEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -427,13 +427,15 @@ Partial Class FrmEmpleado
         Me.Controls.Add(Me.GbEmpleado)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmEmpleado"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gestión Empleado"
+        Me.CmsOpciones.ResumeLayout(False)
         Me.GbEmpleado.ResumeLayout(False)
         Me.GbEmpleado.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.CmsOpciones.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

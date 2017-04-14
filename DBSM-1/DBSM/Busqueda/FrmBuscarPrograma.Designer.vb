@@ -28,11 +28,11 @@ Partial Class FrmBuscarPrograma
         Me.ChNombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChDescripcion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChTipo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RdbCodPrograma = New System.Windows.Forms.RadioButton()
         Me.RdbPrograma = New System.Windows.Forms.RadioButton()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,15 +68,6 @@ Partial Class FrmBuscarPrograma
         Me.ChTipo.Text = "Tipo Programa"
         Me.ChTipo.Width = 132
         '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.Location = New System.Drawing.Point(352, 141)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnBuscar.TabIndex = 122
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
-        '
         'TxtBuscar
         '
         Me.TxtBuscar.Location = New System.Drawing.Point(49, 142)
@@ -99,7 +90,7 @@ Partial Class FrmBuscarPrograma
         'RdbCodPrograma
         '
         Me.RdbCodPrograma.AutoSize = True
-        Me.RdbCodPrograma.Location = New System.Drawing.Point(147, 23)
+        Me.RdbCodPrograma.Location = New System.Drawing.Point(29, 23)
         Me.RdbCodPrograma.Name = "RdbCodPrograma"
         Me.RdbCodPrograma.Size = New System.Drawing.Size(92, 17)
         Me.RdbCodPrograma.TabIndex = 1
@@ -110,13 +101,29 @@ Partial Class FrmBuscarPrograma
         'RdbPrograma
         '
         Me.RdbPrograma.AutoSize = True
-        Me.RdbPrograma.Location = New System.Drawing.Point(21, 23)
+        Me.RdbPrograma.Location = New System.Drawing.Point(162, 23)
         Me.RdbPrograma.Name = "RdbPrograma"
         Me.RdbPrograma.Size = New System.Drawing.Size(70, 17)
         Me.RdbPrograma.TabIndex = 0
         Me.RdbPrograma.TabStop = True
         Me.RdbPrograma.Text = "Programa"
         Me.RdbPrograma.UseVisualStyleBackColor = True
+        '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnBuscar.FlatAppearance.BorderSize = 0
+        Me.BtnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBuscar.Location = New System.Drawing.Point(352, 133)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(39, 36)
+        Me.BtnBuscar.TabIndex = 124
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'FrmBuscarPrograma
         '
@@ -131,6 +138,8 @@ Partial Class FrmBuscarPrograma
         Me.Controls.Add(Me.LsvPrograma)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmBuscarPrograma"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Buscar Programa"
@@ -146,9 +155,9 @@ Partial Class FrmBuscarPrograma
     Friend WithEvents ChNombre As ColumnHeader
     Friend WithEvents ChDescripcion As ColumnHeader
     Friend WithEvents ChTipo As ColumnHeader
-    Friend WithEvents BtnBuscar As Button
     Friend WithEvents TxtBuscar As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RdbCodPrograma As RadioButton
     Friend WithEvents RdbPrograma As RadioButton
+    Friend WithEvents BtnBuscar As Button
 End Class

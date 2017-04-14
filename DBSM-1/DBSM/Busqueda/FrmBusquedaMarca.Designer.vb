@@ -29,8 +29,8 @@ Partial Class FrmBusquedaMarca
         Me.chIdMarca = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chNombreMarca = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
-        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -38,7 +38,7 @@ Partial Class FrmBusquedaMarca
         '
         Me.RdoNombreMarca.AutoSize = True
         Me.RdoNombreMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RdoNombreMarca.Location = New System.Drawing.Point(152, 22)
+        Me.RdoNombreMarca.Location = New System.Drawing.Point(173, 22)
         Me.RdoNombreMarca.Name = "RdoNombreMarca"
         Me.RdoNombreMarca.Size = New System.Drawing.Size(109, 17)
         Me.RdoNombreMarca.TabIndex = 3
@@ -87,26 +87,33 @@ Partial Class FrmBusquedaMarca
         Me.TxtBuscar.Size = New System.Drawing.Size(323, 20)
         Me.TxtBuscar.TabIndex = 108
         '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.Location = New System.Drawing.Point(421, 158)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnBuscar.TabIndex = 109
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
-        '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.RdoNombreMarca)
         Me.GroupBox2.Controls.Add(Me.RdoCodMarca)
-        Me.GroupBox2.Location = New System.Drawing.Point(121, 98)
+        Me.GroupBox2.Location = New System.Drawing.Point(73, 98)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(297, 57)
+        Me.GroupBox2.Size = New System.Drawing.Size(323, 57)
         Me.GroupBox2.TabIndex = 110
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Opciones de busqueda"
+        '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnBuscar.FlatAppearance.BorderSize = 0
+        Me.BtnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBuscar.Location = New System.Drawing.Point(402, 152)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(39, 36)
+        Me.BtnBuscar.TabIndex = 124
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'FrmBusquedaMarca
         '
@@ -115,12 +122,14 @@ Partial Class FrmBusquedaMarca
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(575, 379)
-        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.BtnBuscar)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.TxtBuscar)
         Me.Controls.Add(Me.LsvMarca)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmBusquedaMarca"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Busqueda Marca"
@@ -137,6 +146,6 @@ Partial Class FrmBusquedaMarca
     Friend WithEvents RdoNombreMarca As RadioButton
     Friend WithEvents RdoCodMarca As RadioButton
     Friend WithEvents TxtBuscar As TextBox
-    Friend WithEvents BtnBuscar As Button
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents BtnBuscar As Button
 End Class

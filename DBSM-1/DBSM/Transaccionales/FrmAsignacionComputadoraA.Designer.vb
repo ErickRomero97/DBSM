@@ -202,7 +202,7 @@ Partial Class FrmAsignacionComputadora
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(32, 23)
+        Me.Label5.Location = New System.Drawing.Point(43, 19)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(161, 16)
         Me.Label5.TabIndex = 81
@@ -211,14 +211,14 @@ Partial Class FrmAsignacionComputadora
         'CboCompu
         '
         Me.CboCompu.FormattingEnabled = True
-        Me.CboCompu.Location = New System.Drawing.Point(229, 18)
+        Me.CboCompu.Location = New System.Drawing.Point(217, 18)
         Me.CboCompu.Name = "CboCompu"
         Me.CboCompu.Size = New System.Drawing.Size(121, 21)
         Me.CboCompu.TabIndex = 80
         '
         'TxtAsignacioC
         '
-        Me.TxtAsignacioC.Location = New System.Drawing.Point(327, 145)
+        Me.TxtAsignacioC.Location = New System.Drawing.Point(276, 145)
         Me.TxtAsignacioC.Name = "TxtAsignacioC"
         Me.TxtAsignacioC.Size = New System.Drawing.Size(100, 20)
         Me.TxtAsignacioC.TabIndex = 79
@@ -227,7 +227,7 @@ Partial Class FrmAsignacionComputadora
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(55, 146)
+        Me.Label4.Location = New System.Drawing.Point(21, 146)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(247, 16)
         Me.Label4.TabIndex = 78
@@ -244,7 +244,7 @@ Partial Class FrmAsignacionComputadora
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(75, 112)
+        Me.Label3.Location = New System.Drawing.Point(86, 112)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(118, 16)
         Me.Label3.TabIndex = 76
@@ -261,7 +261,7 @@ Partial Class FrmAsignacionComputadora
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(55, 82)
+        Me.Label2.Location = New System.Drawing.Point(66, 86)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(138, 16)
         Me.Label2.TabIndex = 73
@@ -270,7 +270,7 @@ Partial Class FrmAsignacionComputadora
         'CboAlumno
         '
         Me.CboAlumno.FormattingEnabled = True
-        Me.CboAlumno.Location = New System.Drawing.Point(229, 51)
+        Me.CboAlumno.Location = New System.Drawing.Point(217, 51)
         Me.CboAlumno.Name = "CboAlumno"
         Me.CboAlumno.Size = New System.Drawing.Size(121, 21)
         Me.CboAlumno.TabIndex = 72
@@ -279,7 +279,7 @@ Partial Class FrmAsignacionComputadora
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(68, 52)
+        Me.Label1.Location = New System.Drawing.Point(79, 52)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(125, 16)
         Me.Label1.TabIndex = 69
@@ -385,6 +385,8 @@ Partial Class FrmAsignacionComputadora
         Me.Controls.Add(Me.LsvAsignacionCA)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmAsignacionComputadora"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Asignación Computadora"

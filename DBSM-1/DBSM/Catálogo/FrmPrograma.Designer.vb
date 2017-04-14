@@ -30,6 +30,8 @@ Partial Class FrmPrograma
         Me.ChNombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChDescripcion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChTipo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GbPrograma = New System.Windows.Forms.GroupBox()
         Me.CboTipoPrograma = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -49,11 +51,9 @@ Partial Class FrmPrograma
         Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.BtnNuevo = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.CmsOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.EditarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CmsOpciones.SuspendLayout()
         Me.GbPrograma.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CmsOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
         'ChkMostrarTodo
@@ -98,6 +98,20 @@ Partial Class FrmPrograma
         '
         Me.ChTipo.Text = "Tipo Programa"
         Me.ChTipo.Width = 142
+        '
+        'CmsOpciones
+        '
+        Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem})
+        Me.CmsOpciones.Name = "CmsOpciones"
+        Me.CmsOpciones.Size = New System.Drawing.Size(109, 30)
+        '
+        'EditarToolStripMenuItem
+        '
+        Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(108, 26)
+        Me.EditarToolStripMenuItem.Text = "Editar"
         '
         'GbPrograma
         '
@@ -176,7 +190,7 @@ Partial Class FrmPrograma
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 55)
+        Me.Label1.Location = New System.Drawing.Point(13, 56)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(145, 16)
         Me.Label1.TabIndex = 76
@@ -249,6 +263,7 @@ Partial Class FrmPrograma
         Me.BtnCancelar.BackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.BackgroundImage = CType(resources.GetObject("BtnCancelar.BackgroundImage"), System.Drawing.Image)
         Me.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.FlatAppearance.BorderSize = 0
         Me.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -264,6 +279,7 @@ Partial Class FrmPrograma
         Me.BtnModificar.BackColor = System.Drawing.Color.Transparent
         Me.BtnModificar.BackgroundImage = CType(resources.GetObject("BtnModificar.BackgroundImage"), System.Drawing.Image)
         Me.BtnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnModificar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnModificar.FlatAppearance.BorderSize = 0
         Me.BtnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -279,6 +295,7 @@ Partial Class FrmPrograma
         Me.BtnGuardar.BackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.BackgroundImage = CType(resources.GetObject("BtnGuardar.BackgroundImage"), System.Drawing.Image)
         Me.BtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnGuardar.FlatAppearance.BorderSize = 0
         Me.BtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -294,6 +311,7 @@ Partial Class FrmPrograma
         Me.BtnNuevo.BackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.BackgroundImage = CType(resources.GetObject("BtnNuevo.BackgroundImage"), System.Drawing.Image)
         Me.BtnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNuevo.FlatAppearance.BorderSize = 0
         Me.BtnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -314,20 +332,6 @@ Partial Class FrmPrograma
         Me.PictureBox1.Size = New System.Drawing.Size(530, 66)
         Me.PictureBox1.TabIndex = 120
         Me.PictureBox1.TabStop = False
-        '
-        'CmsOpciones
-        '
-        Me.CmsOpciones.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.CmsOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditarToolStripMenuItem})
-        Me.CmsOpciones.Name = "CmsOpciones"
-        Me.CmsOpciones.Size = New System.Drawing.Size(109, 30)
-        '
-        'EditarToolStripMenuItem
-        '
-        Me.EditarToolStripMenuItem.Image = CType(resources.GetObject("EditarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(108, 26)
-        Me.EditarToolStripMenuItem.Text = "Editar"
         '
         'FrmPrograma
         '
@@ -350,13 +354,15 @@ Partial Class FrmPrograma
         Me.Controls.Add(Me.BtnNuevo)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmPrograma"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Programa"
+        Me.CmsOpciones.ResumeLayout(False)
         Me.GbPrograma.ResumeLayout(False)
         Me.GbPrograma.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.CmsOpciones.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -32,11 +32,11 @@ Partial Class FrmBuscarAsignacionPrograma
         Me.ChNumComputadora = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChPrograma = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ChFecha3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RdbNumComputadora = New System.Windows.Forms.RadioButton()
         Me.RdbPrograma = New System.Windows.Forms.RadioButton()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -92,15 +92,6 @@ Partial Class FrmBuscarAsignacionPrograma
         Me.ChFecha3.Text = "Fecha Instalación"
         Me.ChFecha3.Width = 98
         '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.Location = New System.Drawing.Point(546, 149)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnBuscar.TabIndex = 109
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
-        '
         'TxtBuscar
         '
         Me.TxtBuscar.Location = New System.Drawing.Point(243, 150)
@@ -142,6 +133,22 @@ Partial Class FrmBuscarAsignacionPrograma
         Me.RdbPrograma.Text = "Programa"
         Me.RdbPrograma.UseVisualStyleBackColor = True
         '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnBuscar.FlatAppearance.BorderSize = 0
+        Me.BtnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBuscar.Location = New System.Drawing.Point(546, 141)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(39, 36)
+        Me.BtnBuscar.TabIndex = 123
+        Me.BtnBuscar.UseVisualStyleBackColor = False
+        '
         'FrmBuscarAsignacionPrograma
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -155,6 +162,8 @@ Partial Class FrmBuscarAsignacionPrograma
         Me.Controls.Add(Me.LsvAsignacion)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmBuscarAsignacionPrograma"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Buscar Asignacion Programa"
@@ -174,9 +183,9 @@ Partial Class FrmBuscarAsignacionPrograma
     Friend WithEvents ChNumComputadora As ColumnHeader
     Friend WithEvents ChPrograma As ColumnHeader
     Friend WithEvents ChFecha3 As ColumnHeader
-    Friend WithEvents BtnBuscar As Button
     Friend WithEvents TxtBuscar As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RdbNumComputadora As RadioButton
     Friend WithEvents RdbPrograma As RadioButton
+    Friend WithEvents BtnBuscar As Button
 End Class

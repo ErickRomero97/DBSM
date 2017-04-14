@@ -324,6 +324,8 @@ Partial Class FrmModelo
         Me.Controls.Add(Me.PlModelo)
         Me.Controls.Add(Me.LsvModelo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmModelo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Modelo"
