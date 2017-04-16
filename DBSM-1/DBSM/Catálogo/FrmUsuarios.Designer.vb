@@ -413,6 +413,7 @@ Partial Class FrmUsuarios
         Me.Controls.Add(Me.GbDatosUsuario)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FrmUsuarios"

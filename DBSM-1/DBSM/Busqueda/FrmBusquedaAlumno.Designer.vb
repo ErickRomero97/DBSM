@@ -130,6 +130,7 @@ Partial Class FrmBusquedaAlumno
         Me.Controls.Add(Me.lsbAlumno)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmBusquedaAlumno"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BusquedaAlumno"

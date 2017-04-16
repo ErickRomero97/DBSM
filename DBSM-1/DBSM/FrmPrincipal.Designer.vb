@@ -41,15 +41,15 @@ Partial Class FrmPrincipal
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BusquedasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuscarEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuscarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BuscarAlumnoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuscarAsignacionComputadoraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BuscarAsignaciónProgramaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuscarComputadoraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BuscarEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuscarMarcaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuscarModeloToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuscarAsignaciónProgramaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuscarProgramaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuscarAlumnoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BuscarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogAuditoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BtnEquipo = New System.Windows.Forms.Button()
         Me.BtnAC = New System.Windows.Forms.Button()
@@ -142,49 +142,49 @@ Partial Class FrmPrincipal
         '
         Me.AlumnoToolStripMenuItem.Image = CType(resources.GetObject("AlumnoToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AlumnoToolStripMenuItem.Name = "AlumnoToolStripMenuItem"
-        Me.AlumnoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AlumnoToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.AlumnoToolStripMenuItem.Text = "Alumno"
         '
         'EmpleadoToolStripMenuItem
         '
         Me.EmpleadoToolStripMenuItem.Image = CType(resources.GetObject("EmpleadoToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EmpleadoToolStripMenuItem.Name = "EmpleadoToolStripMenuItem"
-        Me.EmpleadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EmpleadoToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.EmpleadoToolStripMenuItem.Text = "Empleado"
         '
         'MarcaToolStripMenuItem
         '
         Me.MarcaToolStripMenuItem.Image = CType(resources.GetObject("MarcaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.MarcaToolStripMenuItem.Name = "MarcaToolStripMenuItem"
-        Me.MarcaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MarcaToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.MarcaToolStripMenuItem.Text = "Marca"
         '
         'ModeloToolStripMenuItem
         '
         Me.ModeloToolStripMenuItem.Image = CType(resources.GetObject("ModeloToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ModeloToolStripMenuItem.Name = "ModeloToolStripMenuItem"
-        Me.ModeloToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ModeloToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.ModeloToolStripMenuItem.Text = "Modelo"
         '
         'ProgramaToolStripMenuItem
         '
         Me.ProgramaToolStripMenuItem.Image = CType(resources.GetObject("ProgramaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ProgramaToolStripMenuItem.Name = "ProgramaToolStripMenuItem"
-        Me.ProgramaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProgramaToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.ProgramaToolStripMenuItem.Text = "Programa"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Image = CType(resources.GetObject("UsuariosToolStripMenuItem.Image"), System.Drawing.Image)
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Image = CType(resources.GetObject("SalirToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'BusquedasToolStripMenuItem
@@ -195,19 +195,12 @@ Partial Class FrmPrincipal
         Me.BusquedasToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
         Me.BusquedasToolStripMenuItem.Text = "Busquedas"
         '
-        'BuscarEmpleadoToolStripMenuItem
+        'BuscarAlumnoToolStripMenuItem
         '
-        Me.BuscarEmpleadoToolStripMenuItem.Image = CType(resources.GetObject("BuscarEmpleadoToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.BuscarEmpleadoToolStripMenuItem.Name = "BuscarEmpleadoToolStripMenuItem"
-        Me.BuscarEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
-        Me.BuscarEmpleadoToolStripMenuItem.Text = "Buscar Empleado"
-        '
-        'BuscarUsuarioToolStripMenuItem
-        '
-        Me.BuscarUsuarioToolStripMenuItem.Image = CType(resources.GetObject("BuscarUsuarioToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.BuscarUsuarioToolStripMenuItem.Name = "BuscarUsuarioToolStripMenuItem"
-        Me.BuscarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
-        Me.BuscarUsuarioToolStripMenuItem.Text = "Buscar Usuario"
+        Me.BuscarAlumnoToolStripMenuItem.Image = CType(resources.GetObject("BuscarAlumnoToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.BuscarAlumnoToolStripMenuItem.Name = "BuscarAlumnoToolStripMenuItem"
+        Me.BuscarAlumnoToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
+        Me.BuscarAlumnoToolStripMenuItem.Text = "Buscar Alumno"
         '
         'BuscarAsignacionComputadoraToolStripMenuItem
         '
@@ -216,12 +209,26 @@ Partial Class FrmPrincipal
         Me.BuscarAsignacionComputadoraToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
         Me.BuscarAsignacionComputadoraToolStripMenuItem.Text = "Buscar Asignación Computadora"
         '
+        'BuscarAsignaciónProgramaToolStripMenuItem
+        '
+        Me.BuscarAsignaciónProgramaToolStripMenuItem.Image = CType(resources.GetObject("BuscarAsignaciónProgramaToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.BuscarAsignaciónProgramaToolStripMenuItem.Name = "BuscarAsignaciónProgramaToolStripMenuItem"
+        Me.BuscarAsignaciónProgramaToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
+        Me.BuscarAsignaciónProgramaToolStripMenuItem.Text = "Buscar Asignación Programa"
+        '
         'BuscarComputadoraToolStripMenuItem
         '
         Me.BuscarComputadoraToolStripMenuItem.Image = CType(resources.GetObject("BuscarComputadoraToolStripMenuItem.Image"), System.Drawing.Image)
         Me.BuscarComputadoraToolStripMenuItem.Name = "BuscarComputadoraToolStripMenuItem"
         Me.BuscarComputadoraToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
         Me.BuscarComputadoraToolStripMenuItem.Text = "Buscar Computadora"
+        '
+        'BuscarEmpleadoToolStripMenuItem
+        '
+        Me.BuscarEmpleadoToolStripMenuItem.Image = CType(resources.GetObject("BuscarEmpleadoToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.BuscarEmpleadoToolStripMenuItem.Name = "BuscarEmpleadoToolStripMenuItem"
+        Me.BuscarEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
+        Me.BuscarEmpleadoToolStripMenuItem.Text = "Buscar Empleado"
         '
         'BuscarMarcaToolStripMenuItem
         '
@@ -237,13 +244,6 @@ Partial Class FrmPrincipal
         Me.BuscarModeloToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
         Me.BuscarModeloToolStripMenuItem.Text = "Buscar Modelo"
         '
-        'BuscarAsignaciónProgramaToolStripMenuItem
-        '
-        Me.BuscarAsignaciónProgramaToolStripMenuItem.Image = CType(resources.GetObject("BuscarAsignaciónProgramaToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.BuscarAsignaciónProgramaToolStripMenuItem.Name = "BuscarAsignaciónProgramaToolStripMenuItem"
-        Me.BuscarAsignaciónProgramaToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
-        Me.BuscarAsignaciónProgramaToolStripMenuItem.Text = "Buscar Asignación Programa"
-        '
         'BuscarProgramaToolStripMenuItem
         '
         Me.BuscarProgramaToolStripMenuItem.Image = CType(resources.GetObject("BuscarProgramaToolStripMenuItem.Image"), System.Drawing.Image)
@@ -251,12 +251,12 @@ Partial Class FrmPrincipal
         Me.BuscarProgramaToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
         Me.BuscarProgramaToolStripMenuItem.Text = "Buscar Programa"
         '
-        'BuscarAlumnoToolStripMenuItem
+        'BuscarUsuarioToolStripMenuItem
         '
-        Me.BuscarAlumnoToolStripMenuItem.Image = CType(resources.GetObject("BuscarAlumnoToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.BuscarAlumnoToolStripMenuItem.Name = "BuscarAlumnoToolStripMenuItem"
-        Me.BuscarAlumnoToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
-        Me.BuscarAlumnoToolStripMenuItem.Text = "Buscar Alumno"
+        Me.BuscarUsuarioToolStripMenuItem.Image = CType(resources.GetObject("BuscarUsuarioToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.BuscarUsuarioToolStripMenuItem.Name = "BuscarUsuarioToolStripMenuItem"
+        Me.BuscarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
+        Me.BuscarUsuarioToolStripMenuItem.Text = "Buscar Usuario"
         '
         'LogAuditoriaToolStripMenuItem
         '
@@ -330,6 +330,7 @@ Partial Class FrmPrincipal
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "FrmPrincipal"
