@@ -67,7 +67,7 @@ Public Class FrmAsignacionComputadora
             Height = 633
             CenterToScreen()
         Else
-            Height = 487
+            Height = 455
             CenterToScreen()
         End If
     End Sub

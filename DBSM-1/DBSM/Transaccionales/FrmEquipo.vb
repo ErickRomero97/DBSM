@@ -19,10 +19,10 @@ Public Class FrmEquipo
 
     Private Sub chkVertodo_CheckedChanged(sender As Object, e As EventArgs) Handles ChkVerTodo.CheckedChanged
         If ChkVerTodo.CheckState = CheckState.Checked Then
-            Height = 633
+            Height = 700
             CenterToScreen()
         Else
-            Height = 487
+            Height = 501
             CenterToScreen()
         End If
     End Sub

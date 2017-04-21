@@ -81,15 +81,27 @@ Public Class FrmBusquedaComputadora
                             .SubItems.Add(VerEquipo("SerieComputadora").ToString)
                             .SubItems.Add(VerEquipo("Marca").ToString)
                             .SubItems.Add(VerEquipo("Modelo").ToString)
-                            .SubItems.Add(VerEquipo("Mouse").ToString)
-                            .SubItems.Add(VerEquipo("Teclado").ToString)
+                            If Convert.ToBoolean(VerEquipo("Mouse")) = True Then
+                                .SubItems.Add("Si")
+                            Else
+                                .SubItems.Add("No")
+                            End If
+                            If Convert.ToBoolean(VerEquipo("Teclado")) = True Then
+                                .SubItems.Add("Si")
+                            Else
+                                .SubItems.Add("No")
+                            End If
                             .SubItems.Add(VerEquipo("Monitor").ToString)
                             .SubItems.Add(VerEquipo("Capram").ToString)
                             .SubItems.Add(VerEquipo("CapDisco").ToString)
                             .SubItems.Add(VerEquipo("DescripcionProcesador").ToString)
                             .SubItems.Add(VerEquipo("TipoPC").ToString)
                             .SubItems.Add(VerEquipo("RevolucionesDisco").ToString)
-                            .SubItems.Add(VerEquipo("EstadoAsignacion").ToString)
+                            If Convert.ToBoolean(VerEquipo("EstadoAsignacion")) = True Then
+                                .SubItems.Add("Si")
+                            Else
+                                .SubItems.Add("No")
+                            End If
                             .SubItems.Add(VerEquipo("SerieComputadora").ToString)
                         End With
                     End While
@@ -127,15 +139,27 @@ Public Class FrmBusquedaComputadora
                             .SubItems.Add(VerEquipo("SerieComputadora").ToString)
                             .SubItems.Add(VerEquipo("Marca").ToString)
                             .SubItems.Add(VerEquipo("Modelo").ToString)
-                            .SubItems.Add(VerEquipo("Mouse").ToString)
-                            .SubItems.Add(VerEquipo("Teclado").ToString)
+                            If Convert.ToBoolean(VerEquipo("Mouse")) = True Then
+                                .SubItems.Add("Si")
+                            Else
+                                .SubItems.Add("No")
+                            End If
+                            If Convert.ToBoolean(VerEquipo("Teclado")) = True Then
+                                .SubItems.Add("Si")
+                            Else
+                                .SubItems.Add("No")
+                            End If
                             .SubItems.Add(VerEquipo("Monitor").ToString)
                             .SubItems.Add(VerEquipo("Capram").ToString)
                             .SubItems.Add(VerEquipo("CapDisco").ToString)
                             .SubItems.Add(VerEquipo("DescripcionProcesador").ToString)
                             .SubItems.Add(VerEquipo("TipoPC").ToString)
                             .SubItems.Add(VerEquipo("RevolucionesDisco").ToString)
-                            .SubItems.Add(VerEquipo("EstadoAsignacion").ToString)
+                            If Convert.ToBoolean(VerEquipo("EstadoAsignacion")) = True Then
+                                .SubItems.Add("Si")
+                            Else
+                                .SubItems.Add("No")
+                            End If
                             .SubItems.Add(VerEquipo("SerieComputadora").ToString)
                         End With
                     End While

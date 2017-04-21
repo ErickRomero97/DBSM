@@ -828,6 +828,7 @@ G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmAsignacionPrograma.resou
 G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbproj.GenerateResource.Cache
 G:\Capturas de redes\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.exe.licenses
 H:\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbprojResolveAssemblyReference.cache
+C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaAlumno.resources
 C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe.config
 C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.exe
 C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\bin\Debug\DBSM.pdb
@@ -903,4 +904,3 @@ C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\obj\De
 C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.xml
 C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.pdb
 C:\Users\WalterPC\Desktop\Todos los Proyectos\DBSM-Nuevo\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.vbprojResolveAssemblyReference.cache
-C:\Users\ERICK GALLARDO\Desktop\DBSM\DBSM-1\DBSM\obj\Debug\DBSM.FrmBusquedaAlumno.resources

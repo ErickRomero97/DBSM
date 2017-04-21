@@ -179,7 +179,7 @@ Partial Class FrmAlumno
         '
         Me.ChkVertodo.AutoSize = True
         Me.ChkVertodo.BackColor = System.Drawing.Color.Transparent
-        Me.ChkVertodo.Location = New System.Drawing.Point(449, 429)
+        Me.ChkVertodo.Location = New System.Drawing.Point(439, 309)
         Me.ChkVertodo.Name = "ChkVertodo"
         Me.ChkVertodo.Size = New System.Drawing.Size(70, 17)
         Me.ChkVertodo.TabIndex = 96

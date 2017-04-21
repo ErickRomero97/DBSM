@@ -38,8 +38,8 @@ Public Class FrmAsignacionPrograma
 
     Private Sub BtnNuevo_Click(sender As Object, e As EventArgs) Handles BtnNuevo.Click
         Call HabilitarControles(False, True, False, True, True)
-        Call MostrarCodSofwareIdentity()
         Limpiar()
+        Call MostrarCodSofwareIdentity()
     End Sub
 
     Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
@@ -77,7 +77,7 @@ Public Class FrmAsignacionPrograma
             cnn.Open()
             Listarsofwares = ListarCodSoftware.ExecuteReader
             If Listarsofwares.Read = True Then
-                If Listarsofwares("Id") Is DBNull.Value Then
+                If Listarsofwares("Id").ToString Is DBNull.Value Then
                     TxtCodSoftware.Text = 1
                 Else
                     TxtCodSoftware.Text = Listarsofwares("Id").ToString

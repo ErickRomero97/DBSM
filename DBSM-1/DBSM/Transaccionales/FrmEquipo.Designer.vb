@@ -610,7 +610,7 @@ Partial Class FrmEquipo
         Me.LsvEquipo.GridLines = True
         Me.LsvEquipo.Location = New System.Drawing.Point(0, 475)
         Me.LsvEquipo.Name = "LsvEquipo"
-        Me.LsvEquipo.Size = New System.Drawing.Size(887, 222)
+        Me.LsvEquipo.Size = New System.Drawing.Size(887, 167)
         Me.LsvEquipo.TabIndex = 86
         Me.LsvEquipo.UseCompatibleStateImageBehavior = False
         Me.LsvEquipo.View = System.Windows.Forms.View.Details
@@ -720,7 +720,7 @@ Partial Class FrmEquipo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(886, 458)
+        Me.ClientSize = New System.Drawing.Size(886, 462)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LsvEquipo)
         Me.Controls.Add(Me.Label13)
@@ -735,6 +735,7 @@ Partial Class FrmEquipo
         Me.Controls.Add(Me.PlCom)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FrmEquipo"

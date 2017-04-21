@@ -38,6 +38,7 @@ Public Class FrmLogin
                             FrmPrincipal.BtnAP.Enabled = False
                             FrmPrincipal.BtnAC.Enabled = False
                             FrmPrincipal.UsuariosToolStripMenuItem.Enabled = False
+                            FrmPrincipal.BuscarUsuarioToolStripMenuItem.Enabled = False
                             FrmPrincipal.Show()
                         End If
                         Me.Close()
